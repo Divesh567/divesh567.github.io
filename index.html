@@ -53,6 +53,8 @@
 
   /* ---------- hero ---------- */
   header{padding:96px 0 72px}
+  .hero-photo{width:104px;height:104px;border-radius:50%;object-fit:cover;
+    border:3px solid var(--ember);margin-bottom:26px;display:block}
   .eyebrow{font-family:var(--mono);font-size:12.5px;letter-spacing:.22em;color:var(--ember);
     text-transform:uppercase;display:flex;align-items:center;gap:10px;margin-bottom:22px}
   .eyebrow::before{content:"";width:26px;height:1px;background:var(--ember)}
@@ -199,6 +201,7 @@
 
 <header>
   <div class="wrap">
+    <img class="hero-photo rise" src="divesh.jpg" alt="Divesh Dogra" onerror="this.remove()">
     <div class="eyebrow rise">Unity · C# · Mobile</div>
     <h1 class="rise">Divesh Dogra<span>Game Developer</span></h1>
     <p class="tagline rise">I build <b>mobile games end to end</b> in Unity and C# — from competitive multiplayer and live-ops to 3D gameplay, puzzle systems, and the optimization that keeps them smooth on real devices. Prototype to store release, on Android and iOS — with a VFX background for the extra polish.</p>
@@ -291,14 +294,7 @@
         </ul>
       </div>
       <div class="media">
-        <!-- FAUG gameplay video: paste your video ID after /embed/ (the part after v= in the YouTube URL), then delete this comment's surrounding markers to switch it on -->
-        <!-- <div class="embed"><iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID" title="FAUG gameplay" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div> -->
-        <div class="shots">
-          <a class="shot" href="faug-1.jpg" target="_blank" rel="noopener"><img src="faug-1.jpg" alt="FAUG screenshot 1" loading="lazy" onerror="this.closest('.shot').remove()"></a>
-          <a class="shot" href="faug-2.jpg" target="_blank" rel="noopener"><img src="faug-2.jpg" alt="FAUG screenshot 2" loading="lazy" onerror="this.closest('.shot').remove()"></a>
-          <a class="shot" href="faug-3.jpg" target="_blank" rel="noopener"><img src="faug-3.jpg" alt="FAUG screenshot 3" loading="lazy" onerror="this.closest('.shot').remove()"></a>
-          <a class="shot" href="faug-4.jpg" target="_blank" rel="noopener"><img src="faug-4.jpg" alt="FAUG screenshot 4" loading="lazy" onerror="this.closest('.shot').remove()"></a>
-        </div>
+        <div class="embed"><iframe src="https://www.youtube.com/embed/jMdh-wfqhkg" title="FAUG trailer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
       </div>
       <div class="m-foot">
         <span class="chip">Unity</span><span class="chip">C#</span><span class="chip">Multiplayer</span>
