@@ -70,14 +70,15 @@
   .btn-ghost:hover{border-color:var(--ember);color:var(--ember)}
 
   /* scoreboard */
-  .board{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;margin-top:56px;
+  .board{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;margin-top:56px;
     background:var(--line);border:1px solid var(--line)}
   .stat{background:var(--surface);padding:22px 20px}
   .stat .num{font-family:var(--disp);font-weight:700;font-size:34px;color:var(--text);line-height:1}
+  .stat .num.sm{font-size:23px}
   .stat .num i{color:var(--ember);font-style:normal}
   .stat .lbl{font-family:var(--mono);font-size:10.5px;letter-spacing:.12em;color:var(--faint);
     text-transform:uppercase;margin-top:10px}
-  @media(max-width:720px){.board{grid-template-columns:repeat(2,1fr)}}
+  @media(max-width:560px){.board{grid-template-columns:1fr}}
 
   /* ---------- section frame ---------- */
   section{padding:74px 0;border-top:1px solid var(--line)}
@@ -108,7 +109,11 @@
   .mission{background:var(--surface);border:1px solid var(--line);margin-bottom:20px;
     transition:border-color .2s,transform .2s}
   .mission:hover{border-color:#414a5c;transform:translateY(-2px)}
-  .m-top{display:flex;align-items:center;gap:14px;padding:20px 24px;border-bottom:1px solid var(--line);flex-wrap:wrap}
+  .m-top{display:flex;align-items:center;gap:13px;padding:18px 24px;border-bottom:1px solid var(--line);flex-wrap:wrap}
+  .m-icon{position:relative;flex:0 0 auto;width:42px;height:42px;border-radius:10px;overflow:hidden;
+    border:1px solid var(--line);background:var(--elev);display:grid;place-items:center}
+  .m-icon .mono{font-family:var(--disp);font-weight:700;font-size:19px;color:var(--ember)}
+  .m-icon img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
   .m-name{font-family:var(--disp);font-weight:600;font-size:22px;letter-spacing:.02em}
   .m-kind{font-family:var(--mono);font-size:11.5px;color:var(--muted);letter-spacing:.05em}
   .status{margin-left:auto;font-family:var(--mono);font-size:10.5px;letter-spacing:.12em;
@@ -132,12 +137,12 @@
 
   /* ---------- project media ---------- */
   .media{padding:2px 24px 20px;display:grid;gap:12px}
-  .embed{position:relative;width:100%;aspect-ratio:16/9;border:1px solid var(--line);background:#000;overflow:hidden}
+  .embed{position:relative;width:100%;max-width:460px;aspect-ratio:16/9;border:1px solid var(--line);background:#000;overflow:hidden}
   .embed iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
   .embed-row{display:flex;gap:12px;align-items:flex-start;flex-wrap:wrap}
-  .embed-row .embed{flex:1 1 320px}
-  .embed.vertical{flex:0 0 240px;max-width:240px;aspect-ratio:9/16}
-  @media(max-width:560px){.embed.vertical{flex-basis:100%;max-width:100%}}
+  .embed-row .embed{flex:0 1 380px;max-width:380px}
+  .embed.vertical{flex:0 0 190px;max-width:190px;aspect-ratio:9/16}
+  @media(max-width:560px){.embed.vertical{flex-basis:60%;max-width:60%}}
   .shots{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:10px}
   .shots:empty{display:none}
   .shot{display:block;overflow:hidden;border:1px solid var(--line);line-height:0}
@@ -196,18 +201,16 @@
   <div class="wrap">
     <div class="eyebrow rise">Unity · C# · Mobile</div>
     <h1 class="rise">Divesh Dogra<span>Game Developer</span></h1>
-    <p class="tagline rise">I build <b>competitive multiplayer</b> and mobile games in Unity — the hard part most developers avoid. Fast combat, tight controls, live-ops systems, and performance that holds on real devices.</p>
+    <p class="tagline rise">I build <b>mobile games end to end</b> in Unity and C# — from competitive multiplayer and live-ops to 3D gameplay, puzzle systems, and the optimization that keeps them smooth on real devices. Prototype to store release, on Android and iOS — with a VFX background for the extra polish.</p>
     <div class="cta-row rise">
       <a class="btn btn-primary" href="#contact">Hire me</a>
       <a class="btn btn-ghost" href="https://github.com/Divesh567" target="_blank" rel="noopener">GitHub</a>
-      <a class="btn btn-ghost" href="https://divesh567.carrd.co" target="_blank" rel="noopener">Portfolio</a>
     </div>
 
     <div class="board rise">
       <div class="stat"><div class="num"><i>4+</i></div><div class="lbl">Years shipping</div></div>
-      <div class="stat"><div class="num">FPS</div><div class="lbl">Competitive multiplayer</div></div>
-      <div class="stat"><div class="num">15<i>→</i>30</div><div class="lbl">FPS on 4GB devices</div></div>
       <div class="stat"><div class="num">5<i>+</i></div><div class="lbl">Titles worked on</div></div>
+      <div class="stat"><div class="num sm">Android <i>&amp;</i> iOS</div><div class="lbl">Platforms shipped</div></div>
     </div>
   </div>
 </header>
@@ -273,6 +276,7 @@
     <!-- FAUG -->
     <div class="mission rise">
       <div class="m-top">
+        <span class="m-icon"><span class="mono">F</span><img src="faug-icon.png" alt="" onerror="this.remove()"></span>
         <span class="m-name">FAUG</span>
         <span class="m-kind">Competitive Multiplayer FPS · Dot9 Games</span>
         <span class="status st-live">Live</span>
@@ -305,6 +309,7 @@
     <!-- Chapter 26 -->
     <div class="mission rise">
       <div class="m-top">
+        <span class="m-icon"><span class="mono">26</span><img src="chapter26-icon.png" alt="" onerror="this.remove()"></span>
         <span class="m-name">Chapter 26</span>
         <span class="m-kind">Casual Multiplayer Games &amp; Social App · Dot9 Games</span>
         <span class="status st-live">Live</span>
@@ -333,6 +338,7 @@
     <!-- Steady Light -->
     <div class="mission rise">
       <div class="m-top">
+        <span class="m-icon"><span class="mono">S</span><img src="steadylight-icon.png" alt="" onerror="this.remove()"></span>
         <span class="m-name">Steady Light</span>
         <span class="m-kind">2D Physics Platformer · Immersiveorama (solo)</span>
         <span class="status st-ship">Shipped</span>
@@ -359,6 +365,7 @@
     <!-- Mahabharat -->
     <div class="mission rise">
       <div class="m-top">
+        <span class="m-icon"><span class="mono">M</span><img src="mahabharat-icon.png" alt="" onerror="this.remove()"></span>
         <span class="m-name">Mahabharat Games</span>
         <span class="m-kind">3D Board Game · Puzzle Suite · Meta Loop · BoredLeaders</span>
         <span class="status st-ship">Shipped</span>
@@ -437,7 +444,6 @@
       <div class="links-row">
         <a class="btn btn-primary" href="mailto:divesh476@gmail.com">Email me</a>
         <a class="btn btn-ghost" href="https://github.com/Divesh567" target="_blank" rel="noopener">GitHub</a>
-        <a class="btn btn-ghost" href="https://divesh567.carrd.co" target="_blank" rel="noopener">Carrd</a>
       </div>
     </div>
   </div>
