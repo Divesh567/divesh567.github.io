@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Divesh Dogra — Game Developer</title>
+<meta name="description" content="Unity game developer specializing in multiplayer, live-ops, and mobile games in C#. 4+ years shipping titles for Android and iOS." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
+<style>
+  :root{
+    --ink:#101219;
+    --surface:#171A22;
+    --elev:#1F232E;
+    --line:#2C313D;
+    --text:#ECEFF4;
+    --muted:#8B93A6;
+    --faint:#5C6474;
+    --ember:#FF5C33;
+    --ember-soft:rgba(255,92,51,.14);
+    --steel:#5B93C7;
+    --disp:'Chakra Petch',sans-serif;
+    --body:'Inter',sans-serif;
+    --mono:'JetBrains Mono',monospace;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{
+    background:var(--ink);color:var(--text);font-family:var(--body);
+    line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden;
+  }
+  /* faint grid backdrop */
+  body::before{
+    content:"";position:fixed;inset:0;z-index:0;pointer-events:none;
+    background-image:linear-gradient(var(--line) 1px,transparent 1px),linear-gradient(90deg,var(--line) 1px,transparent 1px);
+    background-size:64px 64px;opacity:.16;
+    mask-image:radial-gradient(ellipse 80% 60% at 50% 0%,#000 30%,transparent 80%);
+  }
+  .wrap{max-width:1060px;margin:0 auto;padding:0 28px;position:relative;z-index:1}
+  a{color:inherit;text-decoration:none}
+
+  /* ---------- nav ---------- */
+  nav{position:sticky;top:0;z-index:50;backdrop-filter:blur(10px);
+    background:rgba(16,18,25,.72);border-bottom:1px solid var(--line)}
+  .nav-in{display:flex;align-items:center;justify-content:space-between;height:60px}
+  .brand{font-family:var(--mono);font-size:13px;letter-spacing:.14em;color:var(--muted)}
+  .brand b{color:var(--ember)}
+  .nav-links{display:flex;gap:26px;font-family:var(--mono);font-size:12.5px;letter-spacing:.1em;text-transform:uppercase}
+  .nav-links a{color:var(--muted);transition:color .2s}
+  .nav-links a:hover{color:var(--text)}
+  @media(max-width:640px){.nav-links{display:none}}
+
+  /* ---------- hero ---------- */
+  header{padding:96px 0 72px}
+  .eyebrow{font-family:var(--mono);font-size:12.5px;letter-spacing:.22em;color:var(--ember);
+    text-transform:uppercase;display:flex;align-items:center;gap:10px;margin-bottom:22px}
+  .eyebrow::before{content:"";width:26px;height:1px;background:var(--ember)}
+  h1{font-family:var(--disp);font-weight:700;font-size:clamp(46px,9vw,88px);line-height:.98;
+    letter-spacing:.01em;text-transform:uppercase}
+  h1 span{display:block;color:var(--ember)}
+  .tagline{font-size:clamp(16px,2.3vw,20px);color:var(--muted);max-width:56ch;margin-top:24px}
+  .tagline b{color:var(--text);font-weight:600}
+
+  .cta-row{display:flex;gap:14px;margin-top:34px;flex-wrap:wrap}
+  .btn{font-family:var(--mono);font-size:13px;letter-spacing:.08em;text-transform:uppercase;
+    padding:13px 22px;border:1px solid var(--line);transition:all .2s;display:inline-flex;gap:9px;align-items:center}
+  .btn-primary{background:var(--ember);color:#160a06;border-color:var(--ember);font-weight:700}
+  .btn-primary:hover{filter:brightness(1.08);transform:translateY(-2px)}
+  .btn-ghost:hover{border-color:var(--ember);color:var(--ember)}
+
+  /* scoreboard */
+  .board{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;margin-top:56px;
+    background:var(--line);border:1px solid var(--line)}
+  .stat{background:var(--surface);padding:22px 20px}
+  .stat .num{font-family:var(--disp);font-weight:700;font-size:34px;color:var(--text);line-height:1}
+  .stat .num i{color:var(--ember);font-style:normal}
+  .stat .lbl{font-family:var(--mono);font-size:10.5px;letter-spacing:.12em;color:var(--faint);
+    text-transform:uppercase;margin-top:10px}
+  @media(max-width:720px){.board{grid-template-columns:repeat(2,1fr)}}
+
+  /* ---------- section frame ---------- */
+  section{padding:74px 0;border-top:1px solid var(--line)}
+  .sec-head{display:flex;align-items:baseline;gap:16px;margin-bottom:40px}
+  .sec-idx{font-family:var(--mono);font-size:13px;color:var(--ember);letter-spacing:.1em}
+  .sec-title{font-family:var(--disp);font-weight:600;font-size:clamp(22px,3.5vw,30px);
+    text-transform:uppercase;letter-spacing:.03em}
+  .sec-note{margin-left:auto;font-family:var(--mono);font-size:11px;color:var(--faint);
+    letter-spacing:.1em;text-transform:uppercase}
+  @media(max-width:640px){.sec-note{display:none}}
+
+  .about p{font-size:18px;color:#C7CDDA;max-width:70ch}
+  .about p + p{margin-top:16px}
+
+  /* ---------- loadout / skills ---------- */
+  .load-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+  @media(max-width:720px){.load-grid{grid-template-columns:1fr}}
+  .load-card{background:var(--surface);border:1px solid var(--line);padding:22px 22px 24px}
+  .load-card h3{font-family:var(--mono);font-size:12px;letter-spacing:.14em;text-transform:uppercase;
+    color:var(--muted);margin-bottom:16px;display:flex;align-items:center;gap:9px}
+  .load-card h3::before{content:"";width:6px;height:6px;background:var(--ember);transform:rotate(45deg)}
+  .tags{display:flex;flex-wrap:wrap;gap:8px}
+  .tag{font-family:var(--mono);font-size:12px;padding:6px 11px;border:1px solid var(--line);
+    color:#B7BECD;background:var(--elev);transition:all .18s}
+  .tag:hover{border-color:var(--ember);color:var(--ember)}
+
+  /* ---------- missions / projects ---------- */
+  .mission{background:var(--surface);border:1px solid var(--line);margin-bottom:20px;
+    transition:border-color .2s,transform .2s}
+  .mission:hover{border-color:#414a5c;transform:translateY(-2px)}
+  .m-top{display:flex;align-items:center;gap:14px;padding:20px 24px;border-bottom:1px solid var(--line);flex-wrap:wrap}
+  .m-name{font-family:var(--disp);font-weight:600;font-size:22px;letter-spacing:.02em}
+  .m-kind{font-family:var(--mono);font-size:11.5px;color:var(--muted);letter-spacing:.05em}
+  .status{margin-left:auto;font-family:var(--mono);font-size:10.5px;letter-spacing:.12em;
+    text-transform:uppercase;padding:5px 10px;border:1px solid;display:inline-flex;align-items:center;gap:7px}
+  .status::before{content:"";width:6px;height:6px;border-radius:50%}
+  .st-live{color:var(--ember);border-color:var(--ember-soft);background:var(--ember-soft)}
+  .st-live::before{background:var(--ember);box-shadow:0 0 8px var(--ember)}
+  .st-ship{color:var(--steel);border-color:rgba(91,147,199,.28);background:rgba(91,147,199,.1)}
+  .st-ship::before{background:var(--steel)}
+  .m-body{padding:22px 24px}
+  .m-body ul{list-style:none;display:grid;gap:11px}
+  .m-body li{position:relative;padding-left:22px;color:#C3CAD8;font-size:15px}
+  .m-body li::before{content:"▸";position:absolute;left:0;top:1px;color:var(--ember);font-size:13px}
+  .m-foot{display:flex;gap:10px;flex-wrap:wrap;padding:0 24px 22px}
+  .chip{font-family:var(--mono);font-size:11px;color:var(--faint);padding:5px 10px;border:1px solid var(--line)}
+  .m-links{display:flex;gap:18px;padding:16px 24px;border-top:1px solid var(--line);
+    font-family:var(--mono);font-size:12px;letter-spacing:.06em;text-transform:uppercase}
+  .m-links a{color:var(--muted);display:inline-flex;align-items:center;gap:7px;transition:color .2s}
+  .m-links a:hover{color:var(--ember)}
+  .m-links a::before{content:"↗";color:var(--ember)}
+
+  /* ---------- timeline ---------- */
+  .tl{position:relative;padding-left:30px}
+  .tl::before{content:"";position:absolute;left:6px;top:6px;bottom:6px;width:1px;background:var(--line)}
+  .tl-item{position:relative;padding-bottom:30px}
+  .tl-item:last-child{padding-bottom:0}
+  .tl-item::before{content:"";position:absolute;left:-27px;top:6px;width:11px;height:11px;
+    background:var(--ink);border:2px solid var(--faint);transform:rotate(45deg)}
+  .tl-item.now::before{border-color:var(--ember);box-shadow:0 0 10px var(--ember-soft)}
+  .tl-role{font-family:var(--disp);font-weight:600;font-size:18px}
+  .tl-meta{font-family:var(--mono);font-size:12px;color:var(--faint);letter-spacing:.05em;margin:3px 0 8px}
+  .tl-meta b{color:var(--ember);font-weight:500}
+  .tl-desc{color:var(--muted);font-size:14.5px;max-width:66ch}
+
+  /* ---------- contact ---------- */
+  .contact-box{background:var(--surface);border:1px solid var(--line);padding:44px 34px;text-align:center}
+  .contact-box h2{font-family:var(--disp);font-weight:700;font-size:clamp(26px,4.5vw,40px);
+    text-transform:uppercase;letter-spacing:.02em}
+  .contact-box h2 span{color:var(--ember)}
+  .contact-box p{color:var(--muted);margin:14px auto 28px;max-width:48ch}
+  .links-row{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+
+  footer{padding:40px 0 60px;text-align:center;border-top:1px solid var(--line)}
+  footer p{font-family:var(--mono);font-size:11.5px;color:var(--faint);letter-spacing:.08em}
+
+  /* reveal */
+  .rise{opacity:0;transform:translateY(18px);transition:opacity .6s ease,transform .6s ease}
+  .rise.in{opacity:1;transform:none}
+  @media(prefers-reduced-motion:reduce){
+    .rise{opacity:1;transform:none;transition:none}
+    html{scroll-behavior:auto}
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="wrap nav-in">
+    <div class="brand">DIVESH·DOGRA <b>//</b> GAME DEV</div>
+    <div class="nav-links">
+      <a href="#about">About</a>
+      <a href="#loadout">Loadout</a>
+      <a href="#missions">Work</a>
+      <a href="#timeline">Timeline</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </div>
+</nav>
+
+<header>
+  <div class="wrap">
+    <div class="eyebrow rise">Unity · C# · Mobile</div>
+    <h1 class="rise">Divesh Dogra<span>Game Developer</span></h1>
+    <p class="tagline rise">I build <b>competitive multiplayer</b> and mobile games in Unity — the hard part most developers avoid. Fast combat, tight controls, live-ops systems, and performance that holds on real devices.</p>
+    <div class="cta-row rise">
+      <a class="btn btn-primary" href="#contact">Hire me</a>
+      <a class="btn btn-ghost" href="https://github.com/Divesh567" target="_blank" rel="noopener">GitHub</a>
+      <a class="btn btn-ghost" href="https://divesh567.carrd.co" target="_blank" rel="noopener">Portfolio</a>
+    </div>
+
+    <div class="board rise">
+      <div class="stat"><div class="num"><i>4+</i></div><div class="lbl">Years shipping</div></div>
+      <div class="stat"><div class="num">FPS</div><div class="lbl">Competitive multiplayer</div></div>
+      <div class="stat"><div class="num">15<i>→</i>30</div><div class="lbl">FPS on 4GB devices</div></div>
+      <div class="stat"><div class="num">5<i>+</i></div><div class="lbl">Titles worked on</div></div>
+    </div>
+  </div>
+</header>
+
+<section id="about" class="about">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="sec-idx">01</span><span class="sec-title">About</span>
+      <span class="sec-note">// profile</span>
+    </div>
+    <p class="rise">Unity game developer with 4+ years shipping mobile titles in C# for Android and iOS. My focus is the part of game dev that's genuinely hard: real-time multiplayer, live-ops systems, and squeezing smooth performance out of low-end hardware.</p>
+    <p class="rise">I've built a competitive multiplayer FPS with live e-sports events, shipped a solo-made physics platformer, and written the kind of clean, maintainable code your next developer can actually read. Comfortable owning a project from prototype to store release.</p>
+  </div>
+</section>
+
+<section id="loadout">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="sec-idx">02</span><span class="sec-title">Loadout</span>
+      <span class="sec-note">// skills</span>
+    </div>
+    <div class="load-grid">
+      <div class="load-card rise">
+        <h3>Engine &amp; Language</h3>
+        <div class="tags">
+          <span class="tag">Unity</span><span class="tag">C#</span><span class="tag">OOP</span>
+          <span class="tag">Clean architecture</span><span class="tag">Scriptable Objects</span>
+        </div>
+      </div>
+      <div class="load-card rise">
+        <h3>Multiplayer &amp; Live-Ops</h3>
+        <div class="tags">
+          <span class="tag">Netcode (NGO)</span><span class="tag">Photon</span><span class="tag">Leaderboards</span>
+          <span class="tag">Tournaments</span><span class="tag">Clans</span><span class="tag">Reward systems</span>
+        </div>
+      </div>
+      <div class="load-card rise">
+        <h3>Performance</h3>
+        <div class="tags">
+          <span class="tag">CPU / GPU profiling</span><span class="tag">Memory optimization</span>
+          <span class="tag">Batching</span><span class="tag">Low-end devices</span><span class="tag">Addressables</span>
+        </div>
+      </div>
+      <div class="load-card rise">
+        <h3>Backend &amp; Tools</h3>
+        <div class="tags">
+          <span class="tag">PlayFab</span><span class="tag">Firebase</span><span class="tag">GCP</span>
+          <span class="tag">Remote config</span><span class="tag">A/B testing</span><span class="tag">Analytics</span>
+          <span class="tag">I2 Localization</span><span class="tag">Git</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="missions">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="sec-idx">03</span><span class="sec-title">Selected Work</span>
+      <span class="sec-note">// projects</span>
+    </div>
+
+    <!-- FAUG -->
+    <div class="mission rise">
+      <div class="m-top">
+        <span class="m-name">FAUG</span>
+        <span class="m-kind">Competitive Multiplayer FPS · Dot9 Games</span>
+        <span class="status st-live">Live</span>
+      </div>
+      <div class="m-body">
+        <ul>
+          <li>Built the FBL League — a competitive live-event system that moved the product into e-sports, driving thousands of matches and countless hours of play.</li>
+          <li>Designed the reward architecture (skins, accessories, unlockables) and a battle-streak system that improved early-player retention.</li>
+          <li>Created the Teams / clan system for party-mode gameplay, later featured in a live e-sports event.</li>
+          <li>Optimized the game from ~15 FPS to a stable 30 FPS on low-end 4GB devices.</li>
+          <li>Set up A/B testing with PlayFab Experiments and a remote-config pipeline for designers to tune the game without new builds.</li>
+        </ul>
+      </div>
+      <div class="m-foot">
+        <span class="chip">Unity</span><span class="chip">C#</span><span class="chip">Multiplayer</span>
+        <span class="chip">PlayFab</span><span class="chip">Live-Ops</span>
+      </div>
+      <!-- Add a gameplay clip link below when you have one (unlisted YouTube is fine) -->
+    </div>
+
+    <!-- Chapter 26 -->
+    <div class="mission rise">
+      <div class="m-top">
+        <span class="m-name">Chapter 26</span>
+        <span class="m-kind">Casual Multiplayer Games &amp; Social App · Dot9 Games</span>
+        <span class="status st-live">Live</span>
+      </div>
+      <div class="m-body">
+        <ul>
+          <li>Built tournaments and leaderboards backed by a GCP backend / API.</li>
+          <li>Developed the clan system for social and party-mode play.</li>
+          <li>Created a live-cast feature integrating YouTube stream URLs for in-app broadcast.</li>
+          <li>Implemented Arabic localization with I2 Localization for the client's target market.</li>
+        </ul>
+      </div>
+      <div class="m-foot">
+        <span class="chip">Unity</span><span class="chip">GCP</span><span class="chip">Localization</span><span class="chip">Social</span>
+      </div>
+    </div>
+
+    <!-- Steady Light -->
+    <div class="mission rise">
+      <div class="m-top">
+        <span class="m-name">Steady Light</span>
+        <span class="m-kind">2D Physics Platformer · Immersiveorama (solo)</span>
+        <span class="status st-ship">Shipped</span>
+      </div>
+      <div class="m-body">
+        <ul>
+          <li>Solo-developed and published a physics-based platformer — code, design, and animation, start to finish.</li>
+          <li>Built on Unity's physics engine with DOTween animation and a component-based architecture.</li>
+          <li>Used Addressables for level management to optimize memory usage.</li>
+        </ul>
+      </div>
+      <div class="m-foot">
+        <span class="chip">Unity</span><span class="chip">Physics</span><span class="chip">DOTween</span><span class="chip">Addressables</span>
+      </div>
+      <div class="m-links">
+        <a href="https://www.youtube.com/watch?v=JCKcdK0sfHg" target="_blank" rel="noopener">Watch trailer</a>
+      </div>
+    </div>
+
+    <!-- Mahabharat -->
+    <div class="mission rise">
+      <div class="m-top">
+        <span class="m-name">Mahabharat Games</span>
+        <span class="m-kind">Board Game &amp; Jigsaw Puzzles · BoredLeaders</span>
+        <span class="status st-ship">Shipped</span>
+      </div>
+      <div class="m-body">
+        <ul>
+          <li>Built a scalable jigsaw system (50+ puzzles) and an interactive puzzle book (375+ text puzzles) driven by CSV data and scriptable objects.</li>
+          <li>Integrated Firebase, Play Games, and AdMob; added Hindi localization for a wider audience.</li>
+        </ul>
+      </div>
+      <div class="m-foot">
+        <span class="chip">Unity</span><span class="chip">CSV-driven</span><span class="chip">Firebase</span>
+      </div>
+      <div class="m-links">
+        <a href="https://play.google.com/store/apps/details?id=com.boredleaders.mbpg&hl=en" target="_blank" rel="noopener">Jigsaw Puzzles</a>
+        <a href="https://play.google.com/store/apps/details?id=com.boredleaders.mbbg&hl=en" target="_blank" rel="noopener">Board Game</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="timeline">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="sec-idx">04</span><span class="sec-title">Timeline</span>
+      <span class="sec-note">// experience</span>
+    </div>
+    <div class="tl">
+      <div class="tl-item now rise">
+        <div class="tl-role">Game Developer — Dot9 Games</div>
+        <div class="tl-meta"><b>2025 — Present</b> · Mumbai, India</div>
+        <div class="tl-desc">Multiplayer FPS and social-app development: e-sports systems, live-ops, backend, and device optimization on FAUG and Chapter 26.</div>
+      </div>
+      <div class="tl-item rise">
+        <div class="tl-role">Junior Game Developer — BoredLeaders</div>
+        <div class="tl-meta"><b>2023 — 2024</b> · Delhi, India</div>
+        <div class="tl-desc">Improved performance by 40% through rendering and code optimization; built AI-driven NPC behaviors and shipped new game content.</div>
+      </div>
+      <div class="tl-item rise">
+        <div class="tl-role">Game Developer Intern — BoredLeaders</div>
+        <div class="tl-meta"><b>2023</b> · Delhi, India</div>
+        <div class="tl-desc">Prototyped gameplay mechanics and animations; led a graphics-enhancement effort that lifted visual quality.</div>
+      </div>
+      <div class="tl-item rise">
+        <div class="tl-role">Indie Game Developer — Immersiveorama</div>
+        <div class="tl-meta"><b>2022 — 2023</b> · Mumbai, India</div>
+        <div class="tl-desc">Solo-built and published Steady Light on the Play Store, from code to animation.</div>
+      </div>
+      <div class="tl-item rise">
+        <div class="tl-role">VFX Artist — Cinegence Media</div>
+        <div class="tl-meta"><b>2019 — 2021</b></div>
+        <div class="tl-desc">Created VFX sequences under tight deadlines using Nuke for CG effects and simulations.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="wrap">
+    <div class="contact-box rise">
+      <h2>Let's build something <span>great</span></h2>
+      <p>Available for freelance and full-time game development — multiplayer, mobile, and everything from prototype to store release.</p>
+      <div class="links-row">
+        <a class="btn btn-primary" href="mailto:divesh476@gmail.com">Email me</a>
+        <a class="btn btn-ghost" href="https://github.com/Divesh567" target="_blank" rel="noopener">GitHub</a>
+        <a class="btn btn-ghost" href="https://divesh567.carrd.co" target="_blank" rel="noopener">Carrd</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <p>Divesh Dogra · Game Developer · Mumbai, India</p>
+  </div>
+</footer>
+
+<script>
+  // scroll reveal
+  const io = new IntersectionObserver((entries)=>{
+    entries.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target);} });
+  },{threshold:.12});
+  document.querySelectorAll('.rise').forEach((el,i)=>{
+    el.style.transitionDelay = Math.min(i*40,240)+'ms';
+    io.observe(el);
+  });
+</script>
+</body>
+</html>
