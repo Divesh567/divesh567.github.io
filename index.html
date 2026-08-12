@@ -130,6 +130,20 @@
   .m-links a:hover{color:var(--ember)}
   .m-links a::before{content:"↗";color:var(--ember)}
 
+  /* ---------- project media ---------- */
+  .media{padding:2px 24px 20px;display:grid;gap:12px}
+  .embed{position:relative;width:100%;aspect-ratio:16/9;border:1px solid var(--line);background:#000;overflow:hidden}
+  .embed iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+  .embed-row{display:flex;gap:12px;align-items:flex-start;flex-wrap:wrap}
+  .embed-row .embed{flex:1 1 320px}
+  .embed.vertical{flex:0 0 240px;max-width:240px;aspect-ratio:9/16}
+  @media(max-width:560px){.embed.vertical{flex-basis:100%;max-width:100%}}
+  .shots{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:10px}
+  .shots:empty{display:none}
+  .shot{display:block;overflow:hidden;border:1px solid var(--line);line-height:0}
+  .shot img{width:100%;height:120px;object-fit:cover;display:block;transition:transform .3s,filter .3s;filter:saturate(.92)}
+  .shot:hover img{transform:scale(1.05);filter:saturate(1.1)}
+
   /* ---------- timeline ---------- */
   .tl{position:relative;padding-left:30px}
   .tl::before{content:"";position:absolute;left:6px;top:6px;bottom:6px;width:1px;background:var(--line)}
@@ -272,11 +286,20 @@
           <li>Set up A/B testing with PlayFab Experiments and a remote-config pipeline for designers to tune the game without new builds.</li>
         </ul>
       </div>
+      <div class="media">
+        <!-- FAUG gameplay video: paste your video ID after /embed/ (the part after v= in the YouTube URL), then delete this comment's surrounding markers to switch it on -->
+        <!-- <div class="embed"><iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID" title="FAUG gameplay" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div> -->
+        <div class="shots">
+          <a class="shot" href="faug-1.jpg" target="_blank" rel="noopener"><img src="faug-1.jpg" alt="FAUG screenshot 1" loading="lazy" onerror="this.closest('.shot').remove()"></a>
+          <a class="shot" href="faug-2.jpg" target="_blank" rel="noopener"><img src="faug-2.jpg" alt="FAUG screenshot 2" loading="lazy" onerror="this.closest('.shot').remove()"></a>
+          <a class="shot" href="faug-3.jpg" target="_blank" rel="noopener"><img src="faug-3.jpg" alt="FAUG screenshot 3" loading="lazy" onerror="this.closest('.shot').remove()"></a>
+          <a class="shot" href="faug-4.jpg" target="_blank" rel="noopener"><img src="faug-4.jpg" alt="FAUG screenshot 4" loading="lazy" onerror="this.closest('.shot').remove()"></a>
+        </div>
+      </div>
       <div class="m-foot">
         <span class="chip">Unity</span><span class="chip">C#</span><span class="chip">Multiplayer</span>
         <span class="chip">PlayFab</span><span class="chip">Live-Ops</span>
       </div>
-      <!-- Add a gameplay clip link below when you have one (unlisted YouTube is fine) -->
     </div>
 
     <!-- Chapter 26 -->
@@ -293,6 +316,14 @@
           <li>Created a live-cast feature integrating YouTube stream URLs for in-app broadcast.</li>
           <li>Implemented Arabic localization with I2 Localization for the client's target market.</li>
         </ul>
+      </div>
+      <div class="media">
+        <!-- <div class="embed"><iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID" title="Chapter 26 gameplay" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div> -->
+        <div class="shots">
+          <a class="shot" href="chapter26-1.jpg" target="_blank" rel="noopener"><img src="chapter26-1.jpg" alt="Chapter 26 screenshot 1" loading="lazy" onerror="this.closest('.shot').remove()"></a>
+          <a class="shot" href="chapter26-2.jpg" target="_blank" rel="noopener"><img src="chapter26-2.jpg" alt="Chapter 26 screenshot 2" loading="lazy" onerror="this.closest('.shot').remove()"></a>
+          <a class="shot" href="chapter26-3.jpg" target="_blank" rel="noopener"><img src="chapter26-3.jpg" alt="Chapter 26 screenshot 3" loading="lazy" onerror="this.closest('.shot').remove()"></a>
+        </div>
       </div>
       <div class="m-foot">
         <span class="chip">Unity</span><span class="chip">GCP</span><span class="chip">Localization</span><span class="chip">Social</span>
@@ -313,11 +344,15 @@
           <li>Used Addressables for level management to optimize memory usage.</li>
         </ul>
       </div>
+      <div class="media">
+        <div class="embed"><iframe src="https://www.youtube.com/embed/JCKcdK0sfHg" title="Steady Light trailer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+        <div class="shots">
+          <a class="shot" href="steadylight-1.jpg" target="_blank" rel="noopener"><img src="steadylight-1.jpg" alt="Steady Light screenshot 1" loading="lazy" onerror="this.closest('.shot').remove()"></a>
+          <a class="shot" href="steadylight-2.jpg" target="_blank" rel="noopener"><img src="steadylight-2.jpg" alt="Steady Light screenshot 2" loading="lazy" onerror="this.closest('.shot').remove()"></a>
+        </div>
+      </div>
       <div class="m-foot">
         <span class="chip">Unity</span><span class="chip">Physics</span><span class="chip">DOTween</span><span class="chip">Addressables</span>
-      </div>
-      <div class="m-links">
-        <a href="https://www.youtube.com/watch?v=JCKcdK0sfHg" target="_blank" rel="noopener">Watch trailer</a>
       </div>
     </div>
 
@@ -325,17 +360,30 @@
     <div class="mission rise">
       <div class="m-top">
         <span class="m-name">Mahabharat Games</span>
-        <span class="m-kind">Board Game &amp; Jigsaw Puzzles · BoredLeaders</span>
+        <span class="m-kind">3D Board Game · Puzzle Suite · Meta Loop · BoredLeaders</span>
         <span class="status st-ship">Shipped</span>
       </div>
       <div class="m-body">
         <ul>
-          <li>Built a scalable jigsaw system (50+ puzzles) and an interactive puzzle book (375+ text puzzles) driven by CSV data and scriptable objects.</li>
-          <li>Integrated Firebase, Play Games, and AdMob; added Hindi localization for a wider audience.</li>
+          <li>Built a 3D Ludo-style board game with power-up cards, obstacles, multiple board layouts, characters, maps, and day/night lighting.</li>
+          <li>Designed a scalable jigsaw system — 50 levels with a data-driven pipeline that lets designers add more with zero developer work.</li>
+          <li>Developed a 400+ level narrative puzzle game retelling the Mahabharat, mixing text puzzles and image-distortion puzzles, all CSV-driven.</li>
+          <li>Tied the three games together with a meta loop that unifies them into a single connected experience.</li>
         </ul>
       </div>
+      <div class="media">
+        <div class="embed-row">
+          <div class="embed"><iframe src="https://www.youtube.com/embed/lilYR9wfwQc" title="Mahabharat trailer" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+          <div class="embed vertical"><iframe src="https://www.youtube.com/embed/yX92sEeh53k" title="Mahabharat short" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+        </div>
+        <div class="shots">
+          <a class="shot" href="mahabharat-1.jpg" target="_blank" rel="noopener"><img src="mahabharat-1.jpg" alt="Mahabharat screenshot 1" loading="lazy" onerror="this.closest('.shot').remove()"></a>
+          <a class="shot" href="mahabharat-2.jpg" target="_blank" rel="noopener"><img src="mahabharat-2.jpg" alt="Mahabharat screenshot 2" loading="lazy" onerror="this.closest('.shot').remove()"></a>
+          <a class="shot" href="mahabharat-3.jpg" target="_blank" rel="noopener"><img src="mahabharat-3.jpg" alt="Mahabharat screenshot 3" loading="lazy" onerror="this.closest('.shot').remove()"></a>
+        </div>
+      </div>
       <div class="m-foot">
-        <span class="chip">Unity</span><span class="chip">CSV-driven</span><span class="chip">Firebase</span>
+        <span class="chip">Unity</span><span class="chip">3D</span><span class="chip">CSV-driven</span><span class="chip">Data-driven levels</span><span class="chip">Firebase</span>
       </div>
       <div class="m-links">
         <a href="https://play.google.com/store/apps/details?id=com.boredleaders.mbpg&hl=en" target="_blank" rel="noopener">Jigsaw Puzzles</a>
