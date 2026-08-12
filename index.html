@@ -53,8 +53,14 @@
 
   /* ---------- hero ---------- */
   header{padding:96px 0 72px}
-  .hero-photo{width:104px;height:104px;border-radius:50%;object-fit:cover;
-    border:3px solid var(--ember);margin-bottom:26px;display:block}
+  .hero-grid{display:flex;align-items:center;gap:44px;justify-content:space-between}
+  .hero-copy{flex:1 1 auto;min-width:0}
+  .hero-photo{flex:0 0 auto;width:150px;height:150px;border-radius:50%;object-fit:cover;
+    border:3px solid var(--ember);display:block}
+  @media(max-width:760px){
+    .hero-grid{flex-direction:column-reverse;align-items:flex-start;gap:24px}
+    .hero-photo{width:120px;height:120px}
+  }
   .eyebrow{font-family:var(--mono);font-size:12.5px;letter-spacing:.22em;color:var(--ember);
     text-transform:uppercase;display:flex;align-items:center;gap:10px;margin-bottom:22px}
   .eyebrow::before{content:"";width:26px;height:1px;background:var(--ember)}
@@ -150,6 +156,8 @@
   .shot{display:block;overflow:hidden;border:1px solid var(--line);line-height:0}
   .shot img{width:100%;height:120px;object-fit:cover;display:block;transition:transform .3s,filter .3s;filter:saturate(.92)}
   .shot:hover img{transform:scale(1.05);filter:saturate(1.1)}
+  .shot.feature{display:inline-block;max-width:460px;width:100%}
+  .shot.feature img{width:100%;height:auto}
 
   /* ---------- timeline ---------- */
   .tl{position:relative;padding-left:30px}
@@ -201,13 +209,17 @@
 
 <header>
   <div class="wrap">
-    <img class="hero-photo rise" src="divesh.jpg" alt="Divesh Dogra" onerror="this.remove()">
-    <div class="eyebrow rise">Unity · C# · Mobile</div>
-    <h1 class="rise">Divesh Dogra<span>Game Developer</span></h1>
-    <p class="tagline rise">I build <b>mobile games end to end</b> in Unity and C# — from competitive multiplayer and live-ops to 3D gameplay, puzzle systems, and the optimization that keeps them smooth on real devices. Prototype to store release, on Android and iOS — with a VFX background for the extra polish.</p>
-    <div class="cta-row rise">
-      <a class="btn btn-primary" href="#contact">Hire me</a>
-      <a class="btn btn-ghost" href="https://github.com/Divesh567" target="_blank" rel="noopener">GitHub</a>
+    <div class="hero-grid">
+      <div class="hero-copy">
+        <div class="eyebrow rise">Unity · C# · Mobile</div>
+        <h1 class="rise">Divesh Dogra<span>Game Developer</span></h1>
+        <p class="tagline rise">I build <b>mobile games end to end</b> in Unity and C# — from competitive multiplayer and live-ops to 3D gameplay, puzzle systems, and the optimization that keeps them smooth on real devices. Prototype to store release, on Android and iOS — with a VFX background for the extra polish.</p>
+        <div class="cta-row rise">
+          <a class="btn btn-primary" href="#contact">Hire me</a>
+          <a class="btn btn-ghost" href="https://github.com/Divesh567" target="_blank" rel="noopener">GitHub</a>
+        </div>
+      </div>
+      <img class="hero-photo rise" src="divesh.jpg" alt="Divesh Dogra" onerror="this.remove()">
     </div>
 
     <div class="board rise">
@@ -300,6 +312,9 @@
         <span class="chip">Unity</span><span class="chip">C#</span><span class="chip">Multiplayer</span>
         <span class="chip">PlayFab</span><span class="chip">Live-Ops</span>
       </div>
+      <div class="m-links">
+        <a href="https://play.google.com/store/apps/details?id=com.dotnine.faug&hl=en_IN" target="_blank" rel="noopener">Play Store</a>
+      </div>
     </div>
 
     <!-- Chapter 26 -->
@@ -319,15 +334,13 @@
         </ul>
       </div>
       <div class="media">
-        <!-- <div class="embed"><iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID" title="Chapter 26 gameplay" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div> -->
-        <div class="shots">
-          <a class="shot" href="chapter26-1.jpg" target="_blank" rel="noopener"><img src="chapter26-1.jpg" alt="Chapter 26 screenshot 1" loading="lazy" onerror="this.closest('.shot').remove()"></a>
-          <a class="shot" href="chapter26-2.jpg" target="_blank" rel="noopener"><img src="chapter26-2.jpg" alt="Chapter 26 screenshot 2" loading="lazy" onerror="this.closest('.shot').remove()"></a>
-          <a class="shot" href="chapter26-3.jpg" target="_blank" rel="noopener"><img src="chapter26-3.jpg" alt="Chapter 26 screenshot 3" loading="lazy" onerror="this.closest('.shot').remove()"></a>
-        </div>
+        <a class="shot feature" href="chapter26-1.webp" target="_blank" rel="noopener"><img src="chapter26-1.webp" alt="Chapter 26" loading="lazy" onerror="this.closest('.shot').remove()"></a>
       </div>
       <div class="m-foot">
         <span class="chip">Unity</span><span class="chip">GCP</span><span class="chip">Localization</span><span class="chip">Social</span>
+      </div>
+      <div class="m-links">
+        <a href="https://play.google.com/store/apps/details?id=com.alsaqeefa.playnation" target="_blank" rel="noopener">Play Store</a>
       </div>
     </div>
 
@@ -337,7 +350,7 @@
         <span class="m-icon"><span class="mono">S</span><img src="steadylight-icon.png" alt="" onerror="this.remove()"></span>
         <span class="m-name">Steady Light</span>
         <span class="m-kind">2D Physics Platformer · Immersiveorama (solo)</span>
-        <span class="status st-ship">Shipped</span>
+        <span class="status st-live">Live</span>
       </div>
       <div class="m-body">
         <ul>
@@ -355,6 +368,9 @@
       </div>
       <div class="m-foot">
         <span class="chip">Unity</span><span class="chip">Physics</span><span class="chip">DOTween</span><span class="chip">Addressables</span>
+      </div>
+      <div class="m-links">
+        <a href="https://play.google.com/store/apps/details?id=com.Immersiveorama.LightForce&hl=en_IN" target="_blank" rel="noopener">Play Store</a>
       </div>
     </div>
 
