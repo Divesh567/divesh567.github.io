@@ -108,6 +108,28 @@
   .load-card h3{font-family:var(--mono);font-size:12px;letter-spacing:.14em;text-transform:uppercase;
     color:var(--muted);margin-bottom:16px;display:flex;align-items:center;gap:9px}
   .load-card h3::before{content:"";width:6px;height:6px;background:var(--ember);transform:rotate(45deg)}
+
+  /* ---------- collapsible interactions ---------- */
+  .collapse{display:grid;grid-template-rows:0fr;transition:grid-template-rows .35s ease}
+  .mission.open > .collapse,.load-card.open .collapse{grid-template-rows:1fr}
+  .collapse-in{overflow:hidden;min-height:0}
+  .chev{flex:0 0 auto;width:9px;height:9px;border-right:2px solid var(--muted);border-bottom:2px solid var(--muted);
+    transform:rotate(45deg);transition:transform .3s,border-color .2s}
+  .mission.open .chev,.load-card.open .chev{transform:rotate(-135deg)}
+  .m-top{cursor:pointer;user-select:none}
+  .m-top .chev{margin-left:12px}
+  .m-top:hover .chev{border-color:var(--ember)}
+  .m-top:focus-visible{outline:2px solid var(--ember);outline-offset:-2px}
+  .load-card{cursor:pointer;user-select:none}
+  .load-card h3 .chev{margin-left:auto}
+  .load-card:hover h3 .chev{border-color:var(--ember)}
+  .load-card:focus-visible{outline:2px solid var(--ember);outline-offset:2px}
+  .load-detail{padding-top:15px;margin-top:16px;border-top:1px solid var(--line);display:grid;gap:11px}
+  .ld-row{font-size:13.5px;color:#C3CAD8;line-height:1.55}
+  .ld-proj{font-family:var(--mono);font-size:10.5px;color:var(--ember);text-transform:uppercase;
+    letter-spacing:.06em;border:1px solid var(--ember-soft);background:var(--ember-soft);
+    padding:2px 7px;border-radius:4px;margin-right:8px;white-space:nowrap}
+  .hint{font-family:var(--mono);font-size:11px;color:var(--faint);letter-spacing:.06em;margin-top:2px}
   .tags{display:flex;flex-wrap:wrap;gap:8px}
   .tag{font-family:var(--mono);font-size:12px;padding:6px 11px;border:1px solid var(--line);
     color:#B7BECD;background:var(--elev);transition:all .18s}
@@ -188,6 +210,7 @@
   .rise.in{opacity:1;transform:none}
   @media(prefers-reduced-motion:reduce){
     .rise{opacity:1;transform:none;transition:none}
+    .collapse,.chev{transition:none}
     html{scroll-behavior:auto}
   }
 </style>
@@ -254,12 +277,23 @@
           <span class="tag">Unity</span><span class="tag">C#</span><span class="tag">OOP</span>
           <span class="tag">Clean architecture</span><span class="tag">Scriptable Objects</span>
         </div>
+        <div class="load-detail">
+          <div class="ld-row"><span class="ld-proj">FAUG</span> Reward, announcement, and live-event systems built in C# on Unity.</div>
+          <div class="ld-row"><span class="ld-proj">Chapter 26</span> Minigames and clan system implemented in Unity / C#.</div>
+          <div class="ld-row"><span class="ld-proj">Mahabharat</span> Scalable, data-driven puzzle systems using Scriptable Objects.</div>
+          <div class="ld-row"><span class="ld-proj">Steady Light</span> Solo-built on a clean, component-based architecture.</div>
+        </div>
       </div>
       <div class="load-card rise">
         <h3>Multiplayer &amp; Live-Ops</h3>
         <div class="tags">
           <span class="tag">Netcode (NGO)</span><span class="tag">Photon</span><span class="tag">Leaderboards</span>
           <span class="tag">Tournaments</span><span class="tag">Clans</span><span class="tag">Reward systems</span>
+        </div>
+        <div class="load-detail">
+          <div class="ld-row"><span class="ld-proj">FAUG</span> FBL League live events, Teams / clan system, reward architecture, battle-streak, and targeted announcements.</div>
+          <div class="ld-row"><span class="ld-proj">Chapter 26</span> Clan system, tournaments, leaderboards, and a YouTube live-cast feature.</div>
+          <div class="ld-row"><span class="ld-proj">Certified</span> Multiplayer in Unity with Netcode for GameObjects (NGO).</div>
         </div>
       </div>
       <div class="load-card rise">
@@ -268,6 +302,12 @@
           <span class="tag">CPU / GPU profiling</span><span class="tag">Memory optimization</span>
           <span class="tag">Batching</span><span class="tag">Low-end devices</span><span class="tag">Addressables</span>
         </div>
+        <div class="load-detail">
+          <div class="ld-row"><span class="ld-proj">FAUG</span> Optimized from ~15 to a stable 30 FPS on low-end 4GB devices.</div>
+          <div class="ld-row"><span class="ld-proj">BoredLeaders</span> Improved game performance by 40% via rendering and code optimization.</div>
+          <div class="ld-row"><span class="ld-proj">Steady Light</span> Addressables for level management to cut memory usage.</div>
+          <div class="ld-row"><span class="ld-proj">Approach</span> CPU / GPU / memory profiling, batching, and device-based quality scaling.</div>
+        </div>
       </div>
       <div class="load-card rise">
         <h3>Backend &amp; Tools</h3>
@@ -275,6 +315,12 @@
           <span class="tag">PlayFab</span><span class="tag">Firebase</span><span class="tag">GCP</span>
           <span class="tag">Remote config</span><span class="tag">A/B testing</span><span class="tag">Analytics</span>
           <span class="tag">I2 Localization</span><span class="tag">Git</span>
+        </div>
+        <div class="load-detail">
+          <div class="ld-row"><span class="ld-proj">FAUG</span> PlayFab Experiments (A/B testing), remote config, and analytics.</div>
+          <div class="ld-row"><span class="ld-proj">Chapter 26</span> GCP backend / API and I2 Localization (Arabic).</div>
+          <div class="ld-row"><span class="ld-proj">Mahabharat</span> Firebase, Play Games, AdMob, and Hindi localization.</div>
+          <div class="ld-row"><span class="ld-proj">Everywhere</span> Git version control.</div>
         </div>
       </div>
     </div>
@@ -476,6 +522,51 @@
   document.querySelectorAll('.rise').forEach((el,i)=>{
     el.style.transitionDelay = Math.min(i*40,240)+'ms';
     io.observe(el);
+  });
+
+  // helper: wrap a set of nodes in an animated collapse container
+  function makeCollapse(nodes){
+    const wrap = document.createElement('div'); wrap.className = 'collapse';
+    const inner = document.createElement('div'); inner.className = 'collapse-in';
+    nodes.forEach(n => inner.appendChild(n));
+    wrap.appendChild(inner);
+    return wrap;
+  }
+  function chevron(){ const c = document.createElement('span'); c.className = 'chev'; c.setAttribute('aria-hidden','true'); return c; }
+  function wireToggle(trigger, card){
+    trigger.setAttribute('role','button');
+    trigger.setAttribute('tabindex','0');
+    trigger.setAttribute('aria-expanded','false');
+    const toggle = () => {
+      const open = card.classList.toggle('open');
+      trigger.setAttribute('aria-expanded', open ? 'true' : 'false');
+    };
+    trigger.addEventListener('click', toggle);
+    trigger.addEventListener('keydown', e => {
+      if(e.key === 'Enter' || e.key === ' '){ e.preventDefault(); toggle(); }
+    });
+  }
+
+  // collapsible project cards: header stays, everything after it collapses
+  document.querySelectorAll('.mission').forEach(card => {
+    const top = card.querySelector('.m-top');
+    if(!top) return;
+    const rest = [];
+    let n = top.nextElementSibling;
+    while(n){ rest.push(n); n = n.nextElementSibling; }
+    if(rest.length) card.appendChild(makeCollapse(rest));
+    top.appendChild(chevron());
+    wireToggle(top, card);
+  });
+
+  // clickable skill blocks: tags stay, per-project detail collapses
+  document.querySelectorAll('.load-card').forEach(card => {
+    const detail = card.querySelector('.load-detail');
+    const h3 = card.querySelector('h3');
+    if(!detail || !h3) return;
+    card.appendChild(makeCollapse([detail]));
+    h3.appendChild(chevron());
+    wireToggle(card, card);
   });
 </script>
 </body>
