@@ -31,5 +31,5 @@ Things that span several places and are easy to break:
 ## Content notes
 
 - The copy deliberately avoids em dashes and en dashes (the last commit removed them). Use commas, colons, or "to" for ranges, for example "2025 to Present". Match that when adding text.
-- The file name `Divesh_Dogra_CV.pdf` is the only CV in the repo (there is no `cv.pdf`), and nothing in `index.html` links to it. If asked to add a CV link, point it at `Divesh_Dogra_CV.pdf` exactly, since a wrong filename means a 404 on Pages. The PDF is a binary, so any content change in `index.html` should be flagged as possibly needing a matching manual CV update.
+- The file name `Divesh_Dogra_CV.pdf` is the only CV in the repo (there is no `cv.pdf`), and the hero and contact sections link to it with "Download CV" buttons. Any CV link must point at `Divesh_Dogra_CV.pdf` exactly, since a wrong filename means a 404 on Pages. The PDF is a binary, so any content change in `index.html` should be flagged as possibly needing a matching manual CV update.
 - Layout is responsive. The nav links are hidden under 640px, and a `prefers-reduced-motion` block disables transitions, so keep new animations covered by it.
