@@ -33,3 +33,7 @@ Things that span several places and are easy to break:
 - The copy deliberately avoids em dashes and en dashes (the last commit removed them). Use commas, colons, or "to" for ranges, for example "2025 to Present". Match that when adding text.
 - The file name `Divesh_Dogra_CV.pdf` is the only CV in the repo (there is no `cv.pdf`), and the hero and contact sections link to it with "Download CV" buttons. Any CV link must point at `Divesh_Dogra_CV.pdf` exactly, since a wrong filename means a 404 on Pages. The PDF is a binary, so any content change in `index.html` should be flagged as possibly needing a matching manual CV update.
 - Layout is responsive. The nav links are hidden under 640px, and a `prefers-reduced-motion` block disables transitions, so keep new animations covered by it.
+
+## Tracker
+
+`TRACKER.md` holds the CV and site improvement plan as ID'd tasks grouped into batches. When a task is finished, tick its box there and add the date and commit. Many tasks touch both `Divesh_Dogra_CV.pdf` and `index.html`, so keep them in sync. This repo is public, so never commit the employer-confidential figures that the tracker's worksheet asks for.
