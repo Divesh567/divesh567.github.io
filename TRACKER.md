@@ -29,16 +29,16 @@ Order matters: batch 3 needs batch 2, and the site sync in batch 7 should wait f
 
 ### CV file and format
 
-- [ ] **CV-01** Rebuild the CV from an editable source and export a real text PDF · P0 · M · claude
+- [x] **CV-01** Rebuild the CV from an editable source and export a real text PDF · P0 · M · claude · done 2026-10-05 (a8cd93c)
   - Why: the current PDF is a screenshot (no text layer, no fonts, no clickable links), so applicant-tracking systems and recruiter search see a blank page.
   - Done when: `pdftotext Divesh_Dogra_CV.pdf -` prints the full CV, the website and GitHub links are clickable, the filename is unchanged (the site links to it), and the source plus one build command live in the repo so later batches only edit text and re-run it.
-- [ ] **CV-02** Cut to one page (two at most) and fix the layout · P0 · M · claude
+- [x] **CV-02** Cut to one page (two at most) and fix the layout · P0 · M · claude · done 2026-10-05 (a8cd93c) · fits one page now, re-check after batch 3 adds content
   - Why: three pages for about four years of experience, large white gaps, a nearly empty page 3, and dates clipped at the right edge on page 2.
   - Done when: no orphan page, no clipped text, strongest material on page 1. Revisit after batch 3, since the rewrite changes the length.
-- [ ] **CV-03** Set the PDF title and author metadata · P0 · S · claude
+- [x] **CV-03** Set the PDF title and author metadata · P0 · S · claude · done 2026-10-05 (a8cd93c)
   - Why: the file title reads "Resume variations and photo" and shows in the browser tab.
   - Done when: `pdfinfo` shows a title like "Divesh Dogra, Unity Game Developer" (match the positioning from POS-01) and an author.
-- [ ] **CV-04** Single-column layout with standard section headings · P1 · S · claude
+- [x] **CV-04** Single-column layout with standard section headings · P1 · S · claude · done 2026-10-05 (a8cd93c)
   - Why: parsers expect Summary, Experience, Skills, Education, and the contact line wraps and leaves a dangling separator.
   - Done when: the contact row fits cleanly and a text extraction reads in the right order.
 - [ ] **CV-05** Decide what the public CV shows · P2 · S · you
@@ -71,7 +71,7 @@ Order matters: batch 3 needs batch 2, and the site sync in batch 7 should wait f
 - [ ] **EXP-04** Bring Mahabharat into the BoredLeaders entry · P1 · M · both · needs EXP-01
   - Why: Mahabharat is a Shipped Titles tile but appears in no bullet, while the site holds the best engineering detail (400+ level CSV-driven narrative puzzle, 50-level data-driven jigsaw, 3D Ludo with power-ups, Firebase).
   - Done when: the CV carries those points, "AI-driven NPC behaviors" is tied to a specific title and technique, and "improved performance by 40%" names the metric and the device.
-- [ ] **EXP-05** Merge Intern and Junior at BoredLeaders, vary bullet openers, lead with the strongest bullet · P1 · S · claude
+- [x] **EXP-05** Merge Intern and Junior at BoredLeaders, vary bullet openers, lead with the strongest bullet · P1 · S · claude · done 2026-10-05 (a8cd93c)
   - Why: the same company appears twice for 2023 with two bullets on the intern role, "Built" opens 8 of the 26 bullets, and the strongest bullets sit at positions 2 and 4.
   - Done when: one entry shows the promotion, no verb opens more than two bullets, and the strongest bullet comes first in each role.
 - [ ] **EXP-06** Clarify the Immersiveorama entry · P2 · S · both
