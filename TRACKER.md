@@ -41,7 +41,7 @@ Order matters: batch 3 needs batch 2, and the site sync in batch 7 should wait f
 - [x] **CV-04** Single-column layout with standard section headings · P1 · S · claude · done 2026-10-05 (a8cd93c)
   - Why: parsers expect Summary, Experience, Skills, Education, and the contact line wraps and leaves a dangling separator.
   - Done when: the contact row fits cleanly and a text extraction reads in the right order.
-- [ ] **CV-05** Decide what the public CV shows · P2 · S · you
+- [ ] **CV-05** Decide what the public CV shows · P2 · S · you · photo and phone removed 2026-10-06, postal code still to decide
   - Why: the PDF sits in a public repo, so the phone number and postal code can be scraped, and a photo is usually discouraged for US, UK and EU applications.
   - Done when: the decision is logged under Decisions; if a second variant is wanted, it builds from the same source as CV-01.
 
@@ -195,5 +195,5 @@ Answer in chat or privately; commit only what you are cleared to publish.
 |---|---|---|
 | Target lane (POS-01) | | |
 | Netcode work in one line (MP-01) | | |
-| Public CV: phone, postal code, photo (CV-05) | | |
+| Public CV: phone, postal code, photo (CV-05) | Photo and phone number removed. Postal code (Mumbai 400065) still shown, undecided. | 2026-10-06 |
 | Availability line (MISS-03) | | |
