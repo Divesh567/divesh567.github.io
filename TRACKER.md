@@ -59,7 +59,7 @@ Order matters: batch 3 needs batch 2, and the site sync in batch 7 should wait f
 
 ### Experience
 
-- [ ] **EXP-01** Collect real numbers and facts (worksheet below) · P1 · M · you · FAUG part answered 2026-10-06 from a git-history summary; claim checks, numbers, Chapter 26 and BoredLeaders still open
+- [ ] **EXP-01** Collect real numbers and facts (worksheet below) · P1 · M · you · FAUG and Chapter 26 answered 2026-10-06 from git-history summaries; claim checks, numbers and BoredLeaders still open
   - Why: the bullets lack baselines, scale and results, so rewrites are guesswork without them.
   - Done when: every worksheet question is answered or marked "not available".
 - [ ] **EXP-02** Rewrite the FAUG bullets · P1 · M · both · needs EXP-01
