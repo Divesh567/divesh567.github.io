@@ -50,7 +50,7 @@ Order matters: batch 3 needs batch 2, and the site sync in batch 7 should wait f
 - [x] **POS-01** Pick your target lane · P1 · S · you · done 2026-10-06
   - Why: the CV reads as a generalist (gameplay, multiplayer, live-ops, shaders, lighting, UI, VFX) with no target role.
   - Done when: one sentence is agreed and logged under Decisions, for example "Unity gameplay and live-ops engineer with a VFX and tech-art background".
-- [ ] **POS-02** Rewrite the summary · P1 · S · both · needs POS-01, EXP-01 · [#5](https://github.com/Divesh567/divesh567.github.io/issues/5)
+- [ ] **POS-02** Rewrite the summary · P1 · S · both · needs POS-01, EXP-01 · draft applied 2026-10-06, awaiting your review; still has no measurable proof points · [#5](https://github.com/Divesh567/divesh567.github.io/issues/5)
   - Why: "Strong in..." is self-rating, and the summary names no role and no proof.
   - Done when: two to three sentences with the target role, the lane, and two measurable proof points.
 - [ ] **POS-03** Surface the VFX to tech-art to engineering story · P2 · S · both · optional now: lane A was chosen without the VFX angle, drop unless wanted · [#16](https://github.com/Divesh567/divesh567.github.io/issues/16)
@@ -59,16 +59,16 @@ Order matters: batch 3 needs batch 2, and the site sync in batch 7 should wait f
 
 ### Experience
 
-- [ ] **EXP-01** Collect real numbers and facts (worksheet below) · P1 · M · you · work summaries: FAUG, Chapter 26 and Steady Light received 2026-10-06, Mahabharat (BoredLeaders) pending; answer the open claim checks only after all four are in · [#2](https://github.com/Divesh567/divesh567.github.io/issues/2)
+- [ ] **EXP-01** Collect real numbers and facts (worksheet below) · P1 · M · you · work summaries: all four sources received 2026-10-06 (FAUG, Chapter 26, both Mahabharat apps, Steady Light); the open questions are next · [#2](https://github.com/Divesh567/divesh567.github.io/issues/2)
   - Why: the bullets lack baselines, scale and results, so rewrites are guesswork without them.
   - Done when: every worksheet question is answered or marked "not available".
-- [ ] **EXP-02** Rewrite the FAUG bullets · P1 · M · both · needs EXP-01 · [#6](https://github.com/Divesh567/divesh567.github.io/issues/6)
+- [ ] **EXP-02** Rewrite the FAUG bullets · P1 · M · both · needs EXP-01 · draft applied 2026-10-06 from the git history; unconfirmed claims left out until Q01 to Q08 are answered · [#6](https://github.com/Divesh567/divesh567.github.io/issues/6)
   - Why: the bullets say what was built, not the scale, the method or the result.
   - Done when: each bullet has action, scope, tech and result; the FPS gain says how and on which devices; retention and A/B claims carry numbers or a named experiment; "Fixed backend, multiplayer, flow, and performance issues across the product" is replaced with something specific or deleted.
-- [ ] **EXP-03** Rewrite the Chapter 26 bullets · P1 · M · both · needs EXP-01 · [#7](https://github.com/Divesh567/divesh567.github.io/issues/7)
+- [ ] **EXP-03** Rewrite the Chapter 26 bullets · P1 · M · both · needs EXP-01 · draft applied 2026-10-06; client-only wording for tournaments, minigame claim reworded to fixes (see Q09, Q10) · [#7](https://github.com/Divesh567/divesh567.github.io/issues/7)
   - Why: it is unclear what was client and what was backend, and the clan system is worded almost the same as in FAUG.
   - Done when: tournaments and leaderboards say whether you built the backend, the client, or both; the clan system says whether it is a reusable module shared with FAUG; "a few months" becomes real dates; Arabic localization mentions right-to-left handling if it applies.
-- [ ] **EXP-04** Bring Mahabharat into the BoredLeaders entry · P1 · M · both · needs EXP-01 · [#8](https://github.com/Divesh567/divesh567.github.io/issues/8)
+- [ ] **EXP-04** Bring Mahabharat into the BoredLeaders entry · P1 · M · both · needs EXP-01 · draft applied 2026-10-06 for both Mahabharat apps; the 40% figure and intern claims left out (see Q14, Q28 to Q30) · [#8](https://github.com/Divesh567/divesh567.github.io/issues/8)
   - Why: Mahabharat is a Shipped Titles tile but appears in no bullet, while the site holds the best engineering detail (400+ level CSV-driven narrative puzzle, 50-level data-driven jigsaw, 3D Ludo with power-ups, Firebase).
   - Done when: the CV carries those points, "AI-driven NPC behaviors" is tied to a specific title and technique, and "improved performance by 40%" names the metric and the device.
 - [x] **EXP-05** Merge Intern and Junior at BoredLeaders, vary bullet openers, lead with the strongest bullet · P1 · S · claude · done 2026-10-05 (a8cd93c)
@@ -89,7 +89,7 @@ Order matters: batch 3 needs batch 2, and the site sync in batch 7 should wait f
 - [ ] **MP-01** Write down the netcode work you actually did · P1 · S · you · provisional answer logged 2026-10-06, confirm whether any gameplay sync was written · [#3](https://github.com/Divesh567/divesh567.github.io/issues/3)
   - Why: the CV headlines Multiplayer / Netcode, but no bullet shows networking work and the NGO course is the only evidence.
   - Done when: stack, authority model, what was synced, player counts, and your part versus the team's are logged under Decisions (or "none, live-ops side only").
-- [ ] **MP-02** Back up or reposition the multiplayer claim · P1 · S · both · needs MP-01 · [#9](https://github.com/Divesh567/divesh567.github.io/issues/9)
+- [ ] **MP-02** Back up or reposition the multiplayer claim · P1 · S · both · needs MP-01 · draft 2026-10-06: skills chip now reads Multiplayer (Photon PUN) instead of Multiplayer / Netcode · [#9](https://github.com/Divesh567/divesh567.github.io/issues/9)
   - Why: a senior engineer will ask how state was synced, and the CV cannot answer.
   - Done when: either one or two concrete netcode bullets name the stack, or the summary and skill chips describe the work as live-ops and meta-game multiplayer instead.
 
@@ -107,7 +107,7 @@ Order matters: batch 3 needs batch 2, and the site sync in batch 7 should wait f
 - [ ] **TL-01** Add months to all dates and explain the transitions · P1 · S · both · needs EXP-01 · [#12](https://github.com/Divesh567/divesh567.github.io/issues/12)
   - Why: year-only dates make 2021 to 2022 (VFX to Unity) and 2024 to 2025 look like gaps and hide how long each role lasted.
   - Done when: every role has a month and year, and one line covers the VFX-to-Unity move and any gap.
-- [ ] **TL-02** Reconcile numbers across the CV and the site · P1 · S · both · [#21](https://github.com/Divesh567/divesh567.github.io/issues/21)
+- [ ] **TL-02** Reconcile numbers across the CV and the site · P1 · S · both · partly resolved 2026-10-06: the CV now counts five titles (two Mahabharat apps), matching the site's 5+; the iOS claim is still open · [#21](https://github.com/Divesh567/divesh567.github.io/issues/21)
   - Why: the site says 5+ titles and the CV shows 4, the site claims Android and iOS but every store link is Google Play, and "4+ years" is repeated in several places.
   - Done when: each claim has one number everywhere (meta description, stats board, about, hero tagline, CV), and the iOS claim has App Store links or is dropped.
 
@@ -200,7 +200,7 @@ Plan: collect a git-history summary of the work at each employer first, then ans
 |---|---|
 | FAUG (Dot9 Games), two parts | received 2026-10-06 |
 | Chapter 26 (Dot9 Games) | received 2026-10-06 |
-| Mahabharat (BoredLeaders) | pending |
+| Mahabharat Board Game and Puzzles of Mahabharat (BoredLeaders) | received 2026-10-06 |
 | Steady Light (Immersiveorama) | received 2026-10-06 |
 
 Prompt to run in each repo's own Claude session. Add the claims list for that repo.
@@ -248,15 +248,18 @@ Answer these after all four summaries are in. When one is answered, change `(ope
 - **Q12** (open) Confirm the tools named on the CV (I2 Localization, YouTube live-cast). · feeds EXP-03, SK-01
 
 **BoredLeaders and Mahabharat** (summary pending)
-- **Q13** (open) Which game had the AI-driven NPCs, and what technique? · feeds EXP-04
-- **Q14** (open) What did the "40% performance" gain measure (metric, device, what changed)? · feeds EXP-04
-- **Q15** (open) Mahabharat: levels per game, the designer tooling around the CSV pipeline, and how Firebase is used. · feeds EXP-04
-- **Q16** (open) Intern start, junior start, and last month at the company. · feeds TL-01
+- **Q13** (answered 2026-10-06) Which game had the AI-driven NPCs, and what technique? The Mahabharat board game bots, using a weighted-RNG dice engine and weighted power selection. · feeds EXP-04
+- **Q14** (open) What did the "40% performance" gain measure (metric, device, what changed)? The code shows FPS benchmark scripts and multi-tier URP quality profiles, but not the 40% figure. · feeds EXP-04
+- **Q15** (answered 2026-10-06) Mahabharat: levels per game, the designer tooling around the CSV pipeline, and how Firebase is used. 375+ story pages, 126 image puzzles and 50 jigsaws, with CSV readers for content; Firebase Auth, Realtime Database, Analytics and Remote Config. · feeds EXP-04
+- **Q16** (open) Intern start, junior start, and last month at the company. The Puzzles of Mahabharat commits run November 2024 to May 2025, later than the CV's 2023 to 2024. · feeds TL-01
 
 **Immersiveorama and Steady Light** (summary pending)
 - **Q17** (open) Steady Light store numbers: installs, rating, and the Firebase figures you can pull (users, day 1 and day 7 retention, level completion rate). The level count is answered: about 45 across 6 worlds. · feeds EXP-06
 - **Q18** (open) Was the game renamed? The Play Store link uses `LightForce`. · feeds EXP-06, TL-02
 - **Q27** (open) Steady Light timeline: the CV and site say 2022 to 2023, but the git history runs February 2024 to July 2026. When was the first Play Store release, and what happened since (updates, a rebuild)? It overlaps with the BoredLeaders and Dot9 roles, so how should the CV describe that (for example, an independent project alongside full-time work)? Also confirm whether to call it a physics puzzle game rather than a platformer. · feeds EXP-06, TL-01, TL-02
+- **Q28** (open) The site says "400+ level narrative puzzle game" and a "meta loop that connects the three games". The repos show 375+ story pages, 126 image puzzles and 50 jigsaws in one app, and a separate board game app. Which numbers should the CV and site use, and is there a cross-game meta loop? · feeds EXP-04, TL-02, WEB-02
+- **Q29** (open) Which of the packaged tools in the board game repo did you write yourself (3D dice package, feedback-form tool, shaders package), and which are third-party? · feeds EXP-04, SK-01
+- **Q30** (open) The draft CV leaves out the intern graphics pass, the level-design claims and the 40% figure, because the summaries do not show them. If they are real, where do they live? · feeds EXP-04, EXP-08
 
 **Across roles**
 - **Q19** (open) Exact start and end month for every job, what you did in 2021 to 2022, and any gap in 2024 to 2025. The first FAUG commit is in April 2025; confirm the actual joining date. · feeds TL-01
@@ -282,6 +285,6 @@ Already answered: target lane (POS-01), public CV contact details (CV-05), and t
 ## GitHub tracking
 
 - Parent issue: [#1 CV and portfolio improvement](https://github.com/Divesh567/divesh567.github.io/issues/1). Every open task has a sub-issue under it, labelled `batch:N`, priority (`P1`, `P2`), `owner:you`, `owner:claude` or `owner:both`, and `area:*`.
-- The open questions (Q01 to Q27) stay in this file. Each task issue lists the questions it needs.
+- The open questions (Q01 to Q30) stay in this file. Each task issue lists the questions it needs.
 - Tasks finished before the issues were created (CV-01 to CV-05, EXP-05, POS-01, WEB-00) have no issue.
 - Project board: the tooling used for this repo can create issues and labels but not GitHub Projects. To get a board, open the repository's Projects tab, create a new Board project, then use "Add item" to pick the open issues. Filter or group by the `batch:N` labels.
