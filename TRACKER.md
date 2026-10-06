@@ -23,7 +23,7 @@ Legend. Priority: P0 = stops the CV being read at all, P1 = changes how a hiring
 | 6 | Links and reach | MISS-01, MISS-02, MISS-03, MISS-04, TL-02 | LinkedIn URL, store numbers, availability |
 | 7 | Site sync and public proof | WEB-01, WEB-02, PUB-01, PUB-02 | Screenshots, time for a code sample |
 
-Order matters: batch 3 needs batch 2, and the site sync in batch 7 should wait for batches 3 to 6.
+Order matters: batch 3 needs batch 2, and the site sync in batch 7 should wait for batches 3 to 6. Agreed workflow for batch 2: collect all four work summaries first, then answer the open questions, then write batch 3.
 
 ## Tasks
 
@@ -59,7 +59,7 @@ Order matters: batch 3 needs batch 2, and the site sync in batch 7 should wait f
 
 ### Experience
 
-- [ ] **EXP-01** Collect real numbers and facts (worksheet below) · P1 · M · you · FAUG and Chapter 26 answered 2026-10-06 from git-history summaries; claim checks, numbers and BoredLeaders still open
+- [ ] **EXP-01** Collect real numbers and facts (worksheet below) · P1 · M · you · work summaries: FAUG and Chapter 26 received 2026-10-06, BoredLeaders and Immersiveorama pending; answer the open claim checks only after all four are in
   - Why: the bullets lack baselines, scale and results, so rewrites are guesswork without them.
   - Done when: every worksheet question is answered or marked "not available".
 - [ ] **EXP-02** Rewrite the FAUG bullets · P1 · M · both · needs EXP-01
