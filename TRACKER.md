@@ -152,6 +152,8 @@ Order matters: batch 3 needs batch 2, and the site sync in batch 7 should wait f
 
 Answer in chat or privately; commit only what you are cleared to publish.
 
+The Open questions section below narrows this list using the work summaries received.
+
 **All roles**
 - Exact start and end month for every job, what you did in 2021 to 2022, any gap in 2024 to 2025, and the date you were promoted from intern to junior.
 - Team size per project and which parts were yours alone.
@@ -188,6 +190,83 @@ Answer in chat or privately; commit only what you are cleared to publish.
 
 **Reach**
 - LinkedIn URL, any App Store links, and notice period, location, remote, relocation and work authorization preferences.
+
+## Work summaries
+
+Plan: collect a git-history summary of the work at each employer first, then answer the open questions, then write batch 3. The summaries are not stored in this repo because it is public and they contain internal details. Keep the originals privately.
+
+| Source | Status |
+|---|---|
+| FAUG (Dot9 Games), two parts | received 2026-10-06 |
+| Chapter 26 (Dot9 Games) | received 2026-10-06 |
+| Mahabharat (BoredLeaders) | pending |
+| Steady Light (Immersiveorama) | pending |
+
+Prompt to run in each repo's own Claude session. Add the claims list for that repo.
+
+```
+Summarize my work in this repo from git, for a CV. My author name/email is <yours>;
+also include any alias or typo'd emails. Read ALL my commits, not a sample, and say
+how many you read.
+
+Give me:
+1. First and last commit dates, unique commit count, and commits per month.
+2. Team size: contributor count from `git shortlog -sn`, and my share of commits.
+3. My work grouped as: built (new systems), integrated (third-party SDKs/services),
+   fixed/maintained, performance, tooling/docs. For each item say whether it is
+   client, backend, UI or tools, which tech it used, and roughly how big it was.
+4. Release evidence: tags, version bumps, store-build commits, and any rename history.
+5. Evidence check. For each claim below, say "supported", "partly", or "not found",
+   and cite commit subjects: <paste the claims for this repo>
+6. Caveats: what git cannot tell you, and which wording is your inference.
+Show the git commands you ran. Do not include keys, secrets or internal URLs.
+```
+
+Claims to check for Mahabharat (BoredLeaders): 3D Ludo-style board game with power-up cards, obstacles, multiple boards, characters, maps and day/night lighting; 50-level data-driven jigsaw that designers extend with no developer work; 400+ level CSV-driven narrative puzzle game; a meta loop connecting the three games; Firebase use; AI-driven NPC behaviors (which game, which technique); "improved performance by 40%" (what was measured); level design; intern work on mechanics, animations and a graphics pass; intern start date and the date the role changed to junior.
+
+Claims to check for Steady Light (Immersiveorama): solo-developed 2D physics platformer; Unity physics and DOTween; component-based architecture; Addressables for level management to reduce memory use; code through animation; number of levels; whether the game was renamed (the Play Store link uses `LightForce`).
+
+## Open questions
+
+Answer these after all four summaries are in. When one is answered, change `(open)` to `(answered DATE)` and move the answer into the Decisions table or the task it feeds.
+
+**FAUG**
+- **Q01** (open) For each FAUG bullet on the CV, where does the work live (branch, commit range, design doc, or a colleague who can vouch)? Bullets to locate: the FPS optimization, the reward system for skins and unlockables, the battle-streak system, the announcement system, the A/B tests, and the e-sports league work. · feeds EXP-02, EXP-08
+- **Q02** (open) What exactly is the "FBL League", and how does it relate to the ranked league and to the tournament and finals tooling? · feeds EXP-02
+- **Q03** (open) Which networking pieces did you write: movement or shooting sync, loadout sync, matchmaking, connection handling? Roughly how many players per match? · feeds MP-01, MP-02
+- **Q04** (open) Load time: before and after figures from the load-time instrumentation. · feeds EXP-02
+- **Q05** (open) FPS work: devices, how it was measured, and the top three changes. · feeds EXP-02
+- **Q06** (open) Retention or engagement: which metric, before and after, and from which change or experiment. · feeds EXP-02
+- **Q07** (open) Exact provider names for voice chat and ad mediation, and whether hack detection is custom or an SDK. Do not name them on the CV until confirmed. · feeds EXP-02, SK-01
+- **Q08** (open) Which details are cleared to publish (partner names, event names, prize or KYC flows)? Default: describe them generically. · feeds EXP-02, EXP-03
+
+**Chapter 26**
+- **Q09** (open) Which minigames did you build, and which did you fix or integrate? · feeds EXP-03
+- **Q10** (open) Tournaments and leaderboards: client only, or any backend work too? · feeds EXP-03
+- **Q11** (open) Team size, and the month the hub shipped. · feeds EXP-03, TL-01
+- **Q12** (open) Confirm the tools named on the CV (I2 Localization, YouTube live-cast). · feeds EXP-03, SK-01
+
+**BoredLeaders and Mahabharat** (summary pending)
+- **Q13** (open) Which game had the AI-driven NPCs, and what technique? · feeds EXP-04
+- **Q14** (open) What did the "40% performance" gain measure (metric, device, what changed)? · feeds EXP-04
+- **Q15** (open) Mahabharat: levels per game, the designer tooling around the CSV pipeline, and how Firebase is used. · feeds EXP-04
+- **Q16** (open) Intern start, junior start, and last month at the company. · feeds TL-01
+
+**Immersiveorama and Steady Light** (summary pending)
+- **Q17** (open) Release date, installs, rating and number of levels. · feeds EXP-06
+- **Q18** (open) Was the game renamed? The Play Store link uses `LightForce`. · feeds EXP-06, TL-02
+
+**Across roles**
+- **Q19** (open) Exact start and end month for every job, what you did in 2021 to 2022, and any gap in 2024 to 2025. The first FAUG commit is in April 2025; confirm the actual joining date. · feeds TL-01
+- **Q20** (open) Installs bracket and rating for each store listing: FAUG, Chapter 26, the two Mahabharat apps, Steady Light. · feeds MISS-02
+- **Q21** (open) Team size per project, and which parts were yours alone. · feeds EXP-08
+- **Q22** (open) Summary headline: "Unity gameplay and live-ops engineer" as chosen, or live-ops first with gameplay (camera, grenades, loadout sync) as supporting evidence? · feeds POS-02
+- **Q23** (open) GitHub profile review: pinned repos, profile README, repo descriptions, anything to fix or hide. · feeds PUB-03
+- **Q24** (open) LinkedIn URL, any App Store links, notice period, location, remote and relocation preferences, and work authorization. · feeds MISS-01, MISS-02, MISS-03, TL-02
+- **Q25** (open) Cinegence: which films or shows can be named, what your part was, and which tools you used. · feeds EXP-07
+- **Q26** (open) Unity versions, source control, build or CI pipeline, bug tracker, and how QA and backend worked with you. · feeds MISS-04
+
+Already answered: target lane (POS-01), public CV contact details (CV-05), and the netcode stack (Photon PUN, from the FAUG summary). See Decisions.
 
 ## Decisions
 
