@@ -47,19 +47,19 @@ Order matters: batch 3 needs batch 2, and the site sync in batch 7 should wait f
 
 ### Positioning
 
-- [ ] **POS-01** Pick your target lane · P1 · S · you
+- [x] **POS-01** Pick your target lane · P1 · S · you · done 2026-10-06
   - Why: the CV reads as a generalist (gameplay, multiplayer, live-ops, shaders, lighting, UI, VFX) with no target role.
   - Done when: one sentence is agreed and logged under Decisions, for example "Unity gameplay and live-ops engineer with a VFX and tech-art background".
 - [ ] **POS-02** Rewrite the summary · P1 · S · both · needs POS-01, EXP-01
   - Why: "Strong in..." is self-rating, and the summary names no role and no proof.
   - Done when: two to three sentences with the target role, the lane, and two measurable proof points.
-- [ ] **POS-03** Surface the VFX to tech-art to engineering story · P2 · S · both
+- [ ] **POS-03** Surface the VFX to tech-art to engineering story · P2 · S · both · optional now: lane A was chosen without the VFX angle, drop unless wanted
   - Why: it is the real differentiator and is currently buried at the bottom of the timeline.
   - Done when: one line in the summary and the skills block use it.
 
 ### Experience
 
-- [ ] **EXP-01** Collect real numbers and facts (worksheet below) · P1 · M · you
+- [ ] **EXP-01** Collect real numbers and facts (worksheet below) · P1 · M · you · FAUG part answered 2026-10-06 from a git-history summary; claim checks, numbers, Chapter 26 and BoredLeaders still open
   - Why: the bullets lack baselines, scale and results, so rewrites are guesswork without them.
   - Done when: every worksheet question is answered or marked "not available".
 - [ ] **EXP-02** Rewrite the FAUG bullets · P1 · M · both · needs EXP-01
@@ -86,7 +86,7 @@ Order matters: batch 3 needs batch 2, and the site sync in batch 7 should wait f
 
 ### Multiplayer evidence
 
-- [ ] **MP-01** Write down the netcode work you actually did · P1 · S · you
+- [ ] **MP-01** Write down the netcode work you actually did · P1 · S · you · provisional answer logged 2026-10-06, confirm whether any gameplay sync was written
   - Why: the CV headlines Multiplayer / Netcode, but no bullet shows networking work and the NGO course is the only evidence.
   - Done when: stack, authority model, what was synced, player counts, and your part versus the team's are logged under Decisions (or "none, live-ops side only").
 - [ ] **MP-02** Back up or reposition the multiplayer claim · P1 · S · both · needs MP-01
@@ -193,7 +193,7 @@ Answer in chat or privately; commit only what you are cleared to publish.
 
 | Decision | Answer | Date |
 |---|---|---|
-| Target lane (POS-01) | | |
-| Netcode work in one line (MP-01) | | |
+| Target lane (POS-01) | Unity gameplay and live-ops engineer (VFX angle left out) | 2026-10-06 |
+| Netcode work in one line (MP-01) | Provisional: Photon PUN connection, matchmaking and session layer on FAUG; no gameplay state sync claimed yet | 2026-10-06 |
 | Public CV: phone, postal code, photo (CV-05) | Photo, phone number and postal code removed; location shows "Mumbai, India". | 2026-10-06 |
 | Availability line (MISS-03) | | |
