@@ -37,4 +37,4 @@ Things that span several places and are easy to break:
 
 ## Tracker
 
-`TRACKER.md` holds the CV and site improvement plan as ID'd tasks grouped into batches. When a task is finished, tick its box there and add the date and commit. Many tasks touch both `Divesh_Dogra_CV.pdf` and `index.html`, so keep them in sync. This repo is public, so never commit the employer-confidential figures that the tracker's worksheet asks for.
+`TRACKER.md` holds the CV and site improvement plan as ID'd tasks grouped into batches, plus the open questions and decisions. Each open task also has a GitHub issue under parent issue 1 (labels `batch:N`, `P1`/`P2`, `owner:*`, `area:*`). When a task is finished, tick its box in `TRACKER.md`, add the date and commit, and close its issue (completed). When creating issues with the GitHub tools, create them without a parent so labels are auto-created, then attach them to the parent with the sub-issue tool using the issue's `id`. Many tasks touch both `Divesh_Dogra_CV.pdf` and `index.html`, so keep them in sync. This repo is public, so never commit the employer-confidential figures that the tracker's worksheet asks for.

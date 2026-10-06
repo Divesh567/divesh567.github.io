@@ -5,7 +5,7 @@ Plan for strengthening `Divesh_Dogra_CV.pdf` and `index.html`, split into small 
 ## How to use
 
 - Pick a batch and tell Claude "do batch 1", or name tasks ("do CV-03 and EXP-05").
-- When a task is finished, tick its box and add the date and commit after it. The checklist below is the only place status lives.
+- When a task is finished, tick its box and add the date and commit after it, and close its GitHub issue. This checklist is the record; the issues feed the project board, so keep both in step.
 - Progress: `grep -c '^- \[x\]' TRACKER.md` counts done tasks and `grep -c '^- \[ \]' TRACKER.md` counts open ones.
 - This repo is public. Do not commit employer-confidential numbers, contacts, or code. Share figures in chat, and only publish what you are cleared to publish.
 
@@ -50,101 +50,101 @@ Order matters: batch 3 needs batch 2, and the site sync in batch 7 should wait f
 - [x] **POS-01** Pick your target lane · P1 · S · you · done 2026-10-06
   - Why: the CV reads as a generalist (gameplay, multiplayer, live-ops, shaders, lighting, UI, VFX) with no target role.
   - Done when: one sentence is agreed and logged under Decisions, for example "Unity gameplay and live-ops engineer with a VFX and tech-art background".
-- [ ] **POS-02** Rewrite the summary · P1 · S · both · needs POS-01, EXP-01
+- [ ] **POS-02** Rewrite the summary · P1 · S · both · needs POS-01, EXP-01 · [#5](https://github.com/Divesh567/divesh567.github.io/issues/5)
   - Why: "Strong in..." is self-rating, and the summary names no role and no proof.
   - Done when: two to three sentences with the target role, the lane, and two measurable proof points.
-- [ ] **POS-03** Surface the VFX to tech-art to engineering story · P2 · S · both · optional now: lane A was chosen without the VFX angle, drop unless wanted
+- [ ] **POS-03** Surface the VFX to tech-art to engineering story · P2 · S · both · optional now: lane A was chosen without the VFX angle, drop unless wanted · [#16](https://github.com/Divesh567/divesh567.github.io/issues/16)
   - Why: it is the real differentiator and is currently buried at the bottom of the timeline.
   - Done when: one line in the summary and the skills block use it.
 
 ### Experience
 
-- [ ] **EXP-01** Collect real numbers and facts (worksheet below) · P1 · M · you · work summaries: FAUG and Chapter 26 received 2026-10-06, BoredLeaders and Immersiveorama pending; answer the open claim checks only after all four are in
+- [ ] **EXP-01** Collect real numbers and facts (worksheet below) · P1 · M · you · work summaries: FAUG and Chapter 26 received 2026-10-06, BoredLeaders and Immersiveorama pending; answer the open claim checks only after all four are in · [#2](https://github.com/Divesh567/divesh567.github.io/issues/2)
   - Why: the bullets lack baselines, scale and results, so rewrites are guesswork without them.
   - Done when: every worksheet question is answered or marked "not available".
-- [ ] **EXP-02** Rewrite the FAUG bullets · P1 · M · both · needs EXP-01
+- [ ] **EXP-02** Rewrite the FAUG bullets · P1 · M · both · needs EXP-01 · [#6](https://github.com/Divesh567/divesh567.github.io/issues/6)
   - Why: the bullets say what was built, not the scale, the method or the result.
   - Done when: each bullet has action, scope, tech and result; the FPS gain says how and on which devices; retention and A/B claims carry numbers or a named experiment; "Fixed backend, multiplayer, flow, and performance issues across the product" is replaced with something specific or deleted.
-- [ ] **EXP-03** Rewrite the Chapter 26 bullets · P1 · M · both · needs EXP-01
+- [ ] **EXP-03** Rewrite the Chapter 26 bullets · P1 · M · both · needs EXP-01 · [#7](https://github.com/Divesh567/divesh567.github.io/issues/7)
   - Why: it is unclear what was client and what was backend, and the clan system is worded almost the same as in FAUG.
   - Done when: tournaments and leaderboards say whether you built the backend, the client, or both; the clan system says whether it is a reusable module shared with FAUG; "a few months" becomes real dates; Arabic localization mentions right-to-left handling if it applies.
-- [ ] **EXP-04** Bring Mahabharat into the BoredLeaders entry · P1 · M · both · needs EXP-01
+- [ ] **EXP-04** Bring Mahabharat into the BoredLeaders entry · P1 · M · both · needs EXP-01 · [#8](https://github.com/Divesh567/divesh567.github.io/issues/8)
   - Why: Mahabharat is a Shipped Titles tile but appears in no bullet, while the site holds the best engineering detail (400+ level CSV-driven narrative puzzle, 50-level data-driven jigsaw, 3D Ludo with power-ups, Firebase).
   - Done when: the CV carries those points, "AI-driven NPC behaviors" is tied to a specific title and technique, and "improved performance by 40%" names the metric and the device.
 - [x] **EXP-05** Merge Intern and Junior at BoredLeaders, vary bullet openers, lead with the strongest bullet · P1 · S · claude · done 2026-10-05 (a8cd93c)
   - Why: the same company appears twice for 2023 with two bullets on the intern role, "Built" opens 8 of the 26 bullets, and the strongest bullets sit at positions 2 and 4.
   - Done when: one entry shows the promotion, no verb opens more than two bullets, and the strongest bullet comes first in each role.
-- [ ] **EXP-06** Clarify the Immersiveorama entry · P2 · S · both
+- [ ] **EXP-06** Clarify the Immersiveorama entry · P2 · S · both · [#13](https://github.com/Divesh567/divesh567.github.io/issues/13)
   - Why: it reads like an employer, and solo work is judged differently.
   - Done when: it says solo or self-employed and links Steady Light with installs or rating if you have them. Also confirm the live store title matches the name on the CV (the site's store link uses the package id `LightForce`).
-- [ ] **EXP-07** Fix the Cinegence wording and trim the VFX role · P2 · S · both
+- [ ] **EXP-07** Fix the Cinegence wording and trim the VFX role · P2 · S · both · [#14](https://github.com/Divesh567/divesh567.github.io/issues/14)
   - Why: "Used Nuke for CG effects and simulations" is imprecise (Nuke is a compositor, and simulations usually come from other tools), and the role takes as much space as the engineering roles.
   - Done when: the bullets say what you actually did and keep only lines relevant to tech art.
-- [ ] **EXP-08** Ownership and claims audit across all bullets · P1 · S · both · run last in the experience rewrite
+- [ ] **EXP-08** Ownership and claims audit across all bullets · P1 · S · both · run last in the experience rewrite · [#15](https://github.com/Divesh567/divesh567.github.io/issues/15)
   - Why: there are no team sizes, "I" versus "we" is unclear, and some bullets claim outcomes outside your control (for example "took the game into e-sports").
   - Done when: each role states team size and your part, and no bullet claims a business result you did not own.
 
 ### Multiplayer evidence
 
-- [ ] **MP-01** Write down the netcode work you actually did · P1 · S · you · provisional answer logged 2026-10-06, confirm whether any gameplay sync was written
+- [ ] **MP-01** Write down the netcode work you actually did · P1 · S · you · provisional answer logged 2026-10-06, confirm whether any gameplay sync was written · [#3](https://github.com/Divesh567/divesh567.github.io/issues/3)
   - Why: the CV headlines Multiplayer / Netcode, but no bullet shows networking work and the NGO course is the only evidence.
   - Done when: stack, authority model, what was synced, player counts, and your part versus the team's are logged under Decisions (or "none, live-ops side only").
-- [ ] **MP-02** Back up or reposition the multiplayer claim · P1 · S · both · needs MP-01
+- [ ] **MP-02** Back up or reposition the multiplayer claim · P1 · S · both · needs MP-01 · [#9](https://github.com/Divesh567/divesh567.github.io/issues/9)
   - Why: a senior engineer will ask how state was synced, and the CV cannot answer.
   - Done when: either one or two concrete netcode bullets name the stack, or the summary and skill chips describe the work as live-ops and meta-game multiplayer instead.
 
 ### Skills and certifications
 
-- [ ] **SK-01** Rebuild the skills block · P1 · S · both
+- [ ] **SK-01** Rebuild the skills block · P1 · S · both · [#10](https://github.com/Divesh567/divesh567.github.io/issues/10)
   - Why: Unity is not listed as a skill, "OOP" and "Debugging" are table stakes, "UI/UX" and "Lighting / World Design" have no bullets behind them, and tools named in the bullets are missing.
   - Done when: skills are grouped (language, engine, backend and live-ops, tools); Unity and its version are listed; PlayFab, Firebase, GCP, Addressables, DOTween, Scriptable Objects, I2 Localization and remote config appear where true, along with the source control and profiling tools you actually use; every listed skill is backed by a bullet.
-- [ ] **SK-02** Trim the certifications · P1 · S · both
+- [ ] **SK-02** Trim the certifications · P1 · S · both · [#11](https://github.com/Divesh567/divesh567.github.io/issues/11)
   - Why: eight course titles with no issuer, date or link, and some read as tutorial projects.
   - Done when: only the strongest remain (candidates: Multiplayer in Unity with NGO, Shader Graphs for Effects), each with issuer, year and link, and the rest become a single "Courses" line or are removed.
 
 ### Timeline and credibility
 
-- [ ] **TL-01** Add months to all dates and explain the transitions · P1 · S · both · needs EXP-01
+- [ ] **TL-01** Add months to all dates and explain the transitions · P1 · S · both · needs EXP-01 · [#12](https://github.com/Divesh567/divesh567.github.io/issues/12)
   - Why: year-only dates make 2021 to 2022 (VFX to Unity) and 2024 to 2025 look like gaps and hide how long each role lasted.
   - Done when: every role has a month and year, and one line covers the VFX-to-Unity move and any gap.
-- [ ] **TL-02** Reconcile numbers across the CV and the site · P1 · S · both
+- [ ] **TL-02** Reconcile numbers across the CV and the site · P1 · S · both · [#21](https://github.com/Divesh567/divesh567.github.io/issues/21)
   - Why: the site says 5+ titles and the CV shows 4, the site claims Android and iOS but every store link is Google Play, and "4+ years" is repeated in several places.
   - Done when: each claim has one number everywhere (meta description, stats board, about, hero tagline, CV), and the iOS claim has App Store links or is dropped.
 
 ### Links and reach
 
-- [ ] **MISS-01** Add LinkedIn to the CV and the site · P1 · S · you, then claude
+- [ ] **MISS-01** Add LinkedIn to the CV and the site · P1 · S · you, then claude · [#17](https://github.com/Divesh567/divesh567.github.io/issues/17)
   - Why: recruiters check LinkedIn first, and neither the CV nor the site links to it.
   - Done when: the link is in the CV header and in the site's hero and contact buttons (needs the URL).
-- [ ] **MISS-02** Make Shipped Titles clickable with installs and ratings · P1 · S · you, then claude
+- [ ] **MISS-02** Make Shipped Titles clickable with installs and ratings · P1 · S · you, then claude · [#18](https://github.com/Divesh567/divesh567.github.io/issues/18)
   - Why: the CV tiles carry no links or numbers, while the site already has store links.
   - Done when: each title links to its store page with an installs bracket and rating read from the live listing.
-- [ ] **MISS-03** Add availability · P2 · S · you
+- [ ] **MISS-03** Add availability · P2 · S · you · [#19](https://github.com/Divesh567/divesh567.github.io/issues/19)
   - Why: nothing says when you can start or where you can work.
   - Done when: notice period, location, remote or relocation preference, and work authorization (for non-India applications) are decided and one line is added.
-- [ ] **MISS-04** Add an engineering-practice line · P2 · S · you, then claude
+- [ ] **MISS-04** Add an engineering-practice line · P2 · S · you, then claude · [#20](https://github.com/Divesh567/divesh567.github.io/issues/20)
   - Why: nothing shows version control, code review, build pipelines, or how you work with QA, backend and designers.
   - Done when: one line or two bullets cover them, only where true.
 
 ### Public proof
 
-- [ ] **PUB-01** Publish one clean-room Unity sample · P1 · L · you, claude can help
+- [ ] **PUB-01** Publish one clean-room Unity sample · P1 · L · you, claude can help · [#24](https://github.com/Divesh567/divesh567.github.io/issues/24)
   - Why: shipped work is proprietary, so no public code shows how you write; it also offsets the lack of a CS degree.
   - Done when: a public repo with a README and a short GIF. Ideas: a CSV-driven level pipeline, a small NGO multiplayer demo, a clan and leaderboard module on a mock backend. Never reuse employer code.
-- [ ] **PUB-02** Write a short technical post · P2 · M · you
+- [ ] **PUB-02** Write a short technical post · P2 · M · you · [#25](https://github.com/Divesh567/divesh567.github.io/issues/25)
   - Why: it shows how you reason about performance, not only the result.
   - Done when: a post such as "15 to 30 FPS on 4GB devices: what changed and how it was measured" is linked from the site. Get Dot9's OK first.
-- [ ] **PUB-03** Review your GitHub profile as an employer would · P1 · S · you
+- [ ] **PUB-03** Review your GitHub profile as an employer would · P1 · S · you · [#4](https://github.com/Divesh567/divesh567.github.io/issues/4)
   - Why: reviewers open GitHub early, and pinned repos, the profile README and repo descriptions should show Unity work. This needs a manual pass.
   - Done when: pinned repos, profile README, descriptions and repo visibility are reviewed, and any findings are added here as new tasks.
 
 ### Site
 
 - [x] **WEB-00** Add Download CV buttons to the hero and contact sections · P1 · S · claude · done 2026-10-05 (c8a9997)
-- [ ] **WEB-01** Add the missing screenshots · P2 · S · you
+- [ ] **WEB-01** Add the missing screenshots · P2 · S · you · [#22](https://github.com/Divesh567/divesh567.github.io/issues/22)
   - Why: `steadylight-1.jpg`, `steadylight-2.jpg` and `mahabharat-1.jpg` to `mahabharat-3.jpg` are referenced but not in the repo, so those slots render nothing.
   - Done when: the images are added with the same names, or the references are removed.
-- [ ] **WEB-02** Sync the site copy with the revised CV · P1 · M · claude · after batches 3 to 6
+- [ ] **WEB-02** Sync the site copy with the revised CV · P1 · M · claude · after batches 3 to 6 · [#23](https://github.com/Divesh567/divesh567.github.io/issues/23)
   - Why: the same facts live in the meta description, stats board, hero tagline, `#about`, skills detail, project bullets and timeline, and they drift easily (see CLAUDE.md).
   - Done when: all of them match the CV and the TL-02 numbers.
 
@@ -276,3 +276,10 @@ Already answered: target lane (POS-01), public CV contact details (CV-05), and t
 | Netcode work in one line (MP-01) | Provisional: Photon PUN connection, matchmaking and session layer on FAUG; no gameplay state sync claimed yet | 2026-10-06 |
 | Public CV: phone, postal code, photo (CV-05) | Photo, phone number and postal code removed; location shows "Mumbai, India". | 2026-10-06 |
 | Availability line (MISS-03) | | |
+
+## GitHub tracking
+
+- Parent issue: [#1 CV and portfolio improvement](https://github.com/Divesh567/divesh567.github.io/issues/1). Every open task has a sub-issue under it, labelled `batch:N`, priority (`P1`, `P2`), `owner:you`, `owner:claude` or `owner:both`, and `area:*`.
+- The open questions (Q01 to Q26) stay in this file. Each task issue lists the questions it needs.
+- Tasks finished before the issues were created (CV-01 to CV-05, EXP-05, POS-01, WEB-00) have no issue.
+- Project board: the tooling used for this repo can create issues and labels but not GitHub Projects. To get a board, open the repository's Projects tab, create a new Board project, then use "Add item" to pick the open issues. Filter or group by the `batch:N` labels.
