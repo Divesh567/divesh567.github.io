@@ -59,7 +59,7 @@ Order matters: batch 3 needs batch 2, and the site sync in batch 7 should wait f
 
 ### Experience
 
-- [ ] **EXP-01** Collect real numbers and facts (worksheet below) · P1 · M · you · work summaries: FAUG and Chapter 26 received 2026-10-06, BoredLeaders and Immersiveorama pending; answer the open claim checks only after all four are in · [#2](https://github.com/Divesh567/divesh567.github.io/issues/2)
+- [ ] **EXP-01** Collect real numbers and facts (worksheet below) · P1 · M · you · work summaries: FAUG, Chapter 26 and Steady Light received 2026-10-06, Mahabharat (BoredLeaders) pending; answer the open claim checks only after all four are in · [#2](https://github.com/Divesh567/divesh567.github.io/issues/2)
   - Why: the bullets lack baselines, scale and results, so rewrites are guesswork without them.
   - Done when: every worksheet question is answered or marked "not available".
 - [ ] **EXP-02** Rewrite the FAUG bullets · P1 · M · both · needs EXP-01 · [#6](https://github.com/Divesh567/divesh567.github.io/issues/6)
@@ -131,6 +131,7 @@ Order matters: batch 3 needs batch 2, and the site sync in batch 7 should wait f
 - [ ] **PUB-01** Publish one clean-room Unity sample · P1 · L · you, claude can help · [#24](https://github.com/Divesh567/divesh567.github.io/issues/24)
   - Why: shipped work is proprietary, so no public code shows how you write; it also offsets the lack of a CS degree.
   - Done when: a public repo with a README and a short GIF. Ideas: a CSV-driven level pipeline, a small NGO multiplayer demo, a clan and leaderboard module on a mock backend. Never reuse employer code.
+  - Note: Steady Light is the best source, since it is your own code (event channels, dependency injection, save system, editor tools). Leave out purchased packages and art (DOTween, Odin, Cartoon FX, Joystick Pack), because their licenses do not allow redistribution.
 - [ ] **PUB-02** Write a short technical post · P2 · M · you · [#25](https://github.com/Divesh567/divesh567.github.io/issues/25)
   - Why: it shows how you reason about performance, not only the result.
   - Done when: a post such as "15 to 30 FPS on 4GB devices: what changed and how it was measured" is linked from the site. Get Dot9's OK first.
@@ -200,7 +201,7 @@ Plan: collect a git-history summary of the work at each employer first, then ans
 | FAUG (Dot9 Games), two parts | received 2026-10-06 |
 | Chapter 26 (Dot9 Games) | received 2026-10-06 |
 | Mahabharat (BoredLeaders) | pending |
-| Steady Light (Immersiveorama) | pending |
+| Steady Light (Immersiveorama) | received 2026-10-06 |
 
 Prompt to run in each repo's own Claude session. Add the claims list for that repo.
 
@@ -253,8 +254,9 @@ Answer these after all four summaries are in. When one is answered, change `(ope
 - **Q16** (open) Intern start, junior start, and last month at the company. · feeds TL-01
 
 **Immersiveorama and Steady Light** (summary pending)
-- **Q17** (open) Release date, installs, rating and number of levels. · feeds EXP-06
+- **Q17** (open) Steady Light store numbers: installs, rating, and the Firebase figures you can pull (users, day 1 and day 7 retention, level completion rate). The level count is answered: about 45 across 6 worlds. · feeds EXP-06
 - **Q18** (open) Was the game renamed? The Play Store link uses `LightForce`. · feeds EXP-06, TL-02
+- **Q27** (open) Steady Light timeline: the CV and site say 2022 to 2023, but the git history runs February 2024 to July 2026. When was the first Play Store release, and what happened since (updates, a rebuild)? It overlaps with the BoredLeaders and Dot9 roles, so how should the CV describe that (for example, an independent project alongside full-time work)? Also confirm whether to call it a physics puzzle game rather than a platformer. · feeds EXP-06, TL-01, TL-02
 
 **Across roles**
 - **Q19** (open) Exact start and end month for every job, what you did in 2021 to 2022, and any gap in 2024 to 2025. The first FAUG commit is in April 2025; confirm the actual joining date. · feeds TL-01
@@ -280,6 +282,6 @@ Already answered: target lane (POS-01), public CV contact details (CV-05), and t
 ## GitHub tracking
 
 - Parent issue: [#1 CV and portfolio improvement](https://github.com/Divesh567/divesh567.github.io/issues/1). Every open task has a sub-issue under it, labelled `batch:N`, priority (`P1`, `P2`), `owner:you`, `owner:claude` or `owner:both`, and `area:*`.
-- The open questions (Q01 to Q26) stay in this file. Each task issue lists the questions it needs.
+- The open questions (Q01 to Q27) stay in this file. Each task issue lists the questions it needs.
 - Tasks finished before the issues were created (CV-01 to CV-05, EXP-05, POS-01, WEB-00) have no issue.
 - Project board: the tooling used for this repo can create issues and labels but not GitHub Projects. To get a board, open the repository's Projects tab, create a new Board project, then use "Add item" to pick the open issues. Filter or group by the `batch:N` labels.
