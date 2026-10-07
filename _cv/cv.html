@@ -73,27 +73,27 @@
   <div class="job-head"><span class="job-title">Game Developer, Dot9 Games</span><span class="job-meta">Apr 2025 to Present · Mumbai, India</span></div>
   <h3>FAUG: Competitive Multiplayer FPS</h3>
   <ul>
-    <li>Built the client for the FAU-G Bharat League (FBL), a weekly league that led to two offline e-sports season finals: flow, Firestore calls, promotion and demotion transitions, failure-handling UI, percentile leaderboards, and a remote-config bot handler that simulates league points.</li>
-    <li>Developed the clan layer on Firestore (create, join, invite, disband, missions, daily login tracking), then the Teams system: invite-based match leadership, party matchmaking, live loadout sync, and server-owned team chat with reporting.</li>
-    <li>Engineered the Photon connection layer: best-ping region selection, Play Again restart, master-client takeover on heartbeat loss, high-ping drop to offline mode, and fixes for matchmaking bugs such as stale team indices.</li>
-    <li>Created the offline tournament system for a live finals event: Firestore data model, room-code match setup, player seating by user ID, score posting at game over, and device-aware control layouts.</li>
-    <li>Rewrote the multi-reward grant logic, built the reward UI for skins, accessories and multi-item rewards, and integrated a third-party reward-claim flow with its result-page and main-menu UI.</li>
+    <li>Built the client for the FAU-G Bharat League (FBL), a weekly league that led to two offline e-sports season finals, covering its flow, league transitions and failure-handling UI.</li>
+    <li>Developed clans and the Teams party mode: match leadership, party matchmaking and team chat.</li>
+    <li>Engineered the multiplayer connection and matchmaking layer on Photon, including region selection, match restarts and matchmaking fixes.</li>
+    <li>Created the tournament system for a live finals event.</li>
+    <li>Rewrote the multi-reward grant logic and built the reward UI for skins, accessories and multi-item rewards.</li>
     <li>Led the battle-streak feature with one junior developer, designing the system and building the streak logic, flow and most of the UI.</li>
-    <li>Designed and built the targeted announcement system end to end: Firestore calls, trait-based personalized messages, global broadcasts and the UI.</li>
-    <li>Integrated PlayFab TitleData as the remote-config layer, so values change without a new build, and set up the client system for A/B tests on PlayFab Experiments, serving different TitleData to a share of the audience so the team could compare reward and feature performance.</li>
-    <li>Integrated AdMob and Unity Ads behind JSON-configured placements, In-App Review prompts, and a JSON-driven Firebase Analytics layer plus AppsFlyer events.</li>
-    <li>Reworked the third-person camera (blend, wall collision, aim reticle fixes) and added a grenade package.</li>
-    <li>Added cheater flagging, player and chat reporting, username validation, and a QA test-device tool.</li>
-    <li>Diagnosed and fixed an overdraw bug with the Frame Debugger: alpha in wall textures made the renderer draw geometry behind walls.</li>
-    <li>Sped up first-time-user and per-match loading with load-time instrumentation, scene reuse on Play Again and mipmap streaming; added a one-command Android build and design docs for Teams, Play Again, leaderboards and tournaments.</li>
+    <li>Designed and built the targeted announcement system end to end, from client calls to logic to UI.</li>
+    <li>Set up the client side of remote configuration and A/B testing so the team could compare features and rewards.</li>
+    <li>Integrated ads, in-app review prompts and analytics.</li>
+    <li>Reworked the third-person camera and added a grenade package.</li>
+    <li>Added player and chat reporting and username validation.</li>
+    <li>Diagnosed and fixed a rendering overdraw issue using the Frame Debugger.</li>
+    <li>Sped up first-time-user and per-match loading using load-time instrumentation, scene reuse and mipmap streaming; added a one-command Android build and design docs for core systems.</li>
   </ul>
   <h3>Chapter 26: Casual Multiplayer Games &amp; Social App</h3>
   <ul>
-    <li>Built the client for a remote-config-driven mini-game hub covering social, tournaments, leaderboards, achievements, daily tasks, rewards and a store, shipped with the team in a few months.</li>
-    <li>Implemented the clan client: member actions (promote, demote, kick), requests, invites, search and profanity checks, with right-to-left layouts.</li>
-    <li>Wrote the tournament and leaderboard flows (state, individual, all-games and city views, score posting, winner pages) against the backend API.</li>
+    <li>Built the client for a mini-game hub covering social features, tournaments, leaderboards, achievements, daily tasks, rewards and a store, shipped with the team in a few months.</li>
+    <li>Implemented the clan client: member management, requests, invites and search, with right-to-left layouts.</li>
+    <li>Wrote the tournament and leaderboard screens and flows against the backend API.</li>
     <li>Delivered Arabic localization and right-to-left layouts across the hub, store and clan screens.</li>
-    <li>Shipped monetization and account flows: ads with a remote-config live and test switch, a runtime-built store, force and soft update gating, OTP rate limiting, and in-app account deletion.</li>
+    <li>Shipped the store, ads and account flows, including in-app account deletion.</li>
     <li>Added a QR scanner and generator for check-ins and a live-cast page; fixed bugs across the Carrom, Blink, Ludo and football penalty minigames.</li>
   </ul>
 </div>

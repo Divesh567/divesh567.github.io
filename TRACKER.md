@@ -8,6 +8,7 @@ Plan for strengthening `Divesh_Dogra_CV.pdf` and `index.html`, split into small 
 - When a task is finished, tick its box and add the date and commit after it, and close its GitHub issue. This checklist is the record; the issues feed the project board, so keep both in step.
 - Progress: `grep -c '^- \[x\]' TRACKER.md` counts done tasks and `grep -c '^- \[ \]' TRACKER.md` counts open ones.
 - This repo is public. Do not commit employer-confidential numbers, contacts, or code. Share figures in chat, and only publish what you are cleared to publish.
+- Dot9 rule (2026-10-07): no performance or retention numbers and no internal details of Dot9's games on the CV, the site or this tracker. Describe the work at the level of features a player can see, plus general skills.
 
 Legend. Priority: P0 = stops the CV being read at all, P1 = changes how a hiring manager scores it, P2 = polish. Effort: S = under an hour, M = a few hours, L = a day or more. Owner: claude = can be done alone, you = needs your input or action, both = needs both.
 
@@ -134,7 +135,7 @@ Order matters: batch 3 needs batch 2, and the site sync in batch 7 should wait f
   - Note: Steady Light is the best source, since it is your own code (event channels, dependency injection, save system, editor tools). Leave out purchased packages and art (DOTween, Odin, Cartoon FX, Joystick Pack), because their licenses do not allow redistribution.
 - [ ] **PUB-02** Write a short technical post · P2 · M · you · [#25](https://github.com/Divesh567/divesh567.github.io/issues/25)
   - Why: it shows how you reason about performance, not only the result.
-  - Done when: a post such as "Finding hidden overdraw with the Frame Debugger: alpha in wall textures" is linked from the site. Get Dot9's OK first.
+  - Done when: a post such as "Finding hidden overdraw with the Frame Debugger", written in general terms with no game-specific detail, is linked from the site. Get Dot9's OK first.
 - [ ] **PUB-03** Review your GitHub profile as an employer would · P1 · S · you · [#4](https://github.com/Divesh567/divesh567.github.io/issues/4)
   - Why: reviewers open GitHub early, and pinned repos, the profile README and repo descriptions should show Unity work. This needs a manual pass.
   - Done when: pinned repos, profile README, descriptions and repo visibility are reviewed, and any findings are added here as new tasks.
@@ -232,14 +233,14 @@ Claims to check for Steady Light (Immersiveorama): solo-developed 2D physics pla
 Answer these after all four summaries are in. When one is answered, change `(open)` to `(answered DATE)` and move the answer into the Decisions table or the task it feeds.
 
 **FAUG**
-- **Q01** (answered 2026-10-07) For each FAUG bullet on the CV, where does the work live? All located. The 15 to 30 FPS optimization is not claimed (the CV has an overdraw fix and the scene-loading work instead). You rewrote the multi-reward grant logic, built the reward UI and integrated the third-party reward-claim flow. You led and built the battle-streak feature with one junior developer. You designed and built the announcement system, although the git summary missed it. You built the client for PlayFab TitleData remote config and A/B tests, which the team ran. You built the FBL client. · feeds EXP-02, EXP-08
-- **Q02** (answered 2026-10-07) What exactly is the "FBL League", and how does it relate to the ranked league and to the tournament and finals tooling? FBL is the FAU-G Bharat League, a weekly league system that led to two offline e-sports season finals. You built the flow, Firestore calls, client handling, league transitions and failure-handling UI. The ranked league in the git history is treated as the same system. · feeds EXP-02
-- **Q03** (answered 2026-10-07) Which networking pieces did you write? You did not write gameplay sync (movement, shooting). Your Photon work was the connection, matchmaking and session layer, plus loadout sync to teammates. · feeds MP-01, MP-02
+- **Q01** (answered 2026-10-07) For each FAUG bullet on the CV, where does the work live? All located. The 15 to 30 FPS optimization is not claimed. You rewrote the multi-reward grant logic and built the reward UI, led and built the battle-streak feature with one junior developer, designed and built the announcement system (the git summary missed it), built the client side of remote config and A/B testing (the team ran the experiments), and built the FBL client. · feeds EXP-02, EXP-08
+- **Q02** (answered 2026-10-07) What exactly is the "FBL League", and how does it relate to the ranked league and to the tournament and finals tooling? FBL is the FAU-G Bharat League, a weekly league that led to two offline e-sports season finals. You built the client flow, league transitions and failure-handling UI. The ranked league in the git history is treated as the same system. · feeds EXP-02
+- **Q03** (answered 2026-10-07) Which networking pieces did you write? You did not write gameplay sync (movement, shooting). Your Photon work was the connection and matchmaking layer. · feeds MP-01, MP-02
 - **Q04** (answered 2026-10-07) Load time: before and after figures from the load-time instrumentation. A measured improvement exists for both the first-time-user flow and every match, but you cannot share the figures, so they are kept off the CV, the site and this tracker. · feeds EXP-02
-- **Q05** (answered 2026-10-07) FPS work: devices, how it was measured, and the top three changes. Not claimed. The real work was an overdraw fix: wall textures had an alpha channel, so geometry behind them was still drawn; found with the Frame Debugger. · feeds EXP-02
-- **Q06** (open) Retention or engagement: which metric, before and after, and from which change or experiment. · feeds EXP-02
-- **Q07** (open) Exact provider names for voice chat and ad mediation, and whether hack detection is custom or an SDK. Do not name them on the CV until confirmed. · feeds EXP-02, SK-01
-- **Q08** (open) Which details are cleared to publish (partner names, event names, prize or KYC flows)? Default: describe them generically. · feeds EXP-02, EXP-03
+- **Q05** (answered 2026-10-07) FPS work: devices, how it was measured, and the top three changes. Not claimed. The real work was a rendering overdraw fix found with the Frame Debugger. · feeds EXP-02
+- **Q06** (answered 2026-10-07) Retention or engagement: which metric, before and after, and from which change or experiment. You cannot share retention or engagement figures, so none will go on the CV, the site or this tracker. · feeds EXP-02
+- **Q07** (dropped 2026-10-07) Exact provider names for voice chat and ad mediation, and whether hack detection is custom or an SDK. You cannot share internal details of Dot9's games, so these are not needed. · feeds EXP-02, SK-01
+- **Q08** (answered 2026-10-07) Which details are cleared to publish? Nothing internal to Dot9's games: no numbers, mechanics, architecture, tool-to-system mappings or partner names. Features a player can see, and general skills, are fine. · feeds EXP-02, EXP-03
 
 **Chapter 26**
 - **Q09** (answered 2026-10-07) Which minigames did you build, and which did you fix or integrate? You built none of them; you fixed bugs in Carrom, Blink, Ludo and football penalty. The git history also showed Baloot exit bugs, which are not on the CV. · feeds EXP-03
@@ -261,13 +262,13 @@ Answer these after all four summaries are in. When one is answered, change `(ope
 - **Q29** (open) Which of the packaged tools in the board game repo did you write yourself (3D dice package, feedback-form tool, shaders package), and which are third-party? · feeds EXP-04, SK-01
 - **Q30** (open) The draft CV leaves out the intern graphics pass, the level-design claims and the 40% figure, because the summaries do not show them. If they are real, where do they live? · feeds EXP-04, EXP-08
 - **Q31** (answered 2026-10-07) Cinegence VFX job: exact start and end month. Started August 2019, left in March 2020, rejoined for about two months after the lockdown, then left the industry for game development. The CV's 2021 end date was wrong and now reads 2020. · feeds TL-01, EXP-07
-- **Q32** (open) Announcement module details to pull from the code: which player traits drive the targeting, the message types, and what the UI shows. · feeds EXP-02
+- **Q32** (dropped 2026-10-07) Announcement module details. You cannot share internal details of Dot9's games, so no further detail is needed. · feeds EXP-02
 
 **Across roles**
 - **Q19** (answered 2026-10-07) Exact start and end month for every job, what you did in 2021 to 2022, and any gap in 2024 to 2025. BoredLeaders (February 2023 to December 2024) and Dot9 (April 2025) are confirmed, leaving a gap of about three months. In 2020 to 2022 you taught yourself Unity after a VFX job ended in the lockdown, published a first game in October 2020 (since removed from the Play Store), then built Steady Light. The VFX job dates are tracked in Q31. · feeds TL-01
 - **Q20** (open) Installs bracket and rating for each store listing: FAUG, Chapter 26, the two Mahabharat apps, Steady Light. · feeds MISS-02
 - **Q21** (open) Team size per project, and which parts were yours alone. Known so far: on FAUG you led the battle-streak feature with one junior developer and built most of it. · feeds EXP-08
-- **Q22** (open) Summary headline: "Unity gameplay and live-ops engineer" as chosen, or live-ops first with gameplay (camera, grenades, loadout sync) as supporting evidence? · feeds POS-02
+- **Q22** (open) Summary headline: "Unity gameplay and live-ops engineer" as chosen, or live-ops first with gameplay (camera, grenades) as supporting evidence? · feeds POS-02
 - **Q23** (open) GitHub profile review: pinned repos, profile README, repo descriptions, anything to fix or hide. · feeds PUB-03
 - **Q24** (open) LinkedIn URL, any App Store links, notice period, location, remote and relocation preferences, and work authorization. · feeds MISS-01, MISS-02, MISS-03, TL-02
 - **Q25** (open) Cinegence: which films or shows can be named, what your part was, and which tools you used. · feeds EXP-07
@@ -280,7 +281,7 @@ Already answered: target lane (POS-01), public CV contact details (CV-05), and t
 | Decision | Answer | Date |
 |---|---|---|
 | Target lane (POS-01) | Unity gameplay and live-ops engineer (VFX angle left out) | 2026-10-06 |
-| Netcode work in one line (MP-01) | Photon PUN connection, matchmaking and session layer on FAUG, plus loadout sync; no gameplay state sync | 2026-10-07 |
+| Netcode work in one line (MP-01) | Photon connection and matchmaking layer on FAUG; no gameplay state sync | 2026-10-07 |
 | Public CV: phone, postal code, photo (CV-05) | Photo, phone number and postal code removed; location shows "Mumbai, India". | 2026-10-06 |
 | Availability line (MISS-03) | | |
 
