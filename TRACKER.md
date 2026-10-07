@@ -104,7 +104,7 @@ Order matters: batch 3 needs batch 2, and the site sync in batch 7 should wait f
 
 ### Timeline and credibility
 
-- [ ] **TL-01** Add months to all dates and explain the transitions · P1 · S · both · needs EXP-01 · [#12](https://github.com/Divesh567/divesh567.github.io/issues/12)
+- [ ] **TL-01** Add months to all dates and explain the transitions · P1 · S · both · needs EXP-01 · BoredLeaders dates done 2026-10-07 (Feb 2023 to Dec 2024); Dot9 and Immersiveorama months still open · [#12](https://github.com/Divesh567/divesh567.github.io/issues/12)
   - Why: year-only dates make 2021 to 2022 (VFX to Unity) and 2024 to 2025 look like gaps and hide how long each role lasted.
   - Done when: every role has a month and year, and one line covers the VFX-to-Unity move and any gap.
 - [ ] **TL-02** Reconcile numbers across the CV and the site · P1 · S · both · partly resolved 2026-10-06: the CV now counts five titles (two Mahabharat apps), matching the site's 5+; the iOS claim is still open · [#21](https://github.com/Divesh567/divesh567.github.io/issues/21)
@@ -251,7 +251,7 @@ Answer these after all four summaries are in. When one is answered, change `(ope
 - **Q13** (answered 2026-10-06) Which game had the AI-driven NPCs, and what technique? The Mahabharat board game bots, using a weighted-RNG dice engine and weighted power selection. · feeds EXP-04
 - **Q14** (open) What did the "40% performance" gain measure (metric, device, what changed)? The code shows FPS benchmark scripts and multi-tier URP quality profiles, but not the 40% figure. · feeds EXP-04
 - **Q15** (answered 2026-10-06) Mahabharat: levels per game, the designer tooling around the CSV pipeline, and how Firebase is used. 375+ story pages, 126 image puzzles and 50 jigsaws, with CSV readers for content; Firebase Auth, Realtime Database, Analytics and Remote Config. · feeds EXP-04
-- **Q16** (open) Intern start, junior start, and last month at the company. The Puzzles of Mahabharat commits run November 2024 to May 2025, later than the CV's 2023 to 2024. · feeds TL-01
+- **Q16** (answered 2026-10-07) Intern start, junior start, and last month at the company. Intern from February 2023 for about six months, then junior, last month December 2024. Commit dates in the Puzzles of Mahabharat repo run later because the repo was changed once, so they do not show the real timeline. · feeds TL-01
 
 **Immersiveorama and Steady Light** (summary pending)
 - **Q17** (open) Steady Light store numbers: installs, rating, and the Firebase figures you can pull (users, day 1 and day 7 retention, level completion rate). The level count is answered: about 45 across 6 worlds. · feeds EXP-06
