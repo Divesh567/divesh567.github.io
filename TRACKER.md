@@ -104,7 +104,7 @@ Order matters: batch 3 needs batch 2, and the site sync in batch 7 should wait f
 
 ### Timeline and credibility
 
-- [ ] **TL-01** Add months to all dates and explain the transitions · P1 · S · both · needs EXP-01 · BoredLeaders, Dot9, Steady Light and the VFX-to-Unity story done 2026-10-07; only the VFX job dates (Q31) are still open · [#12](https://github.com/Divesh567/divesh567.github.io/issues/12)
+- [x] **TL-01** Add months to all dates and explain the transitions · P1 · S · both · needs EXP-01 · done 2026-10-07: BoredLeaders, Dot9, VFX and the VFX-to-Unity story have months; Steady Light stays year-level because it is an independent project · [#12](https://github.com/Divesh567/divesh567.github.io/issues/12) · issue closed
   - Why: year-only dates make 2021 to 2022 (VFX to Unity) and 2024 to 2025 look like gaps and hide how long each role lasted.
   - Done when: every role has a month and year, and one line covers the VFX-to-Unity move and any gap.
 - [ ] **TL-02** Reconcile numbers across the CV and the site · P1 · S · both · partly resolved 2026-10-06: the CV now counts five titles (two Mahabharat apps), matching the site's 5+; the iOS claim is still open · [#21](https://github.com/Divesh567/divesh567.github.io/issues/21)
@@ -260,7 +260,7 @@ Answer these after all four summaries are in. When one is answered, change `(ope
 - **Q28** (open) The site says "400+ level narrative puzzle game" and a "meta loop that connects the three games". The repos show 375+ story pages, 126 image puzzles and 50 jigsaws in one app, and a separate board game app. Which numbers should the CV and site use, and is there a cross-game meta loop? · feeds EXP-04, TL-02, WEB-02
 - **Q29** (open) Which of the packaged tools in the board game repo did you write yourself (3D dice package, feedback-form tool, shaders package), and which are third-party? · feeds EXP-04, SK-01
 - **Q30** (open) The draft CV leaves out the intern graphics pass, the level-design claims and the 40% figure, because the summaries do not show them. If they are real, where do they live? · feeds EXP-04, EXP-08
-- **Q31** (open) Cinegence VFX job: exact start and end month. The CV says 2019 to 2021, but the job ended because of the lockdown (which began in 2020) and your first game came out in October 2020. · feeds TL-01, EXP-07
+- **Q31** (answered 2026-10-07) Cinegence VFX job: exact start and end month. Started August 2019, left in March 2020, rejoined for about two months after the lockdown, then left the industry for game development. The CV's 2021 end date was wrong and now reads 2020. · feeds TL-01, EXP-07
 
 **Across roles**
 - **Q19** (answered 2026-10-07) Exact start and end month for every job, what you did in 2021 to 2022, and any gap in 2024 to 2025. BoredLeaders (February 2023 to December 2024) and Dot9 (April 2025) are confirmed, leaving a gap of about three months. In 2020 to 2022 you taught yourself Unity after a VFX job ended in the lockdown, published a first game in October 2020 (since removed from the Play Store), then built Steady Light. The VFX job dates are tracked in Q31. · feeds TL-01
