@@ -104,7 +104,7 @@ Order matters: batch 3 needs batch 2, and the site sync in batch 7 should wait f
 
 ### Timeline and credibility
 
-- [ ] **TL-01** Add months to all dates and explain the transitions · P1 · S · both · needs EXP-01 · BoredLeaders, Dot9 and Steady Light release dates done 2026-10-07; the Steady Light start month and the 2021 to 2022 transition still open · [#12](https://github.com/Divesh567/divesh567.github.io/issues/12)
+- [ ] **TL-01** Add months to all dates and explain the transitions · P1 · S · both · needs EXP-01 · BoredLeaders, Dot9, Steady Light and the VFX-to-Unity story done 2026-10-07; only the VFX job dates (Q31) are still open · [#12](https://github.com/Divesh567/divesh567.github.io/issues/12)
   - Why: year-only dates make 2021 to 2022 (VFX to Unity) and 2024 to 2025 look like gaps and hide how long each role lasted.
   - Done when: every role has a month and year, and one line covers the VFX-to-Unity move and any gap.
 - [ ] **TL-02** Reconcile numbers across the CV and the site · P1 · S · both · partly resolved 2026-10-06: the CV now counts five titles (two Mahabharat apps), matching the site's 5+; the iOS claim is still open · [#21](https://github.com/Divesh567/divesh567.github.io/issues/21)
@@ -256,13 +256,14 @@ Answer these after all four summaries are in. When one is answered, change `(ope
 **Immersiveorama and Steady Light** (summary pending)
 - **Q17** (open) Steady Light store numbers: installs, rating, and the Firebase figures you can pull (users, day 1 and day 7 retention, level completion rate). The level count is answered: about 45 across 6 worlds. · feeds EXP-06
 - **Q18** (open) Was the game renamed? The Play Store link uses `LightForce`. · feeds EXP-06, TL-02
-- **Q27** (partly answered 2026-10-07) Steady Light timeline. First released October 2022, about six months of active updates, rare updates after that, last update February 2026. The repo history was changed once, so its dates differ from the CV's. Still open: when development started, and whether to call it a physics puzzle game rather than a platformer. · feeds EXP-06, TL-01, TL-02
+- **Q27** (partly answered 2026-10-07) Steady Light timeline. Built while learning after the first game, first released October 2022, about six months of active updates, rare updates after that, last update February 2026. The repo history was changed once, so its dates differ from the CV's. Still open: whether to call it a physics puzzle game rather than a platformer. · feeds EXP-06, TL-02
 - **Q28** (open) The site says "400+ level narrative puzzle game" and a "meta loop that connects the three games". The repos show 375+ story pages, 126 image puzzles and 50 jigsaws in one app, and a separate board game app. Which numbers should the CV and site use, and is there a cross-game meta loop? · feeds EXP-04, TL-02, WEB-02
 - **Q29** (open) Which of the packaged tools in the board game repo did you write yourself (3D dice package, feedback-form tool, shaders package), and which are third-party? · feeds EXP-04, SK-01
 - **Q30** (open) The draft CV leaves out the intern graphics pass, the level-design claims and the 40% figure, because the summaries do not show them. If they are real, where do they live? · feeds EXP-04, EXP-08
+- **Q31** (open) Cinegence VFX job: exact start and end month. The CV says 2019 to 2021, but the job ended because of the lockdown (which began in 2020) and your first game came out in October 2020. · feeds TL-01, EXP-07
 
 **Across roles**
-- **Q19** (partly answered 2026-10-07) Exact start and end month for every job, what you did in 2021 to 2022, and any gap in 2024 to 2025. BoredLeaders (February 2023 to December 2024) and Dot9 (April 2025) are confirmed, which leaves a gap of about three months between them. Still open: what you did in 2021 to 2022, and the Immersiveorama months. · feeds TL-01
+- **Q19** (answered 2026-10-07) Exact start and end month for every job, what you did in 2021 to 2022, and any gap in 2024 to 2025. BoredLeaders (February 2023 to December 2024) and Dot9 (April 2025) are confirmed, leaving a gap of about three months. In 2020 to 2022 you taught yourself Unity after a VFX job ended in the lockdown, published a first game in October 2020 (since removed from the Play Store), then built Steady Light. The VFX job dates are tracked in Q31. · feeds TL-01
 - **Q20** (open) Installs bracket and rating for each store listing: FAUG, Chapter 26, the two Mahabharat apps, Steady Light. · feeds MISS-02
 - **Q21** (open) Team size per project, and which parts were yours alone. · feeds EXP-08
 - **Q22** (open) Summary headline: "Unity gameplay and live-ops engineer" as chosen, or live-ops first with gameplay (camera, grenades, loadout sync) as supporting evidence? · feeds POS-02
@@ -285,6 +286,6 @@ Already answered: target lane (POS-01), public CV contact details (CV-05), and t
 ## GitHub tracking
 
 - Parent issue: [#1 CV and portfolio improvement](https://github.com/Divesh567/divesh567.github.io/issues/1). Every open task has a sub-issue under it, labelled `batch:N`, priority (`P1`, `P2`), `owner:you`, `owner:claude` or `owner:both`, and `area:*`.
-- The open questions (Q01 to Q30) stay in this file. Each task issue lists the questions it needs.
+- The open questions (Q01 to Q31) stay in this file. Each task issue lists the questions it needs.
 - Tasks finished before the issues were created (CV-01 to CV-05, EXP-05, POS-01, WEB-00) have no issue.
 - Project board: the tooling used for this repo can create issues and labels but not GitHub Projects. To get a board, open the repository's Projects tab, create a new Board project, then use "Add item" to pick the open issues. Filter or group by the `batch:N` labels.
