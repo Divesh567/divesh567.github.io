@@ -8,7 +8,7 @@ Plan for strengthening `Divesh_Dogra_CV.pdf` and `index.html`, split into small 
 - When a task is finished, tick its box and add the date and commit after it, and close its GitHub issue. This checklist is the record; the issues feed the project board, so keep both in step.
 - Progress: `grep -c '^- \[x\]' TRACKER.md` counts done tasks and `grep -c '^- \[ \]' TRACKER.md` counts open ones.
 - This repo is public. Do not commit employer-confidential numbers, contacts, or code. Share figures in chat, and only publish what you are cleared to publish.
-- Dot9 rule (2026-10-07): no performance or retention numbers and no internal details of Dot9's games on the CV, the site or this tracker. Describe the work at the level of features a player can see, plus general skills.
+- Confidentiality rule (2026-10-07): no performance or retention numbers for any game, and no internal details of Dot9's or BoredLeaders' games, on the CV, the site or this tracker. Describe the work at the level of features a player can see, plus general skills.
 
 Legend. Priority: P0 = stops the CV being read at all, P1 = changes how a hiring manager scores it, P2 = polish. Effort: S = under an hour, M = a few hours, L = a day or more. Owner: claude = can be done alone, you = needs your input or action, both = needs both.
 
@@ -163,7 +163,7 @@ The Open questions section below narrows this list using the work summaries rece
 
 **FAUG**
 - 15 to 30 FPS: devices, how you measured, and the top three changes that moved it.
-- Retention: which metric (day 1, day 7), before and after, and from which experiment.
+- Retention: not shared; no retention figures for any game.
 - FBL League: matches or players, which parts you built (client UI, backend calls, matchmaking), team size.
 - Teams / clan system: scope, backend, and whether it is shared with Chapter 26.
 - Announcement system: how segments or traits were defined, and reach.
@@ -238,7 +238,7 @@ Answer these after all four summaries are in. When one is answered, change `(ope
 - **Q03** (answered 2026-10-07) Which networking pieces did you write? You did not write gameplay sync (movement, shooting). Your Photon work was the connection and matchmaking layer. · feeds MP-01, MP-02
 - **Q04** (answered 2026-10-07) Load time: before and after figures from the load-time instrumentation. A measured improvement exists for both the first-time-user flow and every match, but you cannot share the figures, so they are kept off the CV, the site and this tracker. · feeds EXP-02
 - **Q05** (answered 2026-10-07) FPS work: devices, how it was measured, and the top three changes. Not claimed. The real work was a rendering overdraw fix found with the Frame Debugger. · feeds EXP-02
-- **Q06** (answered 2026-10-07) Retention or engagement: which metric, before and after, and from which change or experiment. You cannot share retention or engagement figures, so none will go on the CV, the site or this tracker. · feeds EXP-02
+- **Q06** (answered 2026-10-07) Retention or engagement: which metric, before and after, and from which change or experiment. You cannot share retention figures for any game, so none will go on the CV, the site or this tracker. · feeds EXP-02
 - **Q07** (dropped 2026-10-07) Exact provider names for voice chat and ad mediation, and whether hack detection is custom or an SDK. You cannot share internal details of Dot9's games, so these are not needed. · feeds EXP-02, SK-01
 - **Q08** (answered 2026-10-07) Which details are cleared to publish? Nothing internal to Dot9's games: no numbers, mechanics, architecture, tool-to-system mappings or partner names. Features a player can see, and general skills, are fine. · feeds EXP-02, EXP-03
 
@@ -246,20 +246,20 @@ Answer these after all four summaries are in. When one is answered, change `(ope
 - **Q09** (answered 2026-10-07) Which minigames did you build, and which did you fix or integrate? You built none of them; you fixed bugs in Carrom, Blink, Ludo and football penalty. The git history also showed Baloot exit bugs, which are not on the CV. · feeds EXP-03
 - **Q10** (answered 2026-10-07) Tournaments and leaderboards: client only, or any backend work too? Client side only. The CV says "against the backend API", and the site no longer claims a GCP backend or lists GCP as a skill. · feeds EXP-03
 - **Q11** (open) Team size, and the month the hub shipped. · feeds EXP-03, TL-01
-- **Q12** (open) Confirm the tools named on the CV (I2 Localization, YouTube live-cast). · feeds EXP-03, SK-01
+- **Q12** (dropped 2026-10-07) Confirm the tools named on the CV for Chapter 26. The CV no longer names tools for Dot9's games. · feeds EXP-03, SK-01
 
 **BoredLeaders and Mahabharat** (summary pending)
 - **Q13** (answered 2026-10-06) Which game had the AI-driven NPCs, and what technique? The Mahabharat board game bots, using a weighted-RNG dice engine and weighted power selection. · feeds EXP-04
-- **Q14** (open) What did the "40% performance" gain measure (metric, device, what changed)? The code shows FPS benchmark scripts and multi-tier URP quality profiles, but not the 40% figure. · feeds EXP-04
+- **Q14** (dropped 2026-10-07) What did the "40% performance" gain measure? Performance numbers are not shared, so the claim is removed from the CV and the site. · feeds EXP-04
 - **Q15** (answered 2026-10-06) Mahabharat: levels per game, the designer tooling around the CSV pipeline, and how Firebase is used. 375+ story pages, 126 image puzzles and 50 jigsaws, with CSV readers for content; Firebase Auth, Realtime Database, Analytics and Remote Config. · feeds EXP-04
 - **Q16** (answered 2026-10-07) Intern start, junior start, and last month at the company. Intern from February 2023 for about six months, then junior, last month December 2024. Commit dates in the Puzzles of Mahabharat repo run later because the repo was changed once, so they do not show the real timeline. · feeds TL-01
 
 **Immersiveorama and Steady Light** (summary pending)
-- **Q17** (open) Steady Light store numbers: installs, rating, and the Firebase figures you can pull (users, day 1 and day 7 retention, level completion rate). The level count is answered: about 45 across 6 worlds. · feeds EXP-06
+- **Q17** (open) Steady Light store numbers: installs and rating only. No retention figures for any game. The level count is answered: about 45 across 6 worlds. · feeds EXP-06
 - **Q18** (open) Was the game renamed? The Play Store link uses `LightForce`. · feeds EXP-06, TL-02
 - **Q27** (partly answered 2026-10-07) Steady Light timeline. Built while learning after the first game, first released October 2022, about six months of active updates, rare updates after that, last update February 2026. The repo history was changed once, so its dates differ from the CV's. Still open: whether to call it a physics puzzle game rather than a platformer. · feeds EXP-06, TL-02
-- **Q28** (open) The site says "400+ level narrative puzzle game" and a "meta loop that connects the three games". The repos show 375+ story pages, 126 image puzzles and 50 jigsaws in one app, and a separate board game app. Which numbers should the CV and site use, and is there a cross-game meta loop? · feeds EXP-04, TL-02, WEB-02
-- **Q29** (open) Which of the packaged tools in the board game repo did you write yourself (3D dice package, feedback-form tool, shaders package), and which are third-party? · feeds EXP-04, SK-01
+- **Q28** (answered 2026-10-07, by default) The site said "400+ level narrative puzzle game" and a "meta loop that connects the three games". The CV and site now use the repo counts (375+ story pages, 126 image puzzles, 50 jigsaws, 10 puzzle types) and no cross-game meta loop is claimed. Say so if the loop is real. · feeds EXP-04, TL-02, WEB-02
+- **Q29** (dropped 2026-10-07) Which of the packaged tools in the board game repo did you write? The CV no longer mentions them, and internal details are not shared. · feeds EXP-04, SK-01
 - **Q30** (open) The draft CV leaves out the intern graphics pass, the level-design claims and the 40% figure, because the summaries do not show them. If they are real, where do they live? · feeds EXP-04, EXP-08
 - **Q31** (answered 2026-10-07) Cinegence VFX job: exact start and end month. Started August 2019, left in March 2020, rejoined for about two months after the lockdown, then left the industry for game development. The CV's 2021 end date was wrong and now reads 2020. · feeds TL-01, EXP-07
 - **Q32** (dropped 2026-10-07) Announcement module details. You cannot share internal details of Dot9's games, so no further detail is needed. · feeds EXP-02
