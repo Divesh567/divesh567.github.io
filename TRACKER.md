@@ -86,10 +86,10 @@ Order matters: batch 3 needs batch 2, and the site sync in batch 7 should wait f
 
 ### Multiplayer evidence
 
-- [ ] **MP-01** Write down the netcode work you actually did · P1 · S · you · provisional answer logged 2026-10-06, confirm whether any gameplay sync was written · [#3](https://github.com/Divesh567/divesh567.github.io/issues/3)
+- [x] **MP-01** Write down the netcode work you actually did · P1 · S · you · provisional answer logged 2026-10-06, confirm whether any gameplay sync was written · [#3](https://github.com/Divesh567/divesh567.github.io/issues/3) · done 2026-10-07 · issue closed
   - Why: the CV headlines Multiplayer / Netcode, but no bullet shows networking work and the NGO course is the only evidence.
   - Done when: stack, authority model, what was synced, player counts, and your part versus the team's are logged under Decisions (or "none, live-ops side only").
-- [ ] **MP-02** Back up or reposition the multiplayer claim · P1 · S · both · needs MP-01 · draft 2026-10-06: skills chip now reads Multiplayer (Photon PUN) instead of Multiplayer / Netcode · [#9](https://github.com/Divesh567/divesh567.github.io/issues/9)
+- [x] **MP-02** Back up or reposition the multiplayer claim · P1 · S · both · needs MP-01 · draft 2026-10-06: skills chip now reads Multiplayer (Photon PUN) instead of Multiplayer / Netcode · [#9](https://github.com/Divesh567/divesh567.github.io/issues/9) · done 2026-10-07 · issue closed
   - Why: a senior engineer will ask how state was synced, and the CV cannot answer.
   - Done when: either one or two concrete netcode bullets name the stack, or the summary and skill chips describe the work as live-ops and meta-game multiplayer instead.
 
@@ -234,7 +234,7 @@ Answer these after all four summaries are in. When one is answered, change `(ope
 **FAUG**
 - **Q01** (answered 2026-10-07) For each FAUG bullet on the CV, where does the work live? All located. The 15 to 30 FPS optimization is not claimed (the CV has an overdraw fix and the scene-loading work instead). You rewrote the multi-reward grant logic, built the reward UI and integrated the third-party reward-claim flow. You led and built the battle-streak feature with one junior developer. You designed and built the announcement system, although the git summary missed it. You built the client for PlayFab TitleData remote config and A/B tests, which the team ran. You built the FBL client. · feeds EXP-02, EXP-08
 - **Q02** (answered 2026-10-07) What exactly is the "FBL League", and how does it relate to the ranked league and to the tournament and finals tooling? FBL is the FAU-G Bharat League, a weekly league system that led to two offline e-sports season finals. You built the flow, Firestore calls, client handling, league transitions and failure-handling UI. The ranked league in the git history is treated as the same system. · feeds EXP-02
-- **Q03** (open) Which networking pieces did you write: movement or shooting sync, loadout sync, matchmaking, connection handling? Roughly how many players per match? · feeds MP-01, MP-02
+- **Q03** (answered 2026-10-07) Which networking pieces did you write? You did not write gameplay sync (movement, shooting). Your Photon work was the connection, matchmaking and session layer, plus loadout sync to teammates. · feeds MP-01, MP-02
 - **Q04** (open) Load time: before and after figures from the load-time instrumentation. · feeds EXP-02
 - **Q05** (answered 2026-10-07) FPS work: devices, how it was measured, and the top three changes. Not claimed. The real work was an overdraw fix: wall textures had an alpha channel, so geometry behind them was still drawn; found with the Frame Debugger. · feeds EXP-02
 - **Q06** (open) Retention or engagement: which metric, before and after, and from which change or experiment. · feeds EXP-02
@@ -280,7 +280,7 @@ Already answered: target lane (POS-01), public CV contact details (CV-05), and t
 | Decision | Answer | Date |
 |---|---|---|
 | Target lane (POS-01) | Unity gameplay and live-ops engineer (VFX angle left out) | 2026-10-06 |
-| Netcode work in one line (MP-01) | Provisional: Photon PUN connection, matchmaking and session layer on FAUG; no gameplay state sync claimed yet | 2026-10-06 |
+| Netcode work in one line (MP-01) | Photon PUN connection, matchmaking and session layer on FAUG, plus loadout sync; no gameplay state sync | 2026-10-07 |
 | Public CV: phone, postal code, photo (CV-05) | Photo, phone number and postal code removed; location shows "Mumbai, India". | 2026-10-06 |
 | Availability line (MISS-03) | | |
 
