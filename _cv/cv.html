@@ -80,7 +80,8 @@
     <li>Integrated the growth stack: AdMob and Unity Ads behind JSON-configured placements, In-App Review prompts, and a JSON-driven Firebase Analytics layer plus AppsFlyer events.</li>
     <li>Reworked the third-person camera (blend, wall collision, aim reticle fixes) and added a grenade package.</li>
     <li>Added cheater flagging, player and chat reporting, username validation, and a test-device tool that keeps QA purchases out of analytics.</li>
-    <li>Cut load time by reusing loaded scenes on same-map Play Again, enabled mipmap streaming for the player's own weapon, set up a one-command Android build, and wrote design docs for Teams, Play Again, leaderboards and tournaments.</li>
+    <li>Diagnosed and fixed an overdraw bug using the Frame Debugger: alpha in wall textures made the renderer draw geometry hidden behind walls.</li>
+    <li>Sped up scene loading with load-time instrumentation, scene reuse on same-map Play Again and mipmap streaming for the player's own weapon; set up a one-command Android build and wrote design docs for Teams, Play Again, leaderboards and tournaments.</li>
   </ul>
   <h3>Chapter 26: Casual Multiplayer Games &amp; Social App</h3>
   <ul>

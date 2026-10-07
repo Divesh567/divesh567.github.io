@@ -62,7 +62,7 @@ Order matters: batch 3 needs batch 2, and the site sync in batch 7 should wait f
 - [ ] **EXP-01** Collect real numbers and facts (worksheet below) · P1 · M · you · work summaries: all four sources received 2026-10-06 (FAUG, Chapter 26, both Mahabharat apps, Steady Light); the open questions are next · [#2](https://github.com/Divesh567/divesh567.github.io/issues/2)
   - Why: the bullets lack baselines, scale and results, so rewrites are guesswork without them.
   - Done when: every worksheet question is answered or marked "not available".
-- [ ] **EXP-02** Rewrite the FAUG bullets · P1 · M · both · needs EXP-01 · draft applied 2026-10-06 from the git history; unconfirmed claims left out until Q01 to Q08 are answered · [#6](https://github.com/Divesh567/divesh567.github.io/issues/6)
+- [ ] **EXP-02** Rewrite the FAUG bullets · P1 · M · both · needs EXP-01 · draft applied 2026-10-06 from the git history; unconfirmed claims left out until Q01 to Q08 are answered · FPS claim removed and overdraw fix added 2026-10-07, on the CV and the site · [#6](https://github.com/Divesh567/divesh567.github.io/issues/6)
   - Why: the bullets say what was built, not the scale, the method or the result.
   - Done when: each bullet has action, scope, tech and result; the FPS gain says how and on which devices; retention and A/B claims carry numbers or a named experiment; "Fixed backend, multiplayer, flow, and performance issues across the product" is replaced with something specific or deleted.
 - [ ] **EXP-03** Rewrite the Chapter 26 bullets · P1 · M · both · needs EXP-01 · draft applied 2026-10-06; client-only wording for tournaments, minigame claim reworded to fixes (see Q09, Q10) · [#7](https://github.com/Divesh567/divesh567.github.io/issues/7)
@@ -134,7 +134,7 @@ Order matters: batch 3 needs batch 2, and the site sync in batch 7 should wait f
   - Note: Steady Light is the best source, since it is your own code (event channels, dependency injection, save system, editor tools). Leave out purchased packages and art (DOTween, Odin, Cartoon FX, Joystick Pack), because their licenses do not allow redistribution.
 - [ ] **PUB-02** Write a short technical post · P2 · M · you · [#25](https://github.com/Divesh567/divesh567.github.io/issues/25)
   - Why: it shows how you reason about performance, not only the result.
-  - Done when: a post such as "15 to 30 FPS on 4GB devices: what changed and how it was measured" is linked from the site. Get Dot9's OK first.
+  - Done when: a post such as "Finding hidden overdraw with the Frame Debugger: alpha in wall textures" is linked from the site. Get Dot9's OK first.
 - [ ] **PUB-03** Review your GitHub profile as an employer would · P1 · S · you · [#4](https://github.com/Divesh567/divesh567.github.io/issues/4)
   - Why: reviewers open GitHub early, and pinned repos, the profile README and repo descriptions should show Unity work. This needs a manual pass.
   - Done when: pinned repos, profile README, descriptions and repo visibility are reviewed, and any findings are added here as new tasks.
@@ -232,11 +232,11 @@ Claims to check for Steady Light (Immersiveorama): solo-developed 2D physics pla
 Answer these after all four summaries are in. When one is answered, change `(open)` to `(answered DATE)` and move the answer into the Decisions table or the task it feeds.
 
 **FAUG**
-- **Q01** (open) For each FAUG bullet on the CV, where does the work live (branch, commit range, design doc, or a colleague who can vouch)? Bullets to locate: the FPS optimization, the reward system for skins and unlockables, the battle-streak system, the announcement system, the A/B tests, and the e-sports league work. · feeds EXP-02, EXP-08
+- **Q01** (partly answered 2026-10-07) For each FAUG bullet on the CV, where does the work live (branch, commit range, design doc, or a colleague who can vouch)? The 15 to 30 FPS optimization is not claimed; the CV now describes an overdraw fix found with the Frame Debugger, and the scene-loading work. Still to locate: the reward system for skins and unlockables, the battle-streak system, the announcement system, the A/B tests, and the e-sports league work. · feeds EXP-02, EXP-08
 - **Q02** (open) What exactly is the "FBL League", and how does it relate to the ranked league and to the tournament and finals tooling? · feeds EXP-02
 - **Q03** (open) Which networking pieces did you write: movement or shooting sync, loadout sync, matchmaking, connection handling? Roughly how many players per match? · feeds MP-01, MP-02
 - **Q04** (open) Load time: before and after figures from the load-time instrumentation. · feeds EXP-02
-- **Q05** (open) FPS work: devices, how it was measured, and the top three changes. · feeds EXP-02
+- **Q05** (answered 2026-10-07) FPS work: devices, how it was measured, and the top three changes. Not claimed. The real work was an overdraw fix: wall textures had an alpha channel, so geometry behind them was still drawn; found with the Frame Debugger. · feeds EXP-02
 - **Q06** (open) Retention or engagement: which metric, before and after, and from which change or experiment. · feeds EXP-02
 - **Q07** (open) Exact provider names for voice chat and ad mediation, and whether hack detection is custom or an SDK. Do not name them on the CV until confirmed. · feeds EXP-02, SK-01
 - **Q08** (open) Which details are cleared to publish (partner names, event names, prize or KYC flows)? Default: describe them generically. · feeds EXP-02, EXP-03
