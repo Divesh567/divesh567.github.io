@@ -77,13 +77,13 @@
     <li>Developed the clan layer on Firestore (create, join, invite, disband, missions, daily login tracking), then the Teams system: invite-based match leadership, party matchmaking, live loadout sync, and server-owned team chat with reporting.</li>
     <li>Engineered the Photon connection layer: best-ping region selection, Play Again restart, master-client takeover on heartbeat loss, high-ping drop to offline mode, and fixes for matchmaking bugs such as stale team indices.</li>
     <li>Created the offline tournament system for a live finals event: Firestore data model, room-code match setup, player seating by user ID, score posting at game over, and device-aware control layouts.</li>
-    <li>Rewrote the multi-reward grant logic, built the reward UI for skins, accessories and multi-item rewards, and integrated a third-party reward-claim flow (web view, credit rules, result-page and main-menu UI, notification badges).</li>
+    <li>Rewrote the multi-reward grant logic, built the reward UI for skins, accessories and multi-item rewards, and integrated a third-party reward-claim flow with its result-page and main-menu UI.</li>
     <li>Led the battle-streak feature with one junior developer, including the design doc and streak-reset fixes.</li>
-    <li>Integrated the growth stack: AdMob and Unity Ads behind JSON-configured placements, In-App Review prompts, and a JSON-driven Firebase Analytics layer plus AppsFlyer events.</li>
+    <li>Integrated AdMob and Unity Ads behind JSON-configured placements, In-App Review prompts, and a JSON-driven Firebase Analytics layer plus AppsFlyer events.</li>
     <li>Reworked the third-person camera (blend, wall collision, aim reticle fixes) and added a grenade package.</li>
-    <li>Added cheater flagging, player and chat reporting, username validation, and a test-device tool that keeps QA purchases out of analytics.</li>
-    <li>Diagnosed and fixed an overdraw bug using the Frame Debugger: alpha in wall textures made the renderer draw geometry hidden behind walls.</li>
-    <li>Sped up scene loading with load-time instrumentation, scene reuse on same-map Play Again and mipmap streaming for the player's own weapon; set up a one-command Android build and wrote design docs for Teams, Play Again, leaderboards and tournaments.</li>
+    <li>Added cheater flagging, player and chat reporting, username validation, and a QA test-device tool.</li>
+    <li>Diagnosed and fixed an overdraw bug with the Frame Debugger: alpha in wall textures made the renderer draw geometry behind walls.</li>
+    <li>Sped up scene loading (load-time instrumentation, scene reuse on Play Again, mipmap streaming); added a one-command Android build and design docs for Teams, Play Again, leaderboards and tournaments.</li>
   </ul>
   <h3>Chapter 26: Casual Multiplayer Games &amp; Social App</h3>
   <ul>
