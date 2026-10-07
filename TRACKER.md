@@ -243,7 +243,7 @@ Answer these after all four summaries are in. When one is answered, change `(ope
 
 **Chapter 26**
 - **Q09** (answered 2026-10-07) Which minigames did you build, and which did you fix or integrate? You built none of them; you fixed bugs in Carrom, Blink, Ludo and football penalty. The git history also showed Baloot exit bugs, which are not on the CV. · feeds EXP-03
-- **Q10** (open) Tournaments and leaderboards: client only, or any backend work too? · feeds EXP-03
+- **Q10** (answered 2026-10-07) Tournaments and leaderboards: client only, or any backend work too? Client side only. The CV says "against the backend API", and the site no longer claims a GCP backend or lists GCP as a skill. · feeds EXP-03
 - **Q11** (open) Team size, and the month the hub shipped. · feeds EXP-03, TL-01
 - **Q12** (open) Confirm the tools named on the CV (I2 Localization, YouTube live-cast). · feeds EXP-03, SK-01
 
