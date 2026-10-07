@@ -232,7 +232,7 @@ Claims to check for Steady Light (Immersiveorama): solo-developed 2D physics pla
 Answer these after all four summaries are in. When one is answered, change `(open)` to `(answered DATE)` and move the answer into the Decisions table or the task it feeds.
 
 **FAUG**
-- **Q01** (partly answered 2026-10-07) For each FAUG bullet on the CV, where does the work live (branch, commit range, design doc, or a colleague who can vouch)? The 15 to 30 FPS optimization is not claimed; the CV now describes an overdraw fix found with the Frame Debugger, and the scene-loading work. The reward work is answered (2026-10-07): you rewrote the multi-reward grant logic, built the reward UI for skins, accessories and multi-item rewards, and integrated the third-party reward-claim flow. The battle-streak feature is answered (2026-10-07): you led it with one junior developer, and you designed the system and built the streak logic, flow and most of the UI. Still to locate: the announcement system, the A/B tests, and the e-sports league work. · feeds EXP-02, EXP-08
+- **Q01** (partly answered 2026-10-07) For each FAUG bullet on the CV, where does the work live (branch, commit range, design doc, or a colleague who can vouch)? The 15 to 30 FPS optimization is not claimed; the CV now describes an overdraw fix found with the Frame Debugger, and the scene-loading work. The reward work is answered (2026-10-07): you rewrote the multi-reward grant logic, built the reward UI for skins, accessories and multi-item rewards, and integrated the third-party reward-claim flow. The battle-streak feature is answered (2026-10-07): you led it with one junior developer, and you designed the system and built the streak logic, flow and most of the UI. The announcement system is answered (2026-10-07): you designed and built it end to end, from Firestore calls to logic to UI, although the git summary missed it. Still to locate: the A/B tests and the e-sports league work. · feeds EXP-02, EXP-08
 - **Q02** (open) What exactly is the "FBL League", and how does it relate to the ranked league and to the tournament and finals tooling? · feeds EXP-02
 - **Q03** (open) Which networking pieces did you write: movement or shooting sync, loadout sync, matchmaking, connection handling? Roughly how many players per match? · feeds MP-01, MP-02
 - **Q04** (open) Load time: before and after figures from the load-time instrumentation. · feeds EXP-02
@@ -261,6 +261,7 @@ Answer these after all four summaries are in. When one is answered, change `(ope
 - **Q29** (open) Which of the packaged tools in the board game repo did you write yourself (3D dice package, feedback-form tool, shaders package), and which are third-party? · feeds EXP-04, SK-01
 - **Q30** (open) The draft CV leaves out the intern graphics pass, the level-design claims and the 40% figure, because the summaries do not show them. If they are real, where do they live? · feeds EXP-04, EXP-08
 - **Q31** (answered 2026-10-07) Cinegence VFX job: exact start and end month. Started August 2019, left in March 2020, rejoined for about two months after the lockdown, then left the industry for game development. The CV's 2021 end date was wrong and now reads 2020. · feeds TL-01, EXP-07
+- **Q32** (open) Announcement module details to pull from the code: which player traits drive the targeting, the message types, and what the UI shows. · feeds EXP-02
 
 **Across roles**
 - **Q19** (answered 2026-10-07) Exact start and end month for every job, what you did in 2021 to 2022, and any gap in 2024 to 2025. BoredLeaders (February 2023 to December 2024) and Dot9 (April 2025) are confirmed, leaving a gap of about three months. In 2020 to 2022 you taught yourself Unity after a VFX job ended in the lockdown, published a first game in October 2020 (since removed from the Play Store), then built Steady Light. The VFX job dates are tracked in Q31. · feeds TL-01
@@ -286,6 +287,6 @@ Already answered: target lane (POS-01), public CV contact details (CV-05), and t
 ## GitHub tracking
 
 - Parent issue: [#1 CV and portfolio improvement](https://github.com/Divesh567/divesh567.github.io/issues/1). Every open task has a sub-issue under it, labelled `batch:N`, priority (`P1`, `P2`), `owner:you`, `owner:claude` or `owner:both`, and `area:*`.
-- The open questions (Q01 to Q31) stay in this file. Each task issue lists the questions it needs.
+- The open questions (Q01 to Q32) stay in this file. Each task issue lists the questions it needs.
 - Tasks finished before the issues were created (CV-01 to CV-05, EXP-05, POS-01, WEB-00) have no issue.
 - Project board: the tooling used for this repo can create issues and labels but not GitHub Projects. To get a board, open the repository's Projects tab, create a new Board project, then use "Add item" to pick the open issues. Filter or group by the `batch:N` labels.
