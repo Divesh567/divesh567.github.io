@@ -74,7 +74,7 @@ Order matters: batch 3 needs batch 2, and the site sync in batch 7 should wait f
 - [x] **EXP-05** Merge Intern and Junior at BoredLeaders, vary bullet openers, lead with the strongest bullet · P1 · S · claude · done 2026-10-05 (a8cd93c)
   - Why: the same company appears twice for 2023 with two bullets on the intern role, "Built" opens 8 of the 26 bullets, and the strongest bullets sit at positions 2 and 4.
   - Done when: one entry shows the promotion, no verb opens more than two bullets, and the strongest bullet comes first in each role.
-- [ ] **EXP-06** Clarify the Immersiveorama entry · P2 · S · both · [#13](https://github.com/Divesh567/divesh567.github.io/issues/13)
+- [ ] **EXP-06** Clarify the Immersiveorama entry · P2 · S · both · release and update dates confirmed 2026-10-07 and on the CV · [#13](https://github.com/Divesh567/divesh567.github.io/issues/13)
   - Why: it reads like an employer, and solo work is judged differently.
   - Done when: it says solo or self-employed and links Steady Light with installs or rating if you have them. Also confirm the live store title matches the name on the CV (the site's store link uses the package id `LightForce`).
 - [ ] **EXP-07** Fix the Cinegence wording and trim the VFX role · P2 · S · both · [#14](https://github.com/Divesh567/divesh567.github.io/issues/14)
@@ -104,7 +104,7 @@ Order matters: batch 3 needs batch 2, and the site sync in batch 7 should wait f
 
 ### Timeline and credibility
 
-- [ ] **TL-01** Add months to all dates and explain the transitions · P1 · S · both · needs EXP-01 · BoredLeaders and Dot9 months done 2026-10-07; Immersiveorama months and the 2021 to 2022 transition still open · [#12](https://github.com/Divesh567/divesh567.github.io/issues/12)
+- [ ] **TL-01** Add months to all dates and explain the transitions · P1 · S · both · needs EXP-01 · BoredLeaders, Dot9 and Steady Light release dates done 2026-10-07; the Steady Light start month and the 2021 to 2022 transition still open · [#12](https://github.com/Divesh567/divesh567.github.io/issues/12)
   - Why: year-only dates make 2021 to 2022 (VFX to Unity) and 2024 to 2025 look like gaps and hide how long each role lasted.
   - Done when: every role has a month and year, and one line covers the VFX-to-Unity move and any gap.
 - [ ] **TL-02** Reconcile numbers across the CV and the site · P1 · S · both · partly resolved 2026-10-06: the CV now counts five titles (two Mahabharat apps), matching the site's 5+; the iOS claim is still open · [#21](https://github.com/Divesh567/divesh567.github.io/issues/21)
@@ -256,7 +256,7 @@ Answer these after all four summaries are in. When one is answered, change `(ope
 **Immersiveorama and Steady Light** (summary pending)
 - **Q17** (open) Steady Light store numbers: installs, rating, and the Firebase figures you can pull (users, day 1 and day 7 retention, level completion rate). The level count is answered: about 45 across 6 worlds. · feeds EXP-06
 - **Q18** (open) Was the game renamed? The Play Store link uses `LightForce`. · feeds EXP-06, TL-02
-- **Q27** (open) Steady Light timeline: the CV and site say 2022 to 2023, but the git history runs February 2024 to July 2026. When was the first Play Store release, and what happened since (updates, a rebuild)? It overlaps with the BoredLeaders and Dot9 roles, so how should the CV describe that (for example, an independent project alongside full-time work)? Also confirm whether to call it a physics puzzle game rather than a platformer. · feeds EXP-06, TL-01, TL-02
+- **Q27** (partly answered 2026-10-07) Steady Light timeline. First released October 2022, about six months of active updates, rare updates after that, last update February 2026. The repo history was changed once, so its dates differ from the CV's. Still open: when development started, and whether to call it a physics puzzle game rather than a platformer. · feeds EXP-06, TL-01, TL-02
 - **Q28** (open) The site says "400+ level narrative puzzle game" and a "meta loop that connects the three games". The repos show 375+ story pages, 126 image puzzles and 50 jigsaws in one app, and a separate board game app. Which numbers should the CV and site use, and is there a cross-game meta loop? · feeds EXP-04, TL-02, WEB-02
 - **Q29** (open) Which of the packaged tools in the board game repo did you write yourself (3D dice package, feedback-form tool, shaders package), and which are third-party? · feeds EXP-04, SK-01
 - **Q30** (open) The draft CV leaves out the intern graphics pass, the level-design claims and the 40% figure, because the summaries do not show them. If they are real, where do they live? · feeds EXP-04, EXP-08
