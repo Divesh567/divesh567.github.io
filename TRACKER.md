@@ -104,7 +104,7 @@ Order matters: batch 3 needs batch 2, and the site sync in batch 7 should wait f
 
 ### Timeline and credibility
 
-- [ ] **TL-01** Add months to all dates and explain the transitions · P1 · S · both · needs EXP-01 · BoredLeaders dates done 2026-10-07 (Feb 2023 to Dec 2024); Dot9 and Immersiveorama months still open · [#12](https://github.com/Divesh567/divesh567.github.io/issues/12)
+- [ ] **TL-01** Add months to all dates and explain the transitions · P1 · S · both · needs EXP-01 · BoredLeaders and Dot9 months done 2026-10-07; Immersiveorama months and the 2021 to 2022 transition still open · [#12](https://github.com/Divesh567/divesh567.github.io/issues/12)
   - Why: year-only dates make 2021 to 2022 (VFX to Unity) and 2024 to 2025 look like gaps and hide how long each role lasted.
   - Done when: every role has a month and year, and one line covers the VFX-to-Unity move and any gap.
 - [ ] **TL-02** Reconcile numbers across the CV and the site · P1 · S · both · partly resolved 2026-10-06: the CV now counts five titles (two Mahabharat apps), matching the site's 5+; the iOS claim is still open · [#21](https://github.com/Divesh567/divesh567.github.io/issues/21)
@@ -262,7 +262,7 @@ Answer these after all four summaries are in. When one is answered, change `(ope
 - **Q30** (open) The draft CV leaves out the intern graphics pass, the level-design claims and the 40% figure, because the summaries do not show them. If they are real, where do they live? · feeds EXP-04, EXP-08
 
 **Across roles**
-- **Q19** (open) Exact start and end month for every job, what you did in 2021 to 2022, and any gap in 2024 to 2025. The first FAUG commit is in April 2025; confirm the actual joining date. · feeds TL-01
+- **Q19** (partly answered 2026-10-07) Exact start and end month for every job, what you did in 2021 to 2022, and any gap in 2024 to 2025. BoredLeaders (February 2023 to December 2024) and Dot9 (April 2025) are confirmed, which leaves a gap of about three months between them. Still open: what you did in 2021 to 2022, and the Immersiveorama months. · feeds TL-01
 - **Q20** (open) Installs bracket and rating for each store listing: FAUG, Chapter 26, the two Mahabharat apps, Steady Light. · feeds MISS-02
 - **Q21** (open) Team size per project, and which parts were yours alone. · feeds EXP-08
 - **Q22** (open) Summary headline: "Unity gameplay and live-ops engineer" as chosen, or live-ops first with gameplay (camera, grenades, loadout sync) as supporting evidence? · feeds POS-02
