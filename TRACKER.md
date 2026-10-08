@@ -68,7 +68,7 @@ Order matters: batch 3 needs batch 2, and the site sync in batch 7 should wait f
   - Done when: each bullet has action, scope, tech and result; the FPS gain says how and on which devices; retention and A/B claims carry numbers or a named experiment; "Fixed backend, multiplayer, flow, and performance issues across the product" is replaced with something specific or deleted.
 - [ ] **EXP-03** Rewrite the Chapter 26 bullets · P1 · M · both · needs EXP-01 · draft applied 2026-10-06; client-only wording for tournaments, minigame claim reworded to fixes (see Q09, Q10) · [#7](https://github.com/Divesh567/divesh567.github.io/issues/7)
   - Why: it is unclear what was client and what was backend, and the clan system is worded almost the same as in FAUG.
-  - Done when: tournaments and leaderboards say whether you built the backend, the client, or both; the clan system says whether it is a reusable module shared with FAUG; "a few months" becomes real dates; Arabic localization mentions right-to-left handling if it applies.
+  - Done when: tournaments and leaderboards say whether you built the backend, the client, or both; the clan system says whether it is a reusable module shared with FAUG; "a few months" becomes real dates (done 2026-10-08, released Jul 2026); Arabic localization mentions right-to-left handling if it applies.
 - [ ] **EXP-04** Bring Mahabharat into the BoredLeaders entry · P1 · M · both · needs EXP-01 · draft applied 2026-10-06 for both Mahabharat apps; the 40% figure and intern claims left out (see Q14, Q28 to Q30) · [#8](https://github.com/Divesh567/divesh567.github.io/issues/8)
   - Why: Mahabharat is a Shipped Titles tile but appears in no bullet, while the site holds the best engineering detail (400+ level CSV-driven narrative puzzle, 50-level data-driven jigsaw, 3D Ludo with power-ups, Firebase).
   - Done when: the CV carries those points, "AI-driven NPC behaviors" is tied to a specific title and technique, and "improved performance by 40%" names the metric and the device.
@@ -245,7 +245,7 @@ Answer these after all four summaries are in. When one is answered, change `(ope
 **Chapter 26**
 - **Q09** (answered 2026-10-07) Which minigames did you build, and which did you fix or integrate? You built none of them; you fixed bugs in Carrom, Blink, Ludo and football penalty. The git history also showed Baloot exit bugs, which are not on the CV. · feeds EXP-03
 - **Q10** (answered 2026-10-07) Tournaments and leaderboards: client only, or any backend work too? Client side only. The CV says "against the backend API", and the site no longer claims a GCP backend or lists GCP as a skill. · feeds EXP-03
-- **Q11** (open) Team size, and the month the hub shipped. · feeds EXP-03, TL-01
+- **Q11** (answered 2026-10-08) Team size, and the month the hub shipped. The team was 9 developers, 3 2D artists and 2 3D artists. Released 29 July 2026. The CV and the site card now say "released in Jul 2026 by a team of 9 developers and 5 artists". · feeds EXP-03, TL-01
 - **Q12** (dropped 2026-10-07) Confirm the tools named on the CV for Chapter 26. The CV no longer names tools for Dot9's games. · feeds EXP-03, SK-01
 
 **BoredLeaders and Mahabharat** (summary pending)
