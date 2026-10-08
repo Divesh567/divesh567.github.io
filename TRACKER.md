@@ -120,7 +120,7 @@ Order matters: batch 3 needs batch 2, and the site sync in batch 7 should wait f
 - [ ] **MISS-02** Make Shipped Titles clickable with installs and ratings · P1 · S · you, then claude · [#18](https://github.com/Divesh567/divesh567.github.io/issues/18)
   - Why: the CV tiles carry no links or numbers, while the site already has store links.
   - Done when: each title links to its store page with an installs bracket and rating read from the live listing.
-- [ ] **MISS-03** Add availability · P2 · S · you · [#19](https://github.com/Divesh567/divesh567.github.io/issues/19)
+- [x] **MISS-03** Add availability · P2 · S · you · done 2026-10-08 (notice period and remote and relocation on the CV; remote and relocation on the site; work authorization left off until applying outside India) · [#19](https://github.com/Divesh567/divesh567.github.io/issues/19)
   - Why: nothing says when you can start or where you can work.
   - Done when: notice period, location, remote or relocation preference, and work authorization (for non-India applications) are decided and one line is added.
 - [ ] **MISS-04** Add an engineering-practice line · P2 · S · you, then claude · [#20](https://github.com/Divesh567/divesh567.github.io/issues/20)
@@ -270,7 +270,7 @@ Answer these after all four summaries are in. When one is answered, change `(ope
 - **Q21** (open) Team size per project, and which parts were yours alone. Known so far: on FAUG you led the battle-streak feature with one junior developer and built most of it. · feeds EXP-08
 - **Q22** (open) Summary headline: "Unity gameplay and live-ops engineer" as chosen, or live-ops first with gameplay (camera, grenades) as supporting evidence? · feeds POS-02
 - **Q23** (open) GitHub profile review: pinned repos, profile README, repo descriptions, anything to fix or hide. · feeds PUB-03
-- **Q24** (partly answered 2026-10-08: LinkedIn is linkedin.com/in/divesh-dogra-2a689a191, added to the CV and the site). Still open: any App Store links, notice period, location, remote and relocation preferences, and work authorization. · feeds MISS-01, MISS-02, MISS-03, TL-02
+- **Q24** (partly answered 2026-10-08: LinkedIn is linkedin.com/in/divesh-dogra-2a689a191, added to the CV and the site). Notice period (30 days) and remote and relocation (yes) answered the same day and added to the CV. Still open: any App Store links, and work authorization for non-India applications. · feeds MISS-01, MISS-02, MISS-03, TL-02
 - **Q25** (open) Cinegence: which films or shows can be named, what your part was, and which tools you used. · feeds EXP-07
 - **Q26** (open) Unity versions, source control, build or CI pipeline, bug tracker, and how QA and backend worked with you. · feeds MISS-04
 
@@ -283,7 +283,7 @@ Already answered: target lane (POS-01), public CV contact details (CV-05), and t
 | Target lane (POS-01) | Unity gameplay and live-ops engineer (VFX angle left out) | 2026-10-06 |
 | Netcode work in one line (MP-01) | Photon connection and matchmaking layer on FAUG; no gameplay state sync | 2026-10-07 |
 | Public CV: phone, postal code, photo (CV-05) | Photo, phone number and postal code removed; location shows "Mumbai, India". | 2026-10-06 |
-| Availability line (MISS-03) | | |
+| Availability line (MISS-03) | CV header: "Mumbai, India · open to remote and relocation" and "Notice period: 30 days". Site contact section: open to remote work and relocation (no notice period). Work authorization not stated. | 2026-10-08 |
 
 ## GitHub tracking
 
