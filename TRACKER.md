@@ -114,7 +114,7 @@ Order matters: batch 3 needs batch 2, and the site sync in batch 7 should wait f
 
 ### Links and reach
 
-- [ ] **MISS-01** Add LinkedIn to the CV and the site · P1 · S · you, then claude · [#17](https://github.com/Divesh567/divesh567.github.io/issues/17)
+- [x] **MISS-01** Add LinkedIn to the CV and the site · P1 · S · you, then claude · done 2026-10-08 (CV header, site hero and contact buttons) · [#17](https://github.com/Divesh567/divesh567.github.io/issues/17)
   - Why: recruiters check LinkedIn first, and neither the CV nor the site links to it.
   - Done when: the link is in the CV header and in the site's hero and contact buttons (needs the URL).
 - [ ] **MISS-02** Make Shipped Titles clickable with installs and ratings · P1 · S · you, then claude · [#18](https://github.com/Divesh567/divesh567.github.io/issues/18)
@@ -270,7 +270,7 @@ Answer these after all four summaries are in. When one is answered, change `(ope
 - **Q21** (open) Team size per project, and which parts were yours alone. Known so far: on FAUG you led the battle-streak feature with one junior developer and built most of it. · feeds EXP-08
 - **Q22** (open) Summary headline: "Unity gameplay and live-ops engineer" as chosen, or live-ops first with gameplay (camera, grenades) as supporting evidence? · feeds POS-02
 - **Q23** (open) GitHub profile review: pinned repos, profile README, repo descriptions, anything to fix or hide. · feeds PUB-03
-- **Q24** (open) LinkedIn URL, any App Store links, notice period, location, remote and relocation preferences, and work authorization. · feeds MISS-01, MISS-02, MISS-03, TL-02
+- **Q24** (partly answered 2026-10-08: LinkedIn is linkedin.com/in/divesh-dogra-2a689a191, added to the CV and the site). Still open: any App Store links, notice period, location, remote and relocation preferences, and work authorization. · feeds MISS-01, MISS-02, MISS-03, TL-02
 - **Q25** (open) Cinegence: which films or shows can be named, what your part was, and which tools you used. · feeds EXP-07
 - **Q26** (open) Unity versions, source control, build or CI pipeline, bug tracker, and how QA and backend worked with you. · feeds MISS-04
 
