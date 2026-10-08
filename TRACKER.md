@@ -51,7 +51,7 @@ Order matters: batch 3 needs batch 2, and the site sync in batch 7 should wait f
 - [x] **POS-01** Pick your target lane · P1 · S · you · done 2026-10-06
   - Why: the CV reads as a generalist (gameplay, multiplayer, live-ops, shaders, lighting, UI, VFX) with no target role.
   - Done when: one sentence is agreed and logged under Decisions, for example "Unity gameplay and live-ops engineer with a VFX and tech-art background".
-- [ ] **POS-02** Rewrite the summary · P1 · S · both · needs POS-01, EXP-01 · draft applied 2026-10-06, awaiting your review; still has no measurable proof points · [#5](https://github.com/Divesh567/divesh567.github.io/issues/5)
+- [x] **POS-02** Rewrite the summary · P1 · S · both · needs POS-01, EXP-01 · done 2026-10-08: live-ops first, simulator line removed; no performance or retention proof points because of the confidentiality rule, so the proof is the shipped titles and visible counts · [#5](https://github.com/Divesh567/divesh567.github.io/issues/5)
   - Why: "Strong in..." is self-rating, and the summary names no role and no proof.
   - Done when: two to three sentences with the target role, the lane, and two measurable proof points.
 - [ ] **POS-03** Surface the VFX to tech-art to engineering story · P2 · S · both · optional now: lane A was chosen without the VFX angle, drop unless wanted · [#16](https://github.com/Divesh567/divesh567.github.io/issues/16)
@@ -268,7 +268,7 @@ Answer these after all four summaries are in. When one is answered, change `(ope
 - **Q19** (answered 2026-10-07) Exact start and end month for every job, what you did in 2021 to 2022, and any gap in 2024 to 2025. BoredLeaders (February 2023 to December 2024) and Dot9 (April 2025) are confirmed, leaving a gap of about three months. In 2020 to 2022 you taught yourself Unity after a VFX job ended in the lockdown, published a first game in October 2020 (since removed from the Play Store), then built Steady Light. The VFX job dates are tracked in Q31. · feeds TL-01
 - **Q20** (open) Installs bracket and rating for each store listing: FAUG, Chapter 26, the two Mahabharat apps, Steady Light. · feeds MISS-02
 - **Q21** (open) Team size per project, and which parts were yours alone. Known so far: on FAUG you led the battle-streak feature with one junior developer and built most of it. · feeds EXP-08
-- **Q22** (open) Summary headline: "Unity gameplay and live-ops engineer" as chosen, or live-ops first with gameplay (camera, grenades) as supporting evidence? · feeds POS-02
+- **Q22** (answered 2026-10-08) Summary headline: live-ops first, with gameplay as supporting evidence. The summary now opens "Unity live-ops and gameplay engineer", and the "bot-vs-bot balancing simulator" phrase is gone. · feeds POS-02
 - **Q23** (open) GitHub profile review: pinned repos, profile README, repo descriptions, anything to fix or hide. · feeds PUB-03
 - **Q24** (partly answered 2026-10-08: LinkedIn is linkedin.com/in/divesh-dogra-2a689a191, added to the CV and the site). Notice period (30 days) and remote and relocation (yes) answered the same day and added to the CV. Still open: any App Store links, and work authorization for non-India applications. · feeds MISS-01, MISS-02, MISS-03, TL-02
 - **Q25** (open) Cinegence: which films or shows can be named, what your part was, and which tools you used. · feeds EXP-07
@@ -280,7 +280,7 @@ Already answered: target lane (POS-01), public CV contact details (CV-05), and t
 
 | Decision | Answer | Date |
 |---|---|---|
-| Target lane (POS-01) | Unity gameplay and live-ops engineer (VFX angle left out) | 2026-10-06 |
+| Target lane (POS-01) | Unity live-ops and gameplay engineer, live-ops first (VFX angle left out) | 2026-10-08 |
 | Netcode work in one line (MP-01) | Photon connection and matchmaking layer on FAUG; no gameplay state sync | 2026-10-07 |
 | Public CV: phone, postal code, photo (CV-05) | Photo, phone number and postal code removed; location shows "Mumbai, India". | 2026-10-06 |
 | Availability line (MISS-03) | CV header: "Mumbai, India · open to remote and relocation" and "Notice period: 30 days". Site contact section: open to remote work and relocation (no notice period). Work authorization not stated. | 2026-10-08 |
