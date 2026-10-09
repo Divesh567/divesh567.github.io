@@ -75,7 +75,7 @@ Order matters: batch 3 needs batch 2, and the site sync in batch 7 should wait f
 - [x] **EXP-05** Merge Intern and Junior at BoredLeaders, vary bullet openers, lead with the strongest bullet · P1 · S · claude · done 2026-10-05 (a8cd93c)
   - Why: the same company appears twice for 2023 with two bullets on the intern role, "Built" opens 8 of the 26 bullets, and the strongest bullets sit at positions 2 and 4.
   - Done when: one entry shows the promotion, no verb opens more than two bullets, and the strongest bullet comes first in each role.
-- [ ] **EXP-06** Clarify the Immersiveorama entry · P2 · S · both · release and update dates confirmed 2026-10-07 and on the CV · [#13](https://github.com/Divesh567/divesh567.github.io/issues/13)
+- [x] **EXP-06** Clarify the Immersiveorama entry · P2 · S · both · done 2026-10-09: dates, rename, solo and 590 installs with a 4.5 rating are on the CV and the site · [#13](https://github.com/Divesh567/divesh567.github.io/issues/13)
   - Why: it reads like an employer, and solo work is judged differently.
   - Done when: it says solo or self-employed and links Steady Light with installs or rating if you have them. Also confirm the live store title matches the name on the CV (the site's store link uses the package id `LightForce`).
 - [x] **EXP-07** Fix the Cinegence wording and trim the VFX role · P2 · S · both · done 2026-10-08 (two bullets, named films, Nuke described as compositing) · [#14](https://github.com/Divesh567/divesh567.github.io/issues/14)
@@ -255,7 +255,7 @@ Answer these after all four summaries are in. When one is answered, change `(ope
 - **Q16** (answered 2026-10-07) Intern start, junior start, and last month at the company. Intern from February 2023 for about six months, then junior, last month December 2024. Commit dates in the Puzzles of Mahabharat repo run later because the repo was changed once, so they do not show the real timeline. · feeds TL-01
 
 **Immersiveorama and Steady Light** (summary pending)
-- **Q17** (open) Steady Light store numbers: installs and rating only. No retention figures for any game. The level count is answered: about 45 across 6 worlds. · feeds EXP-06
+- **Q17** (answered 2026-10-09) Steady Light store numbers: 590 installs and a 4.5 rating, now on the CV and the site card. No retention figures for any game. The level count is answered: about 45 across 6 worlds. · feeds EXP-06
 - **Q18** (answered 2026-10-08) Was the game renamed? Yes. The original name was LightForce, and the Play Store now shows Steady Light. The Android package id still says `LightForce`, which fits. The CV and the site card say "originally released as LightForce". The rename date was not asked and is not stated. · feeds EXP-06, TL-02
 - **Q27** (answered 2026-10-08) Steady Light timeline and genre. Built while learning after the first game, first released October 2022, about six months of active updates, rare updates after that, last update February 2026. The repo history was changed once, so its dates differ from the CV's. Genre: it is a 2D physics platformer, so the CV was corrected from "puzzle game" to "platformer" and now matches the site. · feeds EXP-06, TL-02
 - **Q28** (answered 2026-10-07, by default) The site said "400+ level narrative puzzle game" and a "meta loop that connects the three games". The CV and site now use the repo counts (375+ story pages, 126 image puzzles, 50 jigsaws, 10 puzzle types) and no cross-game meta loop is claimed. Say so if the loop is real. · feeds EXP-04, TL-02, WEB-02
