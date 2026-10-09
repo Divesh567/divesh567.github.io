@@ -78,7 +78,7 @@ Order matters: batch 3 needs batch 2, and the site sync in batch 7 should wait f
 - [ ] **EXP-06** Clarify the Immersiveorama entry · P2 · S · both · release and update dates confirmed 2026-10-07 and on the CV · [#13](https://github.com/Divesh567/divesh567.github.io/issues/13)
   - Why: it reads like an employer, and solo work is judged differently.
   - Done when: it says solo or self-employed and links Steady Light with installs or rating if you have them. Also confirm the live store title matches the name on the CV (the site's store link uses the package id `LightForce`).
-- [ ] **EXP-07** Fix the Cinegence wording and trim the VFX role · P2 · S · both · [#14](https://github.com/Divesh567/divesh567.github.io/issues/14)
+- [x] **EXP-07** Fix the Cinegence wording and trim the VFX role · P2 · S · both · done 2026-10-08 (two bullets, named films, Nuke described as compositing) · [#14](https://github.com/Divesh567/divesh567.github.io/issues/14)
   - Why: "Used Nuke for CG effects and simulations" is imprecise (Nuke is a compositor, and simulations usually come from other tools), and the role takes as much space as the engineering roles.
   - Done when: the bullets say what you actually did and keep only lines relevant to tech art.
 - [ ] **EXP-08** Ownership and claims audit across all bullets · P1 · S · both · run last in the experience rewrite · [#15](https://github.com/Divesh567/divesh567.github.io/issues/15)
@@ -271,7 +271,7 @@ Answer these after all four summaries are in. When one is answered, change `(ope
 - **Q22** (answered 2026-10-08) Summary headline: live-ops first, with gameplay as supporting evidence. The summary now opens "Unity live-ops and gameplay engineer", and the "bot-vs-bot balancing simulator" phrase is gone. · feeds POS-02
 - **Q23** (open) GitHub profile review: pinned repos, profile README, repo descriptions, anything to fix or hide. · feeds PUB-03
 - **Q24** (partly answered 2026-10-08: LinkedIn is linkedin.com/in/divesh-dogra-2a689a191, added to the CV and the site). Notice period (30 days) and remote and relocation (yes) answered the same day and added to the CV. Still open: any App Store links, and work authorization for non-India applications. · feeds MISS-01, MISS-02, MISS-03, TL-02
-- **Q25** (open) Cinegence: which films or shows can be named, what your part was, and which tools you used. · feeds EXP-07
+- **Q25** (answered 2026-10-08) Cinegence: you worked first as a clean-up artist, then as a compositor, on feature films including Toofan, 83 (you wrote "World Cup 83") and Baaghi 3, and others you do not remember. TV shows were not confirmed, so they are off the CV and the site. The Nuke line was reworded to "compositing in Nuke"; say so if you used it for anything else. · feeds EXP-07
 - **Q26** (open) Unity versions, source control, build or CI pipeline, bug tracker, and how QA and backend worked with you. · feeds MISS-04
 
 Already answered: target lane (POS-01), public CV contact details (CV-05), and the netcode stack (Photon PUN, from the FAUG summary). See Decisions.
