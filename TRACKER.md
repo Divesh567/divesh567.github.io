@@ -123,7 +123,7 @@ Order matters: batch 3 needs batch 2, and the site sync in batch 7 should wait f
 - [x] **MISS-03** Add availability · P2 · S · you · done 2026-10-08 (notice period and remote and relocation on the CV; remote and relocation on the site; work authorization left off until applying outside India) · [#19](https://github.com/Divesh567/divesh567.github.io/issues/19)
   - Why: nothing says when you can start or where you can work.
   - Done when: notice period, location, remote or relocation preference, and work authorization (for non-India applications) are decided and one line is added.
-- [ ] **MISS-04** Add an engineering-practice line · P2 · S · you, then claude · [#20](https://github.com/Divesh567/divesh567.github.io/issues/20)
+- [x] **MISS-04** Add an engineering-practice line · P2 · S · you, then claude · done 2026-10-08: tools only (Unity 2022 LTS and Unity 6, Git, Mantis) added to the CV Skills line; no CI, code-review or QA process claimed, since none was confirmed · [#20](https://github.com/Divesh567/divesh567.github.io/issues/20)
   - Why: nothing shows version control, code review, build pipelines, or how you work with QA, backend and designers.
   - Done when: one line or two bullets cover them, only where true.
 
@@ -272,7 +272,7 @@ Answer these after all four summaries are in. When one is answered, change `(ope
 - **Q23** (open) GitHub profile review: pinned repos, profile README, repo descriptions, anything to fix or hide. · feeds PUB-03
 - **Q24** (partly answered 2026-10-08: LinkedIn is linkedin.com/in/divesh-dogra-2a689a191, added to the CV and the site). Notice period (30 days) and remote and relocation (yes) answered the same day and added to the CV. Still open: any App Store links, and work authorization for non-India applications. · feeds MISS-01, MISS-02, MISS-03, TL-02
 - **Q25** (answered 2026-10-08) Cinegence: you worked first as a clean-up artist, then as a compositor, on feature films including Toofan, 83 (you wrote "World Cup 83") and Baaghi 3, and others you do not remember. TV shows were not confirmed, so they are off the CV and the site. The Nuke line was reworded to "compositing in Nuke"; say so if you used it for anything else. · feeds EXP-07
-- **Q26** (open) Unity versions, source control, build or CI pipeline, bug tracker, and how QA and backend worked with you. · feeds MISS-04
+- **Q26** (answered 2026-10-08) Unity 2022 LTS, Git and Mantis (bug tracker). No CI pipeline or QA and backend process was given, so none is claimed. Steady Light uses Unity 6, which the CV already says. · feeds MISS-04
 
 Already answered: target lane (POS-01), public CV contact details (CV-05), and the netcode stack (Photon PUN, from the FAUG summary). See Decisions.
 
