@@ -81,7 +81,7 @@ Order matters: batch 3 needs batch 2, and the site sync in batch 7 should wait f
 - [x] **EXP-07** Fix the Cinegence wording and trim the VFX role · P2 · S · both · done 2026-10-08 (two bullets, named films, Nuke described as compositing) · [#14](https://github.com/Divesh567/divesh567.github.io/issues/14)
   - Why: "Used Nuke for CG effects and simulations" is imprecise (Nuke is a compositor, and simulations usually come from other tools), and the role takes as much space as the engineering roles.
   - Done when: the bullets say what you actually did and keep only lines relevant to tech art.
-- [ ] **EXP-08** Ownership and claims audit across all bullets · P1 · S · both · run last in the experience rewrite · [#15](https://github.com/Divesh567/divesh567.github.io/issues/15)
+- [x] **EXP-08** Ownership and claims audit across all bullets · P1 · S · both · run last in the experience rewrite · done 2026-10-22: team sizes on every project; Chapter 26 hub bullet now says "worked on"; loading bullet no longer names techniques; duplicate right-to-left mention removed · [#15](https://github.com/Divesh567/divesh567.github.io/issues/15)
   - Why: there are no team sizes, "I" versus "we" is unclear, and some bullets claim outcomes outside your control (for example "took the game into e-sports").
   - Done when: each role states team size and your part, and no bullet claims a business result you did not own.
 
@@ -96,10 +96,10 @@ Order matters: batch 3 needs batch 2, and the site sync in batch 7 should wait f
 
 ### Skills and certifications
 
-- [ ] **SK-01** Rebuild the skills block · P1 · S · both · [#10](https://github.com/Divesh567/divesh567.github.io/issues/10)
+- [x] **SK-01** Rebuild the skills block · P1 · S · both · done 2026-10-22: CV skills are grouped (engine and code, multiplayer and live-ops, graphics, tools); UI/UX, OOP, Debugging and World Design dropped; every listed skill has a bullet behind it · [#10](https://github.com/Divesh567/divesh567.github.io/issues/10)
   - Why: Unity is not listed as a skill, "OOP" and "Debugging" are table stakes, "UI/UX" and "Lighting / World Design" have no bullets behind them, and tools named in the bullets are missing.
   - Done when: skills are grouped (language, engine, backend and live-ops, tools); Unity and its version are listed; PlayFab, Firebase, GCP, Addressables, DOTween, Scriptable Objects, I2 Localization and remote config appear where true, along with the source control and profiling tools you actually use; every listed skill is backed by a bullet.
-- [ ] **SK-02** Trim the certifications · P1 · S · both · [#11](https://github.com/Divesh567/divesh567.github.io/issues/11)
+- [x] **SK-02** Trim the certifications · P1 · S · both · done 2026-10-22: certifications cut to Multiplayer in Unity with NGO, Shader Graphs for Effects and VFX for Movies, plus one line for the short programming courses; issuer, year and links not added because they were not provided · [#11](https://github.com/Divesh567/divesh567.github.io/issues/11)
   - Why: eight course titles with no issuer, date or link, and some read as tutorial projects.
   - Done when: only the strongest remain (candidates: Multiplayer in Unity with NGO, Shader Graphs for Effects), each with issuer, year and link, and the rest become a single "Courses" line or are removed.
 
@@ -108,7 +108,7 @@ Order matters: batch 3 needs batch 2, and the site sync in batch 7 should wait f
 - [x] **TL-01** Add months to all dates and explain the transitions · P1 · S · both · needs EXP-01 · done 2026-10-07: BoredLeaders, Dot9, VFX and the VFX-to-Unity story have months; Steady Light stays year-level because it is an independent project · [#12](https://github.com/Divesh567/divesh567.github.io/issues/12) · issue closed
   - Why: year-only dates make 2021 to 2022 (VFX to Unity) and 2024 to 2025 look like gaps and hide how long each role lasted.
   - Done when: every role has a month and year, and one line covers the VFX-to-Unity move and any gap.
-- [ ] **TL-02** Reconcile numbers across the CV and the site · P1 · S · both · partly resolved 2026-10-06: the CV now counts five titles (two Mahabharat apps), matching the site's 5+; the iOS claim was settled 2026-10-09: FAUG and Chapter 26 are on iOS, the rest are Android only, so the site's "Android and iOS" stays true and the CV tiles name the platforms; App Store links added 2026-10-22 · [#21](https://github.com/Divesh567/divesh567.github.io/issues/21)
+- [x] **TL-02** Reconcile numbers across the CV and the site · P1 · S · both · partly resolved 2026-10-06: the CV now counts five titles (two Mahabharat apps), matching the site's 5+; the iOS claim was settled 2026-10-09: FAUG and Chapter 26 are on iOS, the rest are Android only, so the site's "Android and iOS" stays true and the CV tiles name the platforms; App Store links added 2026-10-22 · done 2026-10-22: five titles, "4+ years" and Android and iOS are the same on the CV and the site; App Store links added · [#21](https://github.com/Divesh567/divesh567.github.io/issues/21)
   - Why: the site says 5+ titles and the CV shows 4, the site claims Android and iOS but every store link is Google Play, and "4+ years" is repeated in several places.
   - Done when: each claim has one number everywhere (meta description, stats board, about, hero tagline, CV), and the iOS claim has App Store links or is dropped.
 
@@ -146,7 +146,7 @@ Order matters: batch 3 needs batch 2, and the site sync in batch 7 should wait f
 - [ ] **WEB-01** Add the missing screenshots · P2 · S · you · [#22](https://github.com/Divesh567/divesh567.github.io/issues/22)
   - Why: `steadylight-1.jpg`, `steadylight-2.jpg` and `mahabharat-1.jpg` to `mahabharat-3.jpg` are referenced but not in the repo, so those slots render nothing.
   - Done when: the images are added with the same names, or the references are removed.
-- [ ] **WEB-02** Sync the site copy with the revised CV · P1 · M · claude · after batches 3 to 6 · [#23](https://github.com/Divesh567/divesh567.github.io/issues/23)
+- [x] **WEB-02** Sync the site copy with the revised CV · P1 · M · claude · after batches 3 to 6 · done 2026-10-22: meta description, hero, stats (now "5" titles), About and skills cards match the CV; PlayFab, AdMob, Play Games, I2, quality-tier and batching claims removed · [#23](https://github.com/Divesh567/divesh567.github.io/issues/23)
   - Why: the same facts live in the meta description, stats board, hero tagline, `#about`, skills detail, project bullets and timeline, and they drift easily (see CLAUDE.md).
   - Done when: all of them match the CV and the TL-02 numbers.
 
