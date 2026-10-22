@@ -35,6 +35,9 @@
   .job-title { font-weight: 700; font-size: 9.6pt; }
   .job-meta { color: #666b78; font-size: 8.8pt; white-space: nowrap; }
   h3 { font-size: 9.1pt; color: #a0451c; margin: 3px 0 1px; break-after: avoid; }
+  .sk { margin: 1px 0; }
+  .sk b { font-weight: 700; }
+  h3 .team { color: #666b78; font-weight: 400; }
   ul { padding-left: 14px; }
   li { margin: 1px 0; break-inside: avoid; }
 
@@ -42,7 +45,9 @@
   .title { display: flex; align-items: center; gap: 5px; }
   .title img { width: 20px; height: 20px; border-radius: 5px; }
   .title b { font-weight: 700; }
+  .title b a { text-decoration: underline; text-decoration-color: #c4c8d0; text-underline-offset: 2px; }
   .title span { color: #666b78; }
+  .title span a { text-decoration: underline; text-decoration-color: #c4c8d0; text-underline-offset: 2px; }
   .edu-meta { color: #666b78; }
 </style>
 </head>
@@ -54,94 +59,108 @@
     <div class="role">Game Developer</div>
     <div class="contact">
       <a href="mailto:divesh476@gmail.com">divesh476@gmail.com</a>
-      <span>Mumbai, India</span>
+      <span>Mumbai, India · open to remote and relocation</span>
+      <span>Notice period: 30 days</span>
       <a href="https://divesh567.github.io">divesh567.github.io</a>
       <a href="https://github.com/Divesh567">github.com/Divesh567</a>
+      <a href="https://www.linkedin.com/in/divesh-dogra-2a689a191/">linkedin.com/in/divesh-dogra-2a689a191</a>
     </div>
   </div>
 </header>
 
 <h2>Summary</h2>
-<p>Unity gameplay and live-ops engineer with 4+ years building mobile games in C#. At Dot9 Games, builds league, clan, party, tournament and monetization systems for a live multiplayer FPS and a social games hub. Earlier shipped a Ludo-style board game with a bot-vs-bot balancing simulator, a bilingual story-puzzle game, and a solo physics puzzle game with Firebase live-ops.</p>
+<p>Unity live-ops and gameplay engineer with 4+ years building mobile games in C#. At Dot9 Games, builds league, clan, party, tournament, reward and A/B-testing client systems for a live multiplayer FPS and a social games hub. Earlier shipped a Ludo-style board game, a bilingual story-puzzle game, and a solo 2D physics platformer run live with Firebase.</p>
 
 <h2>Skills</h2>
-<p>C#, Multiplayer (Photon PUN), Shader Graph, UI / UX, Profiling &amp; optimization, Lighting / World Design, OOP, Debugging</p>
+<p class="sk"><b>Engine and code:</b> Unity (2022 LTS, Unity 6), C#, ScriptableObjects, Addressables, UniTask</p>
+<p class="sk"><b>Multiplayer and live-ops:</b> Photon PUN, leagues, clans and tournaments, reward systems, remote config and A/B testing (client side), Firebase</p>
+<p class="sk"><b>Graphics:</b> Shader Graph, particle systems, animation, 2D and 3D lighting, Frame Debugger</p>
+<p class="sk"><b>Tools:</b> Git, Mantis, Android App Bundle builds, Arabic and Hindi localization</p>
 
 <h2>Experience</h2>
 
 <div class="job">
-  <div class="job-head"><span class="job-title">Game Developer, Dot9 Games</span><span class="job-meta">2025 to Present · Mumbai, India</span></div>
-  <h3>FAUG: Competitive Multiplayer FPS</h3>
+  <div class="job-head"><span class="job-title">Game Developer, Dot9 Games</span><span class="job-meta">Apr 2025 to Present · Mumbai, India</span></div>
+  <h3>FAU-G: Domination, Competitive Multiplayer FPS <span class="team">· team of 12 developers, 10 artists, 4 testers</span></h3>
   <ul>
-    <li>Built the ranked league system: dashboard, promotion and demotion with inactivity checks, league-end animations, percentile leaderboards, and a remote-config bot handler that simulates league points.</li>
-    <li>Developed the clan layer on Firestore (create, join, invite, disband, missions, daily login tracking), then the Teams system: invite-based match leadership, party matchmaking, live loadout sync, and server-owned team chat with reporting.</li>
-    <li>Engineered the Photon connection layer: best-ping region selection, Play Again restart, master-client takeover on heartbeat loss, high-ping drop to offline mode, and fixes for matchmaking bugs such as stale team indices.</li>
-    <li>Created the offline tournament system for a live finals event: Firestore data model, room-code match setup, player seating by user ID, score posting at game over, and device-aware control layouts.</li>
-    <li>Integrated the growth stack: AdMob and Unity Ads behind JSON-configured placements, In-App Review prompts, and a JSON-driven Firebase Analytics layer plus AppsFlyer events.</li>
-    <li>Reworked the third-person camera (blend, wall collision, aim reticle fixes) and added a grenade package.</li>
-    <li>Added cheater flagging, player and chat reporting, username validation, and a test-device tool that keeps QA purchases out of analytics.</li>
-    <li>Cut load time by reusing loaded scenes on same-map Play Again, enabled mipmap streaming for the player's own weapon, set up a one-command Android build, and wrote design docs for Teams, Play Again, leaderboards and tournaments.</li>
+    <li>Built the client for the FAU-G Bharat League (FBL), a weekly league that led to two offline e-sports season finals, covering its flow, league transitions and failure-handling UI.</li>
+    <li>Developed clans and the Teams party mode: match leadership, party matchmaking and team chat.</li>
+    <li>Engineered the multiplayer connection and matchmaking layer on Photon, including region selection, match restarts and matchmaking fixes.</li>
+    <li>Created the tournament system for a live finals event.</li>
+    <li>Rewrote the multi-reward grant logic and built the reward UI for skins, accessories and multi-item rewards.</li>
+    <li>Led the battle-streak feature with one junior developer, designing the system and building the streak logic, flow and most of the UI.</li>
+    <li>Designed and built the targeted announcement system end to end, from client calls to logic to UI.</li>
+    <li>Set up the client side of remote configuration and A/B testing so the team could compare features and rewards.</li>
+    <li>Integrated ads, in-app review prompts and analytics.</li>
+    <li>Reworked the third-person camera and added a grenade package.</li>
+    <li>Added player and chat reporting and username validation.</li>
+    <li>Diagnosed and fixed a rendering overdraw issue using the Frame Debugger.</li>
+    <li>Sped up first-time-user and per-match loading; added a one-command Android build and design docs for core systems.</li>
   </ul>
-  <h3>Chapter 26: Casual Multiplayer Games &amp; Social App</h3>
+  <h3>Chapter 26: Casual Multiplayer Games &amp; Social App <span class="team">· team of 9 developers, 5 artists</span></h3>
   <ul>
-    <li>Built the client for a remote-config-driven mini-game hub covering social, tournaments, leaderboards, achievements, daily tasks, rewards and a store, shipped with the team in a few months.</li>
-    <li>Implemented the clan client: member actions (promote, demote, kick), requests, invites, search and profanity checks, with right-to-left layouts.</li>
-    <li>Wrote the tournament and leaderboard flows (state, individual, all-games and city views, score posting, winner pages) against the backend API.</li>
+    <li>Worked on the client for a mini-game hub covering social features, tournaments, leaderboards, achievements, daily tasks, rewards and a store, released in Jul 2026.</li>
+    <li>Implemented the clan client: member management, requests, invites and search.</li>
+    <li>Wrote the tournament and leaderboard screens and flows against the backend API.</li>
     <li>Delivered Arabic localization and right-to-left layouts across the hub, store and clan screens.</li>
-    <li>Shipped monetization and account flows: ads with a remote-config live and test switch, a runtime-built store, force and soft update gating, OTP rate limiting, and in-app account deletion.</li>
-    <li>Added a QR scanner and generator for check-ins and a live-cast page; fixed crashes and game-exit bugs across Baloot, football penalty, Carrom and Ludo.</li>
-  </ul>
-</div>
-
-<div class="job">
-  <div class="job-head"><span class="job-title">Junior Game Developer (joined as Intern), BoredLeaders Pvt. Ltd</span><span class="job-meta">2023 to 2024 · Delhi, India</span></div>
-  <h3>Mahabharat Board Game: Ludo-Style Strategy Game</h3>
-  <ul>
-    <li>Developed a Ludo-style strategy board game with 2 and 3 player bot matches, 7 battlefields with day and night variants, 25 ScriptableObject power-ups, path-finding over four board layouts, and rewind and reroll turn-state snapshots.</li>
-    <li>Created a headless bot-vs-bot simulation framework that exports win-rate, event and power-usage CSVs for balance analysis, alongside an event-driven weighted-RNG dice system and bot power-selection weights that tune difficulty and game feel.</li>
-    <li>Delivered the meta-game and services: XP, achievements, daily missions, loot chests, challenge modes and a guided tutorial, plus Firebase Auth, Google Play Games, AdMob, Unity IAP and push notifications.</li>
-  </ul>
-  <h3>Puzzles of Mahabharat: Bilingual Story-Puzzle Game</h3>
-  <ul>
-    <li>Engineered a bilingual (English and Hindi) narrated story-puzzle game with 375+ story pages, 126 image puzzles and 50 jigsaws, driven by a CSV pipeline so the content team adds levels without code changes.</li>
-    <li>Wrote 10 puzzle types (rotation, grid, hexagon, circle, hybrid and more), Hindi font conversion, and runtime language switching with per-language voice-over loading.</li>
-    <li>Implemented Firebase login and cloud save with timestamp-based conflict resolution, plus AdMob, Unity IAP, Google Play Games, a rewards SDK with an offline retry queue, and Android App Bundle builds.</li>
+    <li>Shipped the store, ads and account flows, including in-app account deletion.</li>
+    <li>Added a QR scanner and generator for check-ins and a live-cast page; fixed bugs across the Carrom, Blink, Ludo and football penalty minigames.</li>
   </ul>
 </div>
 
 <div class="job page2">
-  <div class="job-head"><span class="job-title">Indie Game Developer, Immersiveorama</span><span class="job-meta">2022 to 2023 · Mumbai, India</span></div>
-  <h3>Steady Light: Solo 2D Physics Puzzle Game (Unity 6)</h3>
+  <div class="job-head"><span class="job-title">Junior Game Developer (promoted from Intern), BoredLeaders Pvt. Ltd</span><span class="job-meta">Feb 2023 to Dec 2024 · Delhi, India</span></div>
   <ul>
-    <li>Solo-developed and published the game on the Play Store: about 45 levels across 6 worlds, a library of about 30 reusable obstacle components, touch controls on the new Input System.</li>
-    <li>Architected it for fast content: ScriptableObject event channels, a custom reflection-based dependency injector, and Addressables-streamed levels defined as data.</li>
-    <li>Ran it as a live game with Firebase Remote Config for balance changes without app updates, and Firebase Analytics with per-level timing.</li>
-    <li>Handled the rest solo, from a tamper-detecting save system (SHA-256), async UI sequencing (UniTask) and custom Shader Graph shaders to 2D lighting and animation, using purchased art and VFX packs.</li>
+    <li>Handled lighting, particle systems and animations across the Mahabharat games, working with ready-made art assets.</li>
+  </ul>
+  <h3>Mahabharat Board Game: Ludo-Style Strategy Game <span class="team">· team of 3 developers, 2 artists</span></h3>
+  <ul>
+    <li>Developed a Ludo-style strategy board game with 2 and 3 player bot matches, 7 battlefields with day and night variants, several board layouts, 25 power-ups, and rewind and reroll turns.</li>
+    <li>Created the bot opponents and tuned their difficulty and the power-ups using automated test runs.</li>
+    <li>Delivered the meta-game and services: XP, achievements, daily missions, loot chests, challenge modes and a guided tutorial, plus sign-in, leaderboards, ads, in-app purchases and push notifications.</li>
+  </ul>
+  <h3>Puzzles of Mahabharat: Bilingual Story-Puzzle Game <span class="team">· sole developer, 1 artist</span></h3>
+  <ul>
+    <li>Engineered a bilingual (English and Hindi) narrated story-puzzle game with 375+ story pages, 126 image puzzles and 50 jigsaws, on a data-driven content pipeline.</li>
+    <li>Wrote 10 puzzle types (rotation, grid, hexagon, circle, hybrid and more), Hindi font support, and runtime language switching with voice-over in both languages.</li>
+    <li>Implemented sign-in and cloud save across devices, plus ads, in-app purchases, achievements, leaderboards and Android App Bundle builds.</li>
   </ul>
 </div>
 
 <div class="job">
-  <div class="job-head"><span class="job-title">VFX Artist, Cinegence Media Pvt. Ltd</span><span class="job-meta">2019 to 2021</span></div>
+  <div class="job-head"><span class="job-title">Indie Game Developer, Immersiveorama</span><span class="job-meta">2022 to 2023, updates to Feb 2026 · Mumbai, India</span></div>
+  <h3>Steady Light: Solo 2D Physics Platformer (Unity 6)</h3>
   <ul>
-    <li>Worked as a compositing and clean-up artist in post-production on several films and TV shows.</li>
-    <li>Produced VFX sequences under tight deadlines that fit cleanly into the final shots.</li>
-    <li>Used Nuke for CG effects and simulations, working with animators to keep scenes consistent.</li>
+    <li>Solo-developed the game and published it on the Play Store in Oct 2022 (originally released as LightForce), now at 590 installs and a 4.5 rating: about 45 levels across 6 worlds, a library of about 30 reusable obstacle components, touch controls on the new Input System.</li>
+    <li>Architected it for fast content: ScriptableObject event channels, a custom reflection-based dependency injector, and Addressables-streamed levels defined as data.</li>
+    <li>Ran it as a live game, with updates through Feb 2026: Firebase Remote Config for balance changes without app updates, and Firebase Analytics with per-level timing.</li>
+    <li>Handled the rest solo, from a tamper-detecting save system (SHA-256), async UI sequencing (UniTask) and custom Shader Graph shaders to 2D lighting and animation, using purchased art and VFX packs.</li>
+    <li>Self-taught Unity during the 2020 lockdown after a VFX role ended; published a first game in Oct 2020 (since removed from the Play Store) before building Steady Light.</li>
+  </ul>
+</div>
+
+<div class="job">
+  <div class="job-head"><span class="job-title">VFX Artist, Cinegence Media Pvt. Ltd</span><span class="job-meta">Aug 2019 to 2020</span></div>
+  <ul>
+    <li>Started as a clean-up artist and moved up to compositor in post-production on feature films, including Toofan, 83 and Baaghi 3.</li>
+    <li>Delivered VFX shots under tight deadlines, compositing in Nuke and working with animators to keep scenes consistent.</li>
   </ul>
 </div>
 
 <h2>Shipped Titles</h2>
 <div class="titles">
-  <div class="title"><img src="img/faug.png" alt=""><div><b>FAUG</b> <span>Dot9 Games</span></div></div>
-  <div class="title"><img src="img/chapter26.png" alt=""><div><b>Chapter 26</b> <span>Dot9 Games</span></div></div>
-  <div class="title"><img src="img/mahabharat.png" alt=""><div><b>Mahabharat (2 apps)</b> <span>BoredLeaders</span></div></div>
-  <div class="title"><img src="img/steadylight.png" alt=""><div><b>Steady Light</b> <span>Immersiveorama</span></div></div>
+  <div class="title"><img src="img/faug.png" alt=""><div><b><a href="https://play.google.com/store/apps/details?id=com.dotnine.faug">FAU-G: Domination</a></b> <span>Dot9 Games · Android, <a href="https://apps.apple.com/in/app/fau-g-domination-mp-season-4/id6741766030">iOS</a></span></div></div>
+  <div class="title"><img src="img/chapter26.png" alt=""><div><b><a href="https://play.google.com/store/apps/details?id=com.alsaqeefa.playnation">Chapter 26</a></b> <span>Dot9 Games · Android, <a href="https://apps.apple.com/sa/app/chapter26/id6779216920">iOS</a></span></div></div>
+  <div class="title"><img src="img/mahabharat.png" alt=""><div><b><a href="https://play.google.com/store/apps/details?id=com.boredleaders.mbbg">Mahabharat Board Game</a></b> <span>BoredLeaders · Android</span></div></div>
+  <div class="title"><img src="img/mahabharat.png" alt=""><div><b><a href="https://play.google.com/store/apps/details?id=com.boredleaders.mbpg">Puzzles of Mahabharat</a></b> <span>BoredLeaders · Android</span></div></div>
+  <div class="title"><img src="img/steadylight.png" alt=""><div><b><a href="https://play.google.com/store/apps/details?id=com.Immersiveorama.LightForce">Steady Light</a></b> <span>Immersiveorama · Android</span></div></div>
 </div>
 
 <h2>Education</h2>
 <p><b>Bachelor of Commerce</b>, Thakur College of Science and Commerce, Mumbai <span class="edu-meta">· 2015 to 2018</span></p>
 
 <h2>Certifications</h2>
-<p>City Builder in Unity (OOP), MVC for Unity in C#, Multiplayer in Unity with NGO, Shader Graphs for Effects, Art of Writing Clean Code, Make Hitman Go from Scratch, Level Management, VFX for Movies (Prime Focus)</p>
+<p>Multiplayer in Unity with NGO, Shader Graphs for Effects, VFX for Movies (Prime Focus), plus short Unity programming courses on clean code, MVC and OOP</p>
 
 <h2>Languages</h2>
 <p>English (Fluent), Hindi (Fluent), Marathi (Basic)</p>
